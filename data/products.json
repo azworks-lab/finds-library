@@ -32,13 +32,17 @@
           "label": "Монтаж",
           "value": "Закреплена на стене, верх монтажной шины 680 мм от пола"
         }
+      ],
+      "related": [
+        "ikea-orrsjon",
+        "ikea-rannilen"
       ]
     },
     {
       "id": "ikea-orrsjon",
       "name": "IKEA ORRSJÖN",
-      "category": "Сантехника и ванная",
-      "subcategory": "Раковины",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
       "status": "Куплено",
       "brand": "IKEA",
       "sku": "705.450.69",
@@ -65,6 +69,10 @@
           "label": "Артикул комплекта с тумбой",
           "value": "096.296.47"
         }
+      ],
+      "related": [
+        "ikea-angsjon-100",
+        "ikea-rannilen"
       ]
     },
     {
@@ -97,13 +105,17 @@
           "label": "Управление",
           "value": "Беспроводной пульт IKEA BILRESA, сопряжён"
         }
+      ],
+      "related": [
+        "ikea-bilresa",
+        "ikea-silverglans"
       ]
     },
     {
       "id": "ikea-rannilen",
       "name": "IKEA RÄNNILEN",
-      "category": "Сантехника и ванная",
-      "subcategory": "Сифоны",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
       "status": "Куплено",
       "brand": "IKEA",
       "specs": "Сифон для раковины IKEA ORRSJÖN",
@@ -121,6 +133,10 @@
           "label": "Особенность монтажа",
           "value": "Ограниченное пространство до канализационного выпуска в стене"
         }
+      ],
+      "related": [
+        "ikea-angsjon-100",
+        "ikea-orrsjon"
       ]
     },
     {
@@ -202,6 +218,11 @@
           "label": "Расчётный ток",
           "value": "~2,92 А"
         }
+      ],
+      "related": [
+        "visional-hb17",
+        "meanwell-lpv10024",
+        "tuya-led-controller"
       ]
     },
     {
@@ -226,6 +247,11 @@
           "label": "Особенность",
           "value": "Для направленного света под 45° может понадобиться иной крепёж или угловой профиль"
         }
+      ],
+      "related": [
+        "btf-fcob",
+        "meanwell-lpv10024",
+        "tuya-led-controller"
       ]
     },
     {
@@ -258,6 +284,11 @@
           "label": "Экосистема",
           "value": "eWeLink"
         }
+      ],
+      "related": [
+        "sonoff-r5",
+        "sonoff-minir4",
+        "sonoff-r4mini"
       ]
     },
     {
@@ -290,6 +321,11 @@
           "label": "Экосистема",
           "value": "eWeLink"
         }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-minir4",
+        "sonoff-r4mini"
       ]
     },
     {
@@ -318,6 +354,11 @@
           "label": "Экосистема",
           "value": "eWeLink"
         }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-r5",
+        "sonoff-r4mini"
       ]
     },
     {
@@ -541,6 +582,11 @@
           "label": "Запас мощности",
           "value": "~30,8 Вт, или ~44% относительно нагрузки"
         }
+      ],
+      "related": [
+        "btf-fcob",
+        "visional-hb17",
+        "tuya-led-controller"
       ]
     },
     {
@@ -574,6 +620,11 @@
           "label": "Экосистема",
           "value": "eWeLink"
         }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-r5",
+        "sonoff-minir4"
       ]
     },
     {
@@ -632,6 +683,11 @@
           "label": "Приложение",
           "value": "Tuya (подтверждено работой устройства)"
         }
+      ],
+      "related": [
+        "btf-fcob",
+        "visional-hb17",
+        "meanwell-lpv10024"
       ]
     },
     {
@@ -733,7 +789,7 @@
       "subcategory": "Ванная",
       "status": "Куплено",
       "sku": "706.178.72",
-      "price": "5 € (цена покупки, IKEA Latvia)",
+      "price": "5 € (цена покупки в IKEA)",
       "specs": "2 кнопки; Matter over Thread; 2 × AAA; 70 × 40 × 19 мм",
       "details": [
         {
@@ -755,13 +811,37 @@
         {
           "label": "Интеграция",
           "value": "Для управления через телефон нужен Thread Border Router"
-        },
-        {
-          "label": "Цена покупки",
-          "value": "5 €"
         }
       ],
-      "note": "Куплен в IKEA за 5 €. Двухкнопочный пульт сопряжён с подсветкой FAXÄLVEN и работает."
+      "note": "Двухкнопочный пульт сопряжён с подсветкой FAXÄLVEN и работает. Matter over Thread; не Zigbee.",
+      "related": [
+        "ikea-faxalven",
+        "ikea-silverglans"
+      ]
+    },
+    {
+      "id": "ikea-silverglans",
+      "name": "IKEA SILVERGLANS",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
+      "status": "В комплекте",
+      "brand": "IKEA",
+      "specs": "Драйвер подсветки зеркального шкафа FAXÄLVEN",
+      "note": "Штатный драйвер подсветки FAXÄLVEN; подключён и работает с пультом BILRESA.",
+      "details": [
+        {
+          "label": "Комплектация",
+          "value": "В составе зеркального шкафа FAXÄLVEN"
+        }
+      ],
+      "tags": [
+        "ванная",
+        "подсветка"
+      ],
+      "related": [
+        "ikea-faxalven",
+        "ikea-bilresa"
+      ]
     }
   ]
 }
