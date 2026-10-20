@@ -1,0 +1,215 @@
+{
+  "version": "2.0",
+  "updated": "2026-10-20",
+  "products": [
+    {
+      "id": "ikea-angsjon-100",
+      "name": "IKEA ÄNGSJÖN",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Подвесная тумба, светлый дуб, 2 ящика, 100×48×63 см",
+      "note": "Выбрана для обновления ванной комнаты.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ]
+    },
+    {
+      "id": "ikea-orrsjon",
+      "name": "IKEA ORRSJÖN",
+      "category": "Сантехника и ванная",
+      "subcategory": "Раковины",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "sku": "705.450.69",
+      "specs": "Белая керамическая раковина, 102×49 см; комплект с тумбой арт. 096.296.47",
+      "note": "Используется вместе с ÄNGSJÖN и сифоном RÄNNILEN.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ]
+    },
+    {
+      "id": "ikea-faxalven",
+      "name": "IKEA FAXÄLVEN",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Зеркальный шкаф, светлый дуб, 100×15×95 см, подсветка SILVERGLANS",
+      "note": "Выбран в комплект к тумбе ÄNGSJÖN.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ]
+    },
+    {
+      "id": "ikea-rannilen",
+      "name": "IKEA RÄNNILEN",
+      "category": "Сантехника и ванная",
+      "subcategory": "Сифоны",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Сифон для раковины IKEA ORRSJÖN",
+      "note": "Часть комплекта для ванной.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ]
+    },
+    {
+      "id": "kanlux-alren",
+      "name": "Kanlux ALREN R DTL-B",
+      "category": "Электрика и освещение",
+      "subcategory": "Потолочные светильники",
+      "status": "Куплено",
+      "brand": "Kanlux",
+      "specs": "6 встраиваемых чёрных светильников под GU10",
+      "price": "4,49 € / шт.",
+      "note": "Выбраны для потолка спальни.",
+      "tags": [
+        "спальня",
+        "GU10"
+      ]
+    },
+    {
+      "id": "btf-fcob",
+      "name": "BTF-LIGHTING FCOB",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-ленты",
+      "status": "Куплено",
+      "brand": "BTF-LIGHTING",
+      "specs": "2700 K, 5 м, 528 LED/м, CRI 90+, 24 V, 70 W, 10 мм",
+      "note": "Акцентная подсветка ниши штор спальни.",
+      "tags": [
+        "спальня",
+        "LED"
+      ]
+    },
+    {
+      "id": "visional-hb17",
+      "name": "VISIONAL HB-17.5×7M",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-профили",
+      "status": "Куплено",
+      "brand": "VISIONAL",
+      "specs": "Прямой алюминиевый профиль для LED-ленты",
+      "note": "Для подсветки спальни; угол установки ещё требует решения.",
+      "tags": [
+        "спальня",
+        "LED"
+      ]
+    },
+    {
+      "id": "sonoff-m5",
+      "name": "Sonoff M5",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "Настенный умный выключатель",
+      "note": "Куплен для входа в спальню; подключение требует проверки рабочего нуля.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ]
+    },
+    {
+      "id": "sonoff-r5",
+      "name": "Sonoff R5",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "2 беспроводных пульта управления",
+      "note": "Управление освещением возле кровати.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ]
+    },
+    {
+      "id": "sonoff-minir4",
+      "name": "Sonoff MINIR4",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "2 мини-реле",
+      "note": "Для потолочного освещения спальни.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ]
+    },
+    {
+      "id": "schneider-sedna",
+      "name": "Schneider Electric Sedna",
+      "category": "Электрика и освещение",
+      "subcategory": "Розетки и рамки",
+      "status": "Куплено",
+      "brand": "Schneider Electric",
+      "specs": "Антрацитовые розетки и рамки",
+      "note": "Выбраны для спальни.",
+      "tags": [
+        "спальня"
+      ]
+    },
+    {
+      "id": "jokari-super4",
+      "name": "Jokari Super 4 Plus",
+      "category": "Инструменты",
+      "subcategory": "Стрипперы",
+      "status": "Выбрано",
+      "brand": "Jokari",
+      "sku": "20050",
+      "specs": "Автоматическое снятие изоляции, 0,2–6,0 мм²",
+      "note": "Приоритетная модель для покупки; бюджет до 25 €.",
+      "tags": [
+        "электрика"
+      ]
+    },
+    {
+      "id": "stadler-erik",
+      "name": "Stadler Form Erik E-020E",
+      "category": "Отопление и вентиляция",
+      "subcategory": "Обогреватели",
+      "status": "Выбрано",
+      "brand": "Stadler Form",
+      "specs": "Напольный обогреватель для спальни ~12 м²",
+      "note": "Основной выбранный вариант; прежний ценовой ориентир ~111 €.",
+      "tags": [
+        "спальня"
+      ]
+    },
+    {
+      "id": "bosch-smv4hax71e",
+      "name": "Bosch SMV4HAX71E",
+      "category": "Бытовая техника",
+      "subcategory": "Посудомоечные машины",
+      "status": "Выбрано",
+      "brand": "Bosch",
+      "specs": "Встраиваемая посудомоечная машина",
+      "note": "Выбранная модель для дальнейшего контроля цены; размещение чаши Ninja Ø27×18 см требует подтверждения.",
+      "tags": [
+        "кухня"
+      ]
+    },
+    {
+      "id": "ikea-gu10",
+      "name": "IKEA GU10 — лампы",
+      "category": "Электрика и освещение",
+      "subcategory": "Лампы GU10",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Лампы GU10 IKEA; точная модель не зафиксирована",
+      "note": "Удачная покупка по соотношению цены и качества. Модель и артикул уточнить при следующем обновлении.",
+      "tags": [
+        "IKEA",
+        "GU10"
+      ]
+    }
+  ]
+}
