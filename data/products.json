@@ -331,13 +331,13 @@
     },
     {
       "id": "visional-hb158x158",
-      "name": "VISIONAL HB-15.8×15.8 — угловой LED-профиль",
+      "name": "VISIONAL HB-15.8×15.8CT — угловой LED-профиль",
       "category": "Электрика и освещение",
       "subcategory": "LED-профили",
       "status": "Куплено",
       "brand": "VISIONAL",
-      "specs": "Угловой анодированный алюминиевый профиль для LED-ленты HB-15.8×15.8; купленная длина 3 м (со слов владельца)",
-      "note": "Куплен в Euroled для ниши штор вместо прямого профиля. Модель HB-15.8×15.8. Цена покупки 8,85 € за 3 м (подтверждена владельцем).",
+      "specs": "Анодированный угловой профиль 3000 × 15,8 × 15,8 мм, посадочное место LED 9 мм, полупрозрачный рассеиватель",
+      "note": "Куплено 3 м за 8,85 € в Euroled. ВНИМАНИЕ: заявленная ширина площадки для LED-ленты 9 мм, а купленная BTF FCOB имеет ширину 10 мм. Проверить фактическую совместимость до наклейки!",
       "tags": [
         "спальня",
         "LED",
@@ -346,19 +346,27 @@
       "details": [
         {
           "label": "Модель",
-          "value": "HB-15.8×15.8"
+          "value": "HB-15.8×15.8CT"
         },
         {
-          "label": "Тип",
-          "value": "Угловой анодированный алюминиевый профиль"
+          "label": "Артикул Euroled",
+          "value": "05-719"
         },
         {
-          "label": "Сечение",
-          "value": "15,8 × 15,8 мм (по названию модели)"
+          "label": "EAN",
+          "value": "4752233009133"
         },
         {
-          "label": "Купленная длина",
-          "value": "3 м (со слов владельца)"
+          "label": "Размер",
+          "value": "3000 × 15,8 × 15,8 мм"
+        },
+        {
+          "label": "Посадочное место LED",
+          "value": "9 мм — может быть несовместимо с лентой 10 мм"
+        },
+        {
+          "label": "Рассеиватель",
+          "value": "Полупрозрачный"
         },
         {
           "label": "Цена покупки",
@@ -374,7 +382,8 @@
         "visional-hb17",
         "meanwell-lpv10024"
       ],
-      "retailerUrl": "https://euroled.lv/ru/castnoe-osveshhenie/vnutrennee-osveschenie/gostinie-i-holli/alyuminievie-profili/profili-dlya-led-lenti/uglovoi-anodirovannii-alyuminievii-profil-dlya-led-lenti-hb-158x158cm2"
+      "retailerUrl": "https://euroled.lv/ru/castnoe-osveshhenie/vnutrennee-osveschenie/gostinie-i-holli/alyuminievie-profili/profili-dlya-led-lenti/uglovoi-anodirovannii-alyuminievii-profil-dlya-led-lenti-hb-158x158cm2",
+      "sku": "05-719"
     },
     {
       "id": "sonoff-m5",
