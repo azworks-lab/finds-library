@@ -68,12 +68,17 @@
         {
           "label": "Артикул комплекта с тумбой",
           "value": "096.296.47"
+        },
+        {
+          "label": "Точные размеры IKEA",
+          "value": "102,3 × 49,4 × 6,4 см"
         }
       ],
       "related": [
         "ikea-angsjon-100",
         "ikea-rannilen"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/"
     },
     {
       "id": "ikea-faxalven",
@@ -126,6 +131,10 @@
       ],
       "details": [
         {
+          "label": "Артикул",
+          "value": "205.545.32"
+        },
+        {
           "label": "Назначение",
           "value": "Сифон для раковины IKEA ORRSJÖN"
         },
@@ -137,7 +146,9 @@
       "related": [
         "ikea-angsjon-100",
         "ikea-orrsjon"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/orrsjon-wash-basin-with-water-trap-spr-79516755/",
+      "sku": "205.545.32"
     },
     {
       "id": "kanlux-alren",
@@ -817,7 +828,8 @@
       "related": [
         "ikea-faxalven",
         "ikea-silverglans"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/bilresa-remote-control-white-smart-dual-button-70617872/"
     },
     {
       "id": "ikea-silverglans",
