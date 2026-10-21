@@ -31,12 +31,18 @@
         {
           "label": "Монтаж",
           "value": "Закреплена на стене, верх монтажной шины 680 мм от пола"
+        },
+        {
+          "label": "Гарантия",
+          "value": "10 лет"
         }
       ],
       "related": [
         "ikea-orrsjon",
         "ikea-rannilen"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/aengsjoen-wash-stand-with-drawers-oak-effect-50535090/",
+      "sku": "505.350.90"
     },
     {
       "id": "ikea-orrsjon",
@@ -109,12 +115,34 @@
         {
           "label": "Управление",
           "value": "Беспроводной пульт IKEA BILRESA, сопряжён"
+        },
+        {
+          "label": "Световой поток",
+          "value": "1630 лм"
+        },
+        {
+          "label": "Потребление",
+          "value": "26,8 Вт"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "2700 K"
+        },
+        {
+          "label": "Степень защиты освещения",
+          "value": "IP44"
+        },
+        {
+          "label": "Гарантия",
+          "value": "10 лет"
         }
       ],
       "related": [
         "ikea-bilresa",
         "ikea-silverglans"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "sku": "495.167.14"
     },
     {
       "id": "ikea-rannilen",
@@ -498,7 +526,7 @@
         "IKEA",
         "GU10"
       ],
-      "sku": "LED2315R3",
+      "sku": "205.840.96",
       "price": "2,49 € / шт. (цена на скриншоте IKEA, не подтверждена как цена покупки)",
       "details": [
         {
@@ -540,8 +568,17 @@
         {
           "label": "Время запуска",
           "value": "Менее 1 секунды"
+        },
+        {
+          "label": "Угол луча",
+          "value": "40°"
+        },
+        {
+          "label": "Диаметр",
+          "value": "50 мм"
         }
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/solhetta-led-bulb-gu10-345-lumen-dimmable-20584096/"
     },
     {
       "id": "meanwell-lpv10024",
@@ -849,6 +886,14 @@
         {
           "label": "Комплектация",
           "value": "Входит в FAXÄLVEN"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "30 Вт"
+        },
+        {
+          "label": "КПД при полной нагрузке",
+          "value": "88 %"
         }
       ],
       "tags": [
@@ -858,7 +903,10 @@
       "related": [
         "ikea-faxalven",
         "ikea-bilresa"
-      ]
+      ],
+      "url": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "sku": "104.747.72",
+      "sourceNote": "Официальная ссылка на комплект FAXÄLVEN, включающий драйвер SILVERGLANS."
     }
   ]
 }
