@@ -209,8 +209,42 @@
         {
           "label": "Цена за штуку",
           "value": "4,49 €"
+        },
+        {
+          "label": "Артикул",
+          "value": "26757"
+        },
+        {
+          "label": "EAN",
+          "value": "5905339267573"
+        },
+        {
+          "label": "Габариты",
+          "value": "99 × 99 × 25 мм"
+        },
+        {
+          "label": "Монтажное отверстие",
+          "value": "80 × 80 мм"
+        },
+        {
+          "label": "Степень защиты",
+          "value": "IP20"
+        },
+        {
+          "label": "Регулировка",
+          "value": "В двух плоскостях, 60°/60°"
+        },
+        {
+          "label": "Патрон",
+          "value": "В комплект не входит"
+        },
+        {
+          "label": "Максимальная мощность лампы",
+          "value": "10 Вт"
         }
-      ]
+      ],
+      "url": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf",
+      "sku": "26757"
     },
     {
       "id": "btf-fcob",
@@ -323,13 +357,26 @@
         {
           "label": "Экосистема",
           "value": "eWeLink"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц, IEEE 802.11 b/g/n"
+        },
+        {
+          "label": "Питание",
+          "value": "100–240 В AC, 50/60 Гц"
+        },
+        {
+          "label": "Исполнение",
+          "value": "1/2/3 клавиши; 80/86/120 — параметры зависят от версии"
         }
       ],
       "related": [
         "sonoff-r5",
         "sonoff-minir4",
         "sonoff-r4mini"
-      ]
+      ],
+      "url": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5"
     },
     {
       "id": "sonoff-r5",
@@ -360,13 +407,30 @@
         {
           "label": "Экосистема",
           "value": "eWeLink"
+        },
+        {
+          "label": "Питание",
+          "value": "2 × CR2032"
+        },
+        {
+          "label": "Кнопки",
+          "value": "6"
+        },
+        {
+          "label": "Размеры",
+          "value": "86 × 86 × 13,5 мм"
+        },
+        {
+          "label": "Управление",
+          "value": "eWeLink-Remote, одинарное/двойное/долгое нажатие"
         }
       ],
       "related": [
         "sonoff-m5",
         "sonoff-minir4",
         "sonoff-r4mini"
-      ]
+      ],
+      "url": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller"
     },
     {
       "id": "sonoff-minir4",
@@ -393,13 +457,30 @@
         {
           "label": "Экосистема",
           "value": "eWeLink"
+        },
+        {
+          "label": "Питание",
+          "value": "100–240 В AC, 50/60 Гц"
+        },
+        {
+          "label": "Максимальная нагрузка",
+          "value": "10 А, активная"
+        },
+        {
+          "label": "Размеры",
+          "value": "39,5 × 33 × 16,8 мм"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц, IEEE 802.11 b/g/n"
         }
       ],
       "related": [
         "sonoff-m5",
         "sonoff-r5",
         "sonoff-r4mini"
-      ]
+      ],
+      "url": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4"
     },
     {
       "id": "schneider-sedna",
@@ -630,13 +711,23 @@
         {
           "label": "Запас мощности",
           "value": "~30,8 Вт, или ~44% относительно нагрузки"
+        },
+        {
+          "label": "Защита корпуса",
+          "value": "IP67"
+        },
+        {
+          "label": "КПД (тип.)",
+          "value": "88 %"
         }
       ],
       "related": [
         "btf-fcob",
         "visional-hb17",
         "tuya-led-controller"
-      ]
+      ],
+      "url": "https://www.mean-well.ru/uploads/files/datasheets/LPV-100-24.pdf",
+      "sourceNote": "По примечанию 11 документации производителя LPV-100 не предназначен для применения в LED-светильниках в ЕС и Китае; для таких применений рекомендуются другие серии. Перед монтажом проверить назначение изделия и нормативную применимость."
     },
     {
       "id": "sonoff-r4mini",
