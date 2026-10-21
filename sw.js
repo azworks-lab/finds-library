@@ -1,5 +1,5 @@
 // Offline-first shell. Product data uses network-first so new decisions appear promptly.
-const CACHE="finds-library-v31-20261021";
+const CACHE="finds-library-v31-approved-20261021";
 const SHELL=["./","./index.html","./manifest.webmanifest","./icon.svg","./data/products.json"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith("finds-library-")&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
