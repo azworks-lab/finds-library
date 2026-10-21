@@ -235,16 +235,13 @@
           "value": "В двух плоскостях, 60°/60°"
         },
         {
-          "label": "Патрон",
-          "value": "В комплект не входит"
-        },
-        {
           "label": "Максимальная мощность лампы",
           "value": "10 Вт"
         }
       ],
       "url": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf",
-      "sku": "26757"
+      "sku": "26757",
+      "sourceNote": ""
     },
     {
       "id": "btf-fcob",
