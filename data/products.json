@@ -237,6 +237,10 @@
         {
           "label": "Максимальная мощность лампы",
           "value": "10 Вт"
+        },
+        {
+          "label": "Тип лампы",
+          "value": "GU10"
         }
       ],
       "url": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf",
