@@ -1,13 +1,13 @@
 {
-  "name": "Библиотека удачных находок",
-  "short_name": "Находки",
+  "name": "FINDS — Библиотека находок",
+  "short_name": "FINDS",
   "description": "Личный каталог выбранных и купленных товаров",
   "lang": "ru",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#0d111a",
-  "theme_color": "#101827",
+  "background_color": "#0e121b",
+  "theme_color": "#0e121b",
   "icons": [
     {
       "src": "icon-192.png",
