@@ -42,7 +42,8 @@
         "ikea-rannilen"
       ],
       "sku": "505.350.90",
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/aengsjoen-wash-stand-with-drawers-oak-effect-50535090/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/aengsjoen-wash-stand-with-drawers-oak-effect-50535090/",
+      "photo": "images/ikea-angsjon-100.jpg"
     },
     {
       "id": "ikea-orrsjon",
@@ -84,7 +85,8 @@
         "ikea-angsjon-100",
         "ikea-rannilen"
       ],
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/",
+      "photo": "images/ikea-orrsjon.jpg"
     },
     {
       "id": "ikea-faxalven",
@@ -142,7 +144,8 @@
         "ikea-silverglans"
       ],
       "sku": "495.167.14",
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "photo": "images/ikea-faxalven.jpg"
     },
     {
       "id": "ikea-rannilen",
@@ -177,7 +180,8 @@
       ],
       "sku": "205.545.32",
       "sourceNote": "Ссылка ведёт на комплект раковины с сифоном, не на отдельную карточку RÄNNILEN.",
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/raennilen-water-trap-w-flexible-pipe-1-bowl-20554532/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/raennilen-water-trap-w-flexible-pipe-1-bowl-20554532/",
+      "photo": "images/ikea-rannilen.jpg"
     },
     {
       "id": "kanlux-alren",
@@ -245,7 +249,8 @@
       ],
       "sku": "26757",
       "sourceNote": "",
-      "manufacturerUrl": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf"
+      "manufacturerUrl": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf",
+      "photo": "images/kanlux-alren.jpg"
     },
     {
       "id": "btf-fcob",
@@ -298,7 +303,8 @@
         "visional-hb17",
         "meanwell-lpv10024",
         "tuya-led-controller"
-      ]
+      ],
+      "photo": "images/btf-fcob.jpg"
     },
     {
       "id": "visional-hb17",
@@ -327,7 +333,8 @@
         "btf-fcob",
         "meanwell-lpv10024",
         "tuya-led-controller"
-      ]
+      ],
+      "photo": "images/visional-hb17.jpg"
     },
     {
       "id": "visional-hb158x158",
@@ -383,7 +390,8 @@
         "meanwell-lpv10024"
       ],
       "retailerUrl": "https://euroled.lv/ru/castnoe-osveshhenie/vnutrennee-osveschenie/gostinie-i-holli/alyuminievie-profili/profili-dlya-led-lenti/uglovoi-anodirovannii-alyuminievii-profil-dlya-led-lenti-hb-158x158cm2",
-      "sku": "05-716"
+      "sku": "05-716",
+      "photo": "images/visional-hb158x158.jpg"
     },
     {
       "id": "sonoff-m5",
@@ -432,7 +440,8 @@
         "sonoff-r5",
         "sonoff-minir4"
       ],
-      "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5"
+      "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5",
+      "photo": "images/sonoff-m5.jpg"
     },
     {
       "id": "sonoff-r5",
@@ -485,7 +494,8 @@
         "sonoff-m5",
         "sonoff-minir4"
       ],
-      "manufacturerUrl": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller"
+      "manufacturerUrl": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller",
+      "photo": "images/sonoff-r5.jpg"
     },
     {
       "id": "sonoff-minir4",
@@ -535,7 +545,8 @@
         "sonoff-r5",
         "sonoff-minir4"
       ],
-      "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4"
+      "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4",
+      "photo": "images/sonoff-minir4.jpg"
     },
     {
       "id": "schneider-sedna",
@@ -562,7 +573,8 @@
           "label": "Состав",
           "value": "Розетки и рамки; артикулы отдельных механизмов пока не зафиксированы"
         }
-      ]
+      ],
+      "photo": "images/schneider-sedna.jpg"
     },
     {
       "id": "jokari-super4",
@@ -601,7 +613,8 @@
           "value": "Сменные"
         }
       ],
-      "manufacturerUrl": "https://jokari.de/en/products/detail/automatic-wire-stripper-super-4-plus"
+      "manufacturerUrl": "https://jokari.de/en/products/detail/automatic-wire-stripper-super-4-plus",
+      "photo": "images/jokari-super4.jpg"
     },
     {
       "id": "stadler-erik",
@@ -624,7 +637,8 @@
           "label": "Ценовой ориентир",
           "value": "~111 € (исторический ориентир, не цена покупки)"
         }
-      ]
+      ],
+      "photo": "images/stadler-erik.jpg"
     },
     {
       "id": "bosch-smv4hax71e",
@@ -647,7 +661,8 @@
           "label": "Критерий подбора",
           "value": "Размещение чаши диаметром около 27 см и высотой 18 см; не проверено"
         }
-      ]
+      ],
+      "photo": "images/bosch-smv4hax71e.jpg"
     },
     {
       "id": "ikea-gu10",
@@ -714,7 +729,8 @@
           "value": "50 мм"
         }
       ],
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/solhetta-led-bulb-gu10-345-lumen-dimmable-20584096/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/solhetta-led-bulb-gu10-345-lumen-dimmable-20584096/",
+      "photo": "images/ikea-gu10.jpg"
     },
     {
       "id": "meanwell-lpv10024",
@@ -782,7 +798,8 @@
         "tuya-led-controller"
       ],
       "sourceNote": "По примечанию 11 документации производителя LPV-100 не предназначен для применения в LED-светильниках в ЕС и Китае; для таких применений рекомендуются другие серии. Перед монтажом проверить назначение изделия и нормативную применимость.",
-      "manufacturerUrl": "https://www.mean-well.ru/uploads/files/datasheets/LPV-100-24.pdf"
+      "manufacturerUrl": "https://www.mean-well.ru/uploads/files/datasheets/LPV-100-24.pdf",
+      "photo": "images/meanwell-lpv10024.jpg"
     },
     {
       "id": "tuya-led-controller",
@@ -845,7 +862,8 @@
         "btf-fcob",
         "visional-hb17",
         "meanwell-lpv10024"
-      ]
+      ],
+      "photo": "images/tuya-led-controller.jpg"
     },
     {
       "id": "anza-microfibre8",
@@ -878,7 +896,8 @@
           "label": "Назначение",
           "value": "Окраска стен спальни"
         }
-      ]
+      ],
+      "photo": "images/anza-microfibre8.jpg"
     },
     {
       "id": "orno-or-cr-282",
@@ -936,7 +955,8 @@
           "label": "Гарантия на упаковке",
           "value": "5 лет"
         }
-      ]
+      ],
+      "photo": "images/orno-or-cr-282.jpg"
     },
     {
       "id": "ikea-bilresa",
@@ -975,7 +995,8 @@
         "ikea-faxalven",
         "ikea-silverglans"
       ],
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/bilresa-remote-control-white-smart-dual-button-70617872/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/bilresa-remote-control-white-smart-dual-button-70617872/",
+      "photo": "images/ikea-bilresa.jpg"
     },
     {
       "id": "ikea-silverglans",
@@ -1014,7 +1035,8 @@
       ],
       "sku": "104.747.72",
       "sourceNote": "Официальная ссылка на комплект FAXÄLVEN, включающий драйвер SILVERGLANS. Ссылка ведёт на официальный комплект, а не отдельную страницу компонента.",
-      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/"
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "photo": "images/ikea-silverglans.jpg"
     },
     {
       "id": "ikea-myggspray",
@@ -1061,7 +1083,8 @@
         "ikea-faxalven",
         "ikea-silverglans",
         "ikea-bilresa"
-      ]
+      ],
+      "photo": "images/ikea-myggspray.jpg"
     }
   ]
 }
