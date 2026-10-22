@@ -1,0 +1,41 @@
+{
+  "image_verified": true,
+  "image_url": "https://assetsemosproduction.vshcdn.net/content/images/product/default/3623885.JPG",
+  "product": {
+    "id": "emos-p3541",
+    "name": "EMOS P3541 — налобный фонарь",
+    "brand": "EMOS",
+    "category": "Инструменты и оборудование",
+    "subcategory": "Фонари",
+    "status": "Кандидат",
+    "sku": "P3541",
+    "specs": "Налобный фонарь LED COB, до 380 лм, аккумулятор Li-Pol 1200 мА·ч",
+    "note": "Тест автоматического импорта FINDS V2. Модель рассматривается; покупка не подтверждена. Фотография с сервера производителя EMOS.",
+    "tags": [
+      "налобный фонарь",
+      "COB",
+      "P3541"
+    ],
+    "details": [
+      {
+        "label": "Артикул",
+        "value": "P3541"
+      },
+      {
+        "label": "EAN",
+        "value": "8592920112571"
+      },
+      {
+        "label": "Световой поток",
+        "value": "до 380 лм"
+      },
+      {
+        "label": "Аккумулятор",
+        "value": "Li-Pol, 1200 мА·ч"
+      }
+    ],
+    "related": [],
+    "manufacturerUrl": "https://www.emos.lv/cob-led-uzladejams-galvas-lukturis-p3541-380-lm-30-m-li-pol-1200-mah",
+    "addedAt": "2026-10-22"
+  }
+}
