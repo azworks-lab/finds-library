@@ -8,7 +8,7 @@ permissions:
   contents: write
 jobs:
   import:
-    if: github.ref != 'refs/heads/main'
+    if: github.ref == 'refs/heads/finds-v2-image-test'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -48,6 +48,8 @@ jobs:
                            (ext == 'webp' and payload[:4] == b'RIFF' and payload[8:12] == b'WEBP'))
                   if not valid:
                       raise SystemExit(f'Invalid or incomplete image: {name}')
+                  if by_id[product_id].get('photo'):
+                      raise SystemExit(f'Existing photo protected; explicit replacement required: {product_id}')
                   updates.append((name, product_id, payload))
           dest = pathlib.Path('images')
           dest.mkdir(exist_ok=True)
