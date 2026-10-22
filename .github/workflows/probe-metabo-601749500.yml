@@ -1,0 +1,44 @@
+name: Probe Metabo 601749500 images
+on:
+  push:
+    branches: [finds-v2-image-test]
+    paths: [.github/workflows/probe-metabo-601749500.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Find downloadable images for exact Metabo SKU
+        shell: python
+        run: |
+          import html.parser, urllib.request, urllib.parse, re
+          pages=[
+            "https://www.toolnation.com/metabo-powermaxx-bs-12-bl-q-cordless-drill-driver-12v-20ah-li-ion-601749500.html",
+            "https://www.rdveikals.lv/products/lv/1575/837426/sort/5/filter/0_0_0_0/PowerMaxx-BS-BL-Q-12V-2x2Ah-601749500-Urbjma%C5%A1%C4%ABna.html",
+            "https://www.hahn-kolb.de/METABO-Akku-Bohrschrauber-POWERMAXX-BS-BL-Q-601749500/71027052.sku/de/DE/EUR/",
+          ]
+          class Images(html.parser.HTMLParser):
+            def __init__(self): super().__init__();self.urls=[]
+            def handle_starttag(self,tag,attrs):
+              d=dict(attrs)
+              if tag=="meta" and (d.get("property") in ("og:image","og:image:secure_url") or d.get("name")=="twitter:image"):self.urls.append(d.get("content",""))
+              if tag in ("img","source"):
+                for k in ("data-src","src","data-original","data-zoom-image","srcset"):
+                  if d.get(k):self.urls.append(d[k].split(",")[0].split(" ")[0])
+          for page in pages:
+            print("\nPAGE",page,flush=True)
+            try:
+              req=urllib.request.Request(page,headers={"User-Agent":"Mozilla/5.0"})
+              with urllib.request.urlopen(req,timeout=20) as r: html=r.read(2_500_000).decode("utf-8","replace");print("PAGE_STATUS",r.status,len(html),flush=True)
+              p=Images();p.feed(html)
+              urls=list(dict.fromkeys(urllib.parse.urljoin(page,u) for u in p.urls if u and not u.startswith("data:")))
+              urls.sort(key=lambda u:(not bool(re.search("601749500|powermaxx|metabo",u,re.I)),not bool(re.search("image|media|product",u,re.I))))
+              for u in urls[:18]:
+                try:
+                  req=urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0","Referer":page})
+                  with urllib.request.urlopen(req,timeout=12) as r:
+                    h=r.read(32); print("IMAGE",r.status,r.headers.get("Content-Type",""),h[:12].hex(),u[:300],flush=True)
+                except Exception as e: print("IMAGE_ERROR",str(e)[:95],u[:220],flush=True)
+            except Exception as e:print("PAGE_ERROR",str(e)[:150],flush=True)
