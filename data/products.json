@@ -1055,6 +1055,51 @@
       "sku": "104.747.72",
       "sourceNote": "Официальная ссылка на комплект FAXÄLVEN, включающий драйвер SILVERGLANS. Ссылка ведёт на официальный комплект, а не отдельную страницу компонента.",
       "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/"
+    },
+    {
+      "id": "ikea-myggspray",
+      "name": "IKEA MYGGSPRAY",
+      "category": "Освещение и электрика",
+      "subcategory": "Датчики движения",
+      "status": "Кандидат",
+      "brand": "IKEA",
+      "specs": "Беспроводной датчик движения, Matter over Thread, IP67, 2×AAA, ширина 40 мм",
+      "note": "Для автоматизации освещения. Для интеграции через телефон требуется Thread Border Router (например IKEA DIRIGERA); совместимость с существующей системой Sonoff/Tuya нужно проверить отдельно. Батарейки не входят в комплект.",
+      "tags": [
+        "IKEA",
+        "умный дом",
+        "датчик движения",
+        "Matter",
+        "Thread"
+      ],
+      "details": [
+        {
+          "label": "Протокол",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Защита",
+          "value": "IP67, помещение и улица"
+        },
+        {
+          "label": "Питание",
+          "value": "2×AAA, отдельно"
+        },
+        {
+          "label": "Размер",
+          "value": "Ширина 40 мм"
+        },
+        {
+          "label": "Цена IKEA Латвия",
+          "value": "7,99 € (проверено 22.10.2026)"
+        },
+        {
+          "label": "Подключение",
+          "value": "Нужен Thread Border Router для управления с телефона"
+        }
+      ],
+      "sku": "306.246.95",
+      "manufacturerUrl": "https://www.ikea.com/lv/ru/p/myggspray-besprovodnoy-datchik-dvizheniya-umnyy-dom-30624695/"
     }
   ]
 }
