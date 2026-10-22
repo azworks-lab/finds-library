@@ -14,8 +14,7 @@ jobs:
       - name: Download and verify manufacturer PNG
         run: |
           python3 - <<'PY'
-          import json, pathlib, urllib.request, io
-          from PIL import Image
+          import json, pathlib, urllib.request, struct, zlib
           config=json.loads(pathlib.Path('data/logis-image-repair-request.json').read_text())
           url=config['image_url']
           if not url.startswith('https://assets.hansgrohe.com/mam/celum/celum_assets/'):
@@ -25,7 +24,9 @@ jobs:
               raw=response.read(5_000_001)
           if len(raw)>5_000_000 or not raw.startswith(bytes([137,80,78,71,13,10,26,10])):
               raise SystemExit('Invalid PNG')
-          image=Image.open(io.BytesIO(raw)); image.verify()
+          if raw[-12:-8] != bytes([0,0,0,0]) or raw[-8:-4] != b'IEND': raise SystemExit('Incomplete PNG')
+          width,height=struct.unpack('>II',raw[16:24])
+          if not (10 <= width <= 10000 and 10 <= height <= 10000): raise SystemExit('Invalid PNG dimensions')
           path=pathlib.Path('images/hansgrohe-logis-100.png')
           path.write_bytes(raw)
           catalog=pathlib.Path('data/products.json')
@@ -33,7 +34,7 @@ jobs:
           product=next(p for p in data['products'] if p['id']=='hansgrohe-logis-100')
           product['photo']='images/hansgrohe-logis-100.png'
           catalog.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print('Validated PNG bytes',len(raw),'dimensions',image.size)
+          print('Validated PNG bytes',len(raw),'dimensions',(width,height))
           PY
       - name: Commit photo and catalog
         run: |
