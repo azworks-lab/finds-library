@@ -32,7 +32,7 @@ jobs:
           catalog=pathlib.Path('data/products.json')
           data=json.loads(catalog.read_text(encoding='utf-8'))
           product=next(p for p in data['products'] if p['id']=='hansgrohe-logis-100')
-          product['photo']='images/hansgrohe-logis-100.png'
+          if product.get('photo'):\n              raise SystemExit('Existing Logis photo is protected; explicit migration required')\n          product['photo']='images/hansgrohe-logis-100.png'
           catalog.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print('Validated PNG bytes',len(raw),'dimensions',(width,height))
           PY
