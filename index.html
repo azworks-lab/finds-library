@@ -25,7 +25,15 @@
 .card .card-back{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;border-radius:0;background:transparent;color:#e4eeff;font-size:28px;font-weight:800;cursor:pointer;flex-shrink:0}
 .card .card-back:focus-visible{outline:2px solid #a9c7f8;outline-offset:2px}
 a{color:#a9c7f8;text-underline-offset:3px}.product-photo{max-width:100%;max-height:280px;object-fit:contain;border-radius:10px;margin-top:12px}.source-note{font-size:12px;color:#a5adba}
-input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}/* FINDS v2 — compact mobile-first visual system */
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}/* Card detail readability refinements */
+.card .body dl{display:grid;grid-template-columns:minmax(105px,38%) minmax(0,1fr);column-gap:12px;row-gap:10px;margin:0 0 16px}
+.card .body dl dt,.card .body dl dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.card .body dl dt{color:#94a3b8}
+.card .body dl dd{color:#e6edf8}
+.card .body a{overflow-wrap:anywhere}
+.card .body .bottom-collapse{min-height:42px}
+@media(max-width:390px){.card .body dl{grid-template-columns:minmax(96px,36%) minmax(0,1fr);column-gap:10px}}
+/* FINDS v2 — compact mobile-first visual system */
 :root{--surface:#192335;--raised:#243247;--stroke:#35465f;--accent:#a9c7f8}
 .app{max-width:720px;padding:19px 14px 54px}
 .brand{display:flex;align-items:center;gap:11px;margin:0 0 20px;letter-spacing:normal}
