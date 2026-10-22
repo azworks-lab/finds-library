@@ -51,7 +51,7 @@ jobs:
                   ext='webp'
               else: raise SystemExit('Unsupported image format')
               if job['id'] not in byid: raise SystemExit('Product ID absent')
-              updates.append((job['id'],ext,raw,url))
+              if byid[job['id']].get('photo'):\n                  raise SystemExit('Existing product photo is protected: '+job['id'])\n              updates.append((job['id'],ext,raw,url))
           for id,ext,raw,url in updates:
               path=pathlib.Path('images')/(id+'.'+ext)
               path.write_bytes(raw)
