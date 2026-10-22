@@ -37,6 +37,7 @@ jobs:
                   remote += 1
               else:
                   raise RuntimeError('Missing or unsupported image: '+str(photo))
+          assert local == len(data['products']) and remote == 0, f'Offline photos incomplete: {local}/{len(data["products"])} embedded, {remote} remote'
           loader = re.search(r"fetch\(location\.hostname==='raw\.githack\.com'.*?\{cache:'no-store'\}\)", html)
           assert loader, 'Cannot locate current catalog loader'
           embedded = 'Promise.resolve({ok:true,json:()=>Promise.resolve('+json.dumps(data,ensure_ascii=False,separators=(',',':'))+')})'
