@@ -1,0 +1,70 @@
+name: Localize three verified FINDS photos
+on:
+  push:
+    branches:
+      - finds-v2-image-test
+    paths:
+      - '.github/workflows/localize-v2-photos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  localize:
+    if: github.ref == 'refs/heads/finds-v2-image-test'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and validate three pinned photos
+        run: |
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import urllib.request
+          from urllib.parse import urlparse
+
+          expected = {
+              'hansgrohe-logis-100': ('ab104ca74c3d38b538cff698e58abeccd854126b', 'png'),
+              'videx-gx53-track-kit-hallway': ('bb5e714377fd40932145aeb92f402c42284758a5', 'png'),
+              'videx-gx53-8w-3000k-hallway': ('bb5e714377fd40932145aeb92f402c42284758a5', 'webp'),
+          }
+          catalog = pathlib.Path('data/products.json')
+          data = json.loads(catalog.read_text(encoding='utf-8'))
+          by_id = {p['id']: p for p in data['products']}
+          downloads = []
+          for pid, (revision, ext) in expected.items():
+              product = by_id[pid]
+              source = f'https://raw.githubusercontent.com/azworks-lab/finds-library/{revision}/images/{pid}.{ext}'
+              destination = pathlib.Path('images') / f'{pid}.{ext}'
+              if product.get('photo') == str(destination):
+                  if not destination.is_file():
+                      raise SystemExit(f'{pid}: local photo missing despite local catalog reference')
+                  print('Already localized:', pid)
+                  continue
+              if product.get('photo') != source:
+                  raise SystemExit(f'{pid}: unexpected current photo URL; refusing to replace')
+              request = urllib.request.Request(source, headers={'User-Agent': 'FINDS-V2-photo-migration'})
+              with urllib.request.urlopen(request, timeout=40) as response:
+                  if response.status != 200:
+                      raise SystemExit(f'{pid}: HTTP {response.status}')
+                  payload = response.read(10_000_001)
+              if not 1000 <= len(payload) <= 10_000_000:
+                  raise SystemExit(f'{pid}: invalid photo size {len(payload)}')
+              valid = (ext == 'png' and payload.startswith(bytes.fromhex('89504e470d0a1a0a')) and payload[-8:-4] == b'IEND') or (ext == 'webp' and payload[:4] == b'RIFF' and payload[8:12] == b'WEBP')
+              if not valid:
+                  raise SystemExit(f'{pid}: invalid {ext} signature')
+              downloads.append((pid, destination, payload))
+          for pid, destination, payload in downloads:
+              destination.parent.mkdir(exist_ok=True)
+              destination.write_bytes(payload)
+              by_id[pid]['photo'] = destination.as_posix()
+              print('Localized:', pid, len(payload), 'bytes')
+          catalog.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Validate catalog and all local photos
+        run: python3 scripts/validate_catalog.py
+      - name: Commit localized photos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/hansgrohe-logis-100.png images/videx-gx53-track-kit-hallway.png images/videx-gx53-8w-3000k-hallway.webp data/products.json
+          git diff --cached --quiet || (git commit -m "Localize three V2 photos for full offline use [skip ci]" && git push)
