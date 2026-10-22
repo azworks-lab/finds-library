@@ -48,7 +48,7 @@ jobs:
           for url in candidates[:15]:
               try:
                   raw=get(url)
-                  if len(raw)>500 and len(raw)<=5_000_000 and raw.startswith(b'\\xff\\xd8\\xff') and raw.endswith(b'\\xff\\xd9'):
+                  if len(raw)>500 and len(raw)<=5_000_000 and raw.startswith(bytes([255,216,255])) and raw.endswith(bytes([255,217])):
                       from PIL import Image
                       im=Image.open(io.BytesIO(raw));im.verify()
                       chosen=(url,raw);break
