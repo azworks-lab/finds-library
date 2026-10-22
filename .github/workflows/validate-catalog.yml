@@ -1,4 +1,5 @@
 name: Validate FINDS V2 catalog
+# Release QA verification trigger 2026-10-23; no functional changes.
 on:
   workflow_dispatch:
   push:
