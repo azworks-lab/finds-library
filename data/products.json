@@ -331,13 +331,13 @@
     },
     {
       "id": "visional-hb158x158",
-      "name": "VISIONAL HB-15.8×15.8CT — угловой LED-профиль",
+      "name": "VISIONAL HB-15.8×15.8CM — угловой LED-профиль",
       "category": "Электрика и освещение",
       "subcategory": "LED-профили",
       "status": "Куплено",
       "brand": "VISIONAL",
-      "specs": "Анодированный угловой профиль 3000 × 15,8 × 15,8 мм, посадочное место LED 9 мм, полупрозрачный рассеиватель",
-      "note": "Куплено 3 м за 8,85 € в Euroled. ВНИМАНИЕ: заявленная ширина площадки для LED-ленты 9 мм, а купленная BTF FCOB имеет ширину 10 мм. Проверить фактическую совместимость до наклейки!",
+      "specs": "Угловой алюминиевый профиль 3000 × 15,8 × 15,8 мм, молочный рассеиватель",
+      "note": "Куплен в Euroled. Модель CM и EAN 4752233009676 подтверждены фотографиями заводской упаковки. Перед установкой проверить ширину посадочного места под LED-ленту 10 мм.",
       "tags": [
         "спальня",
         "LED",
@@ -346,15 +346,15 @@
       "details": [
         {
           "label": "Модель",
-          "value": "HB-15.8×15.8CT"
+          "value": "HB-15.8×15.8CM"
         },
         {
           "label": "Артикул Euroled",
-          "value": "05-719"
+          "value": "05-716"
         },
         {
           "label": "EAN",
-          "value": "4752233009133"
+          "value": "4752233009676"
         },
         {
           "label": "Размер",
@@ -366,7 +366,7 @@
         },
         {
           "label": "Рассеиватель",
-          "value": "Полупрозрачный"
+          "value": "Молочный (Milky White)"
         },
         {
           "label": "Цена покупки",
@@ -383,7 +383,7 @@
         "meanwell-lpv10024"
       ],
       "retailerUrl": "https://euroled.lv/ru/castnoe-osveshhenie/vnutrennee-osveschenie/gostinie-i-holli/alyuminievie-profili/profili-dlya-led-lenti/uglovoi-anodirovannii-alyuminievii-profil-dlya-led-lenti-hb-158x158cm2",
-      "sku": "05-719"
+      "sku": "05-716"
     },
     {
       "id": "sonoff-m5",
@@ -430,7 +430,6 @@
       ],
       "related": [
         "sonoff-r5",
-        "sonoff-minir4",
         "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5"
@@ -484,7 +483,6 @@
       ],
       "related": [
         "sonoff-m5",
-        "sonoff-minir4",
         "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller"
