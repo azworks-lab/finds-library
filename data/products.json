@@ -1041,8 +1041,8 @@
     {
       "id": "ikea-myggspray",
       "name": "IKEA MYGGSPRAY",
-      "category": "Освещение и электрика",
-      "subcategory": "Ванная",
+      "category": "Электрика и освещение",
+      "subcategory": "Датчики движения",
       "status": "Кандидат",
       "brand": "IKEA",
       "specs": "Беспроводной датчик движения, Matter over Thread, IP67, 2×AAA, ширина 40 мм",
