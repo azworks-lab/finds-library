@@ -1,6 +1,10 @@
 name: Build offline library
+# Release QA verification trigger 2026-10-23; no functional changes.
 on:
   push:
+    branches:
+      - finds-v2-image-test
+      - main
     paths:
       - '.github/workflows/build-offline.yml'
       - 'data/products.json'
@@ -11,6 +15,7 @@ permissions:
   contents: write
 jobs:
   build:
+    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,25 +26,38 @@ jobs:
           root = pathlib.Path('.')
           html = (root/'index.html').read_text(encoding='utf-8')
           data = json.loads((root/'data/products.json').read_text(encoding='utf-8'))
-          count = 0
+          local = 0
+          remote = 0
           for product in data['products']:
-              path = root / product.get('photo', '')
-              if path.is_file() and path.suffix.lower() in ('.jpg','.jpeg','.png','.webp'):
+              photo = product.get('photo', '')
+              path = root / photo
+              if photo.startswith('images/') and path.is_file() and path.suffix.lower() in ('.jpg','.jpeg','.png','.webp'):
                   mime = {'.jpg':'image/jpeg','.jpeg':'image/jpeg','.png':'image/png','.webp':'image/webp'}[path.suffix.lower()]
                   product['photo'] = 'data:'+mime+';base64,'+base64.b64encode(path.read_bytes()).decode('ascii')
-                  count += 1
-          assert count == len(data['products']) == 23, f'Expected 23 photos, got {count}'
-          start = "fetch('./data/products.json',{cache:'no-store'})"
-          assert html.count(start) == 1, 'Cannot locate catalog loader'
-          html = html.replace(start, 'Promise.resolve({ok:true,json:()=>Promise.resolve('+json.dumps(data,ensure_ascii=False,separators=(',',':'))+')})')
-          html = html.replace('<title>Finds Library 3.1</title>','<title>Библиотека находок — офлайн</title>')
+                  local += 1
+              elif photo.startswith('https://'):
+                  remote += 1
+              else:
+                  raise RuntimeError('Missing or unsupported image: '+str(photo))
+          assert local == len(data['products']) and remote == 0, f'Offline photos incomplete: {local}/{len(data["products"])} embedded, {remote} remote'
+          # Inline the FINDS brand mark so Android content:// and file:// viewers need no sibling assets.
+          mark = root / 'finds-mark.svg'
+          assert mark.is_file(), 'Missing FINDS logo: finds-mark.svg'
+          logo_uri = 'data:image/svg+xml;base64,' + base64.b64encode(mark.read_bytes()).decode('ascii')
+          html, logo_count = re.subn(r'<img src="\./finds-mark\.svg[^"]*"', lambda m: '<img src="'+logo_uri+'"', html)
+          assert logo_count == 1, f'Expected one FINDS logo reference, got {logo_count}'
+          loader = re.search(r"fetch\(location\.hostname==='raw\.githack\.com'.*?\{cache:'no-store'\}\)", html)
+          assert loader, 'Cannot locate current catalog loader'
+          embedded = 'Promise.resolve({ok:true,json:()=>Promise.resolve('+json.dumps(data,ensure_ascii=False,separators=(',',':'))+')})'
+          html = html[:loader.start()] + embedded + html[loader.end():]
           html = re.sub(r"if\('serviceWorker' in navigator&&location.protocol==='https:'\).*?(?=</script>)", '', html, flags=re.S)
+          html = html.replace('<title>FINDS — Библиотека находок</title>','<title>FINDS — Библиотека находок (офлайн)</title>')
           (root/'library-offline.html').write_text(html,encoding='utf-8')
-          print('Built offline HTML with',count,'photos')
+          print(f'Built offline HTML: {len(data["products"])} products, {local} embedded photos, {remote} remote photo URLs')
           PY
       - name: Commit offline HTML
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add library-offline.html
-          git diff --cached --quiet || (git commit -m "Build self-contained offline library [skip ci]" && git push)
+          git diff --cached --quiet || (git commit -m "Build offline library [skip ci]" && git push)

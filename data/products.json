@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "products": [
     {
       "id": "ikea-angsjon-100",
@@ -48,8 +48,8 @@
     {
       "id": "ikea-orrsjon",
       "name": "IKEA ORRSJÖN",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Сантехника",
+      "subcategory": "Раковины",
       "status": "Куплено",
       "brand": "IKEA",
       "sku": "705.450.69",
@@ -83,7 +83,8 @@
       ],
       "related": [
         "ikea-angsjon-100",
-        "ikea-rannilen"
+        "ikea-rannilen",
+        "hansgrohe-logis-100"
       ],
       "manufacturerUrl": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/",
       "photo": "images/ikea-orrsjon.jpg"
@@ -96,7 +97,7 @@
       "status": "Куплено",
       "brand": "IKEA",
       "specs": "Зеркальный шкаф, светлый дуб, 100×15×95 см, подсветка SILVERGLANS",
-      "note": "Куплен и установлен в ванной. Шкаф со штатной подсветкой SILVERGLANS; управление через сопряжённый беспроводной пульт IKEA BILRESA. Размещён у левого простенка.",
+      "note": "Куплен и установлен в ванной у левого простенка. Штатная система освещения с драйвером SILVERGLANS входила в комплект шкафа. Беспроводной пульт BILRESA приобретён отдельно, сопряжён и работает. Оба компонента доступны в каталоге как связанные товары в разделе электрики.",
       "tags": [
         "IKEA",
         "ванная"
@@ -150,8 +151,8 @@
     {
       "id": "ikea-rannilen",
       "name": "IKEA RÄNNILEN",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Сантехника",
+      "subcategory": "Подключение и арматура",
       "status": "Куплено",
       "brand": "IKEA",
       "specs": "Сифон для раковины IKEA ORRSJÖN",
@@ -176,7 +177,8 @@
       ],
       "related": [
         "ikea-angsjon-100",
-        "ikea-orrsjon"
+        "ikea-orrsjon",
+        "hansgrohe-logis-100"
       ],
       "sku": "205.545.32",
       "sourceNote": "Ссылка ведёт на комплект раковины с сифоном, не на отдельную карточку RÄNNILEN.",
@@ -517,7 +519,7 @@
         },
         {
           "label": "Количество",
-          "value": "2 шт."
+          "value": "4 шт."
         },
         {
           "label": "Экосистема",
@@ -542,8 +544,7 @@
       ],
       "related": [
         "sonoff-m5",
-        "sonoff-r5",
-        "sonoff-minir4"
+        "sonoff-r5"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4",
       "photo": "images/sonoff-minir4.jpg"
@@ -737,10 +738,10 @@
       "name": "Mean Well LPV-100-24",
       "category": "Электрика и освещение",
       "subcategory": "Блоки питания",
-      "status": "Выбрано",
+      "status": "Куплено",
       "brand": "Mean Well",
       "specs": "Блок питания 24 В, 100 Вт для LED-ленты",
-      "note": "Выбран для LED-ленты BTF-LIGHTING FCOB 24 В / 70 Вт. Выход 24 В DC, 4,2 А, 100,8 Вт; IP67, размеры 190×52×37 мм. Номинальный запас мощности около 44% относительно 70 Вт ленты. Покупка пока не подтверждена.",
+      "note": "Выбран для LED-ленты BTF-LIGHTING FCOB 24 В / 70 Вт. Выход 24 В DC, 4,2 А, 100,8 Вт; IP67, размеры 190×52×37 мм. Номинальный запас мощности около 44% относительно 70 Вт ленты. Куплен (подтверждено владельцем).",
       "tags": [
         "спальня",
         "LED"
@@ -962,8 +963,8 @@
       "id": "ikea-bilresa",
       "name": "IKEA BILRESA",
       "brand": "IKEA",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
       "status": "Куплено",
       "sku": "706.178.72",
       "price": "5 € (цена покупки в IKEA)",
@@ -990,7 +991,7 @@
           "value": "Требуется совместимый Thread Border Router для подключения к Matter-системе"
         }
       ],
-      "note": "Сопряжён с подсветкой зеркального шкафа; управление работает. Zigbee не используется.",
+      "note": "Отдельно приобретённый беспроводной пульт управления. Сопряжён с подсветкой зеркального шкафа IKEA FAXÄLVEN через систему SILVERGLANS; управление работает. Компонент можно использовать и в других совместимых системах IKEA. Zigbee не используется.",
       "related": [
         "ikea-faxalven",
         "ikea-silverglans"
@@ -1001,12 +1002,12 @@
     {
       "id": "ikea-silverglans",
       "name": "IKEA SILVERGLANS",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Электрика и освещение",
+      "subcategory": "Блоки питания",
       "status": "В комплекте",
       "brand": "IKEA",
       "specs": "Драйвер подсветки зеркального шкафа FAXÄLVEN",
-      "note": "Штатная подсветка подключена, работает с пультом BILRESA.",
+      "note": "Электронный драйвер светодиодной подсветки IKEA. В данном случае входил в комплект зеркального шкафа FAXÄLVEN, установлен в ванной; подсветка работает с пультом BILRESA. Компонент относится к системе освещения, а не к мебели.",
       "details": [
         {
           "label": "Тип",
@@ -1041,8 +1042,8 @@
     {
       "id": "ikea-myggspray",
       "name": "IKEA MYGGSPRAY",
-      "category": "Освещение и электрика",
-      "subcategory": "Ванная",
+      "category": "Электрика и освещение",
+      "subcategory": "Датчики движения",
       "status": "Кандидат",
       "brand": "IKEA",
       "specs": "Беспроводной датчик движения, Matter over Thread, IP67, 2×AAA, ширина 40 мм",
@@ -1085,6 +1086,333 @@
         "ikea-bilresa"
       ],
       "photo": "images/ikea-myggspray.jpg"
+    },
+    {
+      "id": "hansgrohe-logis-100",
+      "name": "hansgrohe Logis 100",
+      "category": "Сантехника",
+      "subcategory": "Смесители",
+      "status": "Куплено",
+      "brand": "hansgrohe",
+      "sku": "71100000",
+      "specs": "Смеситель для раковины, хром; излив 93 мм, вылет 108 мм, расход до 5 л/мин",
+      "note": "Куплен для раковины IKEA ORRSJÖN в ванной. При установке проверить совместимость донного клапана и сифона IKEA.",
+      "tags": [
+        "сантехника",
+        "смеситель",
+        "ванная",
+        "Logis"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "Logis 100"
+        },
+        {
+          "label": "Артикул",
+          "value": "71100000"
+        },
+        {
+          "label": "Покрытие",
+          "value": "Хром"
+        },
+        {
+          "label": "Высота излива",
+          "value": "93 мм"
+        },
+        {
+          "label": "Вылет излива",
+          "value": "108 мм"
+        },
+        {
+          "label": "Расход при 3 бар",
+          "value": "5 л/мин"
+        },
+        {
+          "label": "Подключение",
+          "value": "Шланги G 3/8"
+        },
+        {
+          "label": "Сливная арматура",
+          "value": "Клапан с тягой G 1¼, совместимость с IKEA требует проверки"
+        }
+      ],
+      "related": [
+        "ikea-orrsjon",
+        "ikea-rannilen",
+        "schell-comfort-049070699"
+      ],
+      "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000",
+      "photo": "images/hansgrohe-logis-100.png",
+      "addedAt": "2026-10-21"
+    },
+    {
+      "id": "schell-comfort-049070699",
+      "name": "SCHELL COMFORT 04 907 06 99",
+      "brand": "SCHELL",
+      "category": "Сантехника",
+      "subcategory": "Подключение и арматура",
+      "status": "Куплено",
+      "sku": "049070699",
+      "specs": "Угловой регулирующий вентиль, G 1/2″ × G 3/8″, хром, 2 шт.",
+      "note": "Куплены 2 угловых вентиля SCHELL для подключения смесителя hansgrohe Logis 100 в ванной. Приобретены в DEPO; точная цена покупки пока не указана. В комплекте удлинённый корпус и декоративная розетка. Исполнение без самоуплотняющейся резьбы ASAG.",
+      "tags": [
+        "ванная",
+        "угловой вентиль",
+        "запорная арматура",
+        "DEPO"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "SCHELL COMFORT 04 907 06 99"
+        },
+        {
+          "label": "Количество",
+          "value": "2 шт."
+        },
+        {
+          "label": "Вход",
+          "value": "DN 15, G 1/2″, наружная резьба"
+        },
+        {
+          "label": "Выход",
+          "value": "DN 10, G 3/8″, наружная резьба"
+        },
+        {
+          "label": "Поверхность",
+          "value": "Хром"
+        },
+        {
+          "label": "Ручка",
+          "value": "COMFORT"
+        },
+        {
+          "label": "Комплектация",
+          "value": "Удлинённый корпус, декоративная розетка Ø 54 мм"
+        },
+        {
+          "label": "Резьба ASAG",
+          "value": "Нет (без самоуплотнения)"
+        },
+        {
+          "label": "Класс шума",
+          "value": "I"
+        },
+        {
+          "label": "Страна производства",
+          "value": "Германия"
+        },
+        {
+          "label": "EAN",
+          "value": "4021163105292"
+        },
+        {
+          "label": "Магазин",
+          "value": "DEPO"
+        },
+        {
+          "label": "Цена за штуку",
+          "value": "5,34 € (DEPO)"
+        },
+        {
+          "label": "Стоимость 2 шт.",
+          "value": "10,68 €"
+        }
+      ],
+      "related": [
+        "hansgrohe-logis-100",
+        "ikea-orrsjon"
+      ],
+      "manufacturerUrl": "https://www.schell.eu/worldwide-en/products/regulating-angle-valves/angle-valves-special-angle-valves/details/artikel/049070699.html",
+      "price": "5,34 € / шт. (DEPO); 10,68 € за 2 шт.",
+      "photo": "images/schell-comfort-049070699.jpg",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "videx-gx53-track-kit-hallway",
+      "name": "VIDEX — трековая система GX53, 2 м + 4 светильника",
+      "category": "Электрика и освещение",
+      "subcategory": "Трековые системы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "Однофазная чёрная шина 2 м и 4 трековых светильника GX53, без ламп",
+      "price": "39,99 € (комплект)",
+      "note": "Куплено для прихожей в LEDveikals.lv. Комплект из 2-метровой однофазной шины и четырёх чёрных светильников GX53. Лампы куплены отдельно. По скриншоту заказа; монтаж не подтверждён.",
+      "tags": [
+        "прихожая",
+        "трек",
+        "GX53"
+      ],
+      "details": [
+        {
+          "label": "Комплект",
+          "value": "Шина 2 м + 4 светильника GX53"
+        },
+        {
+          "label": "Система",
+          "value": "1-фазная"
+        },
+        {
+          "label": "Цвет",
+          "value": "Чёрный"
+        },
+        {
+          "label": "Цена комплекта",
+          "value": "39,99 €"
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-8w-3000k-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/produktu-kategorijas/videx-3/1-fazu-sliezu-sistemas/",
+      "photo": "images/videx-gx53-track-kit-hallway.png",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "videx-gx53-8w-3000k-hallway",
+      "name": "VIDEX LED GX53 — 8 Вт, 3000 K",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-лампы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "4 лампы GX53, 8 Вт, 3000 K, 730 лм, угол 140°",
+      "price": "11,96 € за 4 шт. (2,99 €/шт.)",
+      "note": "Куплены для трековой системы прихожей в LEDveikals.lv. Четыре лампы по 2,99 €.",
+      "tags": [
+        "прихожая",
+        "GX53",
+        "3000K"
+      ],
+      "details": [
+        {
+          "label": "Количество",
+          "value": "4 шт."
+        },
+        {
+          "label": "Цоколь",
+          "value": "GX53"
+        },
+        {
+          "label": "Мощность",
+          "value": "8 Вт / лампа"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "3000 K"
+        },
+        {
+          "label": "Световой поток",
+          "value": "730 лм / лампа"
+        },
+        {
+          "label": "Угол света",
+          "value": "140°"
+        },
+        {
+          "label": "Цена",
+          "value": "2,99 € / шт.; 11,96 € за 4 шт."
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-track-kit-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/tagi/gx53/",
+      "photo": "images/videx-gx53-8w-3000k-hallway.webp",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "emos-p3541",
+      "name": "EMOS P3541 — налобный фонарь",
+      "brand": "EMOS",
+      "category": "Инструменты",
+      "subcategory": "Фонари",
+      "status": "Кандидат",
+      "sku": "P3541",
+      "specs": "Налобный фонарь LED COB, до 380 лм, аккумулятор Li-Pol 1200 мА·ч",
+      "note": "Тест автоматического импорта FINDS V2. Модель рассматривается; покупка не подтверждена. Фотография с сервера производителя EMOS.",
+      "tags": [
+        "налобный фонарь",
+        "COB",
+        "P3541"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "P3541"
+        },
+        {
+          "label": "EAN",
+          "value": "8592920112571"
+        },
+        {
+          "label": "Световой поток",
+          "value": "до 380 лм"
+        },
+        {
+          "label": "Аккумулятор",
+          "value": "Li-Pol, 1200 мА·ч"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.emos.lv/cob-led-uzladejams-galvas-lukturis-p3541-380-lm-30-m-li-pol-1200-mah",
+      "addedAt": "2026-10-22",
+      "photo": "images/emos-p3541.jpg"
+    },
+    {
+      "id": "metabo-powermaxx-bs-12-bl-q-601749500",
+      "name": "Metabo PowerMaxx BS 12 BL Q — шуруповёрт 12 В",
+      "brand": "Metabo",
+      "category": "Инструменты",
+      "subcategory": "Шуруповёрты",
+      "status": "Выбрано",
+      "sku": "601749500",
+      "specs": "12 В, бесщёточный двигатель, 38/20 Н·м, быстросменный патрон Quick; комплект 2×2 А·ч, LC 40, кейс",
+      "note": "Выбранная модель шуруповёрта. Покупка не подтверждена. Фотография точного комплекта по EAN 4061792217843 (Toolnation).",
+      "tags": [
+        "шуруповёрт",
+        "12 В",
+        "бесщёточный",
+        "Quick"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "601749500"
+        },
+        {
+          "label": "EAN",
+          "value": "4061792217843"
+        },
+        {
+          "label": "Крутящий момент",
+          "value": "38/20 Н·м"
+        },
+        {
+          "label": "Комплектация",
+          "value": "2×2 А·ч, LC 40, кейс"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.metabo.com/",
+      "addedAt": "2026-10-22",
+      "photo": "images/metabo-powermaxx-bs-12-bl-q-601749500.jpg"
     }
-  ]
+  ],
+  "subcategories": {
+    "Сантехника": [
+      "Раковины",
+      "Смесители",
+      "Подключение и арматура",
+      "Душевая зона"
+    ]
+  }
 }

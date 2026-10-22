@@ -1,0 +1,34 @@
+name: Import reviewed FINDS product
+on:
+  push:
+    branches:
+      - finds-v2-image-test
+      - main
+    paths:
+      - 'data/product-import-request.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  import:
+    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import reviewed product and photo
+        run: python3 scripts/import_reviewed_product.py
+      - name: Validate catalog and all images
+        run: python3 scripts/validate_catalog.py
+      - name: Commit catalog and photo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/products.json images/
+          git rm -f --ignore-unmatch data/product-import-request.json
+          git diff --cached --quiet || (git commit -m "Import reviewed FINDS product and image" && git push)
+      - name: Trigger offline rebuild after successful import
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-offline.yml --ref "$GITHUB_REF_NAME"

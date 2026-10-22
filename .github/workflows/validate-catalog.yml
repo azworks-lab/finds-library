@@ -1,0 +1,23 @@
+name: Validate FINDS V2 catalog
+# Release QA verification trigger 2026-10-23; no functional changes.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - finds-v2-image-test
+      - main
+    paths:
+      - 'data/products.json'
+      - 'images/**'
+      - 'scripts/validate_catalog.py'
+      - '.github/workflows/validate-catalog.yml'
+permissions:
+  contents: read
+jobs:
+  validate:
+    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate catalog and local images
+        run: python3 scripts/validate_catalog.py
