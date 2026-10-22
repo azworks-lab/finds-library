@@ -42,7 +42,7 @@ jobs:
           mark = root / 'finds-mark.svg'
           assert mark.is_file(), 'Missing FINDS logo: finds-mark.svg'
           logo_uri = 'data:image/svg+xml;base64,' + base64.b64encode(mark.read_bytes()).decode('ascii')
-          html, logo_count = re.subn(r'<img src="\\./finds-mark\\.svg[^\"]*"', lambda m: '<img src="'+logo_uri+'"', html)
+          html, logo_count = re.subn(r'<img src="\./finds-mark\.svg[^"]*"', lambda m: '<img src="'+logo_uri+'"', html)
           assert logo_count == 1, f'Expected one FINDS logo reference, got {logo_count}'
           loader = re.search(r"fetch\(location\.hostname==='raw\.githack\.com'.*?\{cache:'no-store'\}\)", html)
           assert loader, 'Cannot locate current catalog loader'
