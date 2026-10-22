@@ -1366,6 +1366,45 @@
       "manufacturerUrl": "https://www.emos.lv/cob-led-uzladejams-galvas-lukturis-p3541-380-lm-30-m-li-pol-1200-mah",
       "addedAt": "2026-10-22",
       "photo": "images/emos-p3541.jpg"
+    },
+    {
+      "id": "metabo-powermaxx-bs-12-bl-q-601749500",
+      "name": "Metabo PowerMaxx BS 12 BL Q — шуруповёрт 12 В",
+      "brand": "Metabo",
+      "category": "Инструменты и оборудование",
+      "subcategory": "Шуруповёрты",
+      "status": "Выбрано",
+      "sku": "601749500",
+      "specs": "12 В, бесщёточный двигатель, 38/20 Н·м, быстросменный патрон Quick; комплект 2×2 А·ч, LC 40, кейс",
+      "note": "Выбранная модель шуруповёрта. Покупка не подтверждена. Фотография точного комплекта по EAN 4061792217843 (Toolnation).",
+      "tags": [
+        "шуруповёрт",
+        "12 В",
+        "бесщёточный",
+        "Quick"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "601749500"
+        },
+        {
+          "label": "EAN",
+          "value": "4061792217843"
+        },
+        {
+          "label": "Крутящий момент",
+          "value": "38/20 Н·м"
+        },
+        {
+          "label": "Комплектация",
+          "value": "2×2 А·ч, LC 40, кейс"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.metabo.com/",
+      "addedAt": "2026-10-22",
+      "photo": "images/metabo-powermaxx-bs-12-bl-q-601749500.jpg"
     }
   ],
   "subcategories": {
