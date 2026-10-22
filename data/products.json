@@ -1268,7 +1268,7 @@
         "videx-gx53-8w-3000k-hallway"
       ],
       "manufacturerUrl": "https://ledveikals.lv/produktu-kategorijas/videx-3/1-fazu-sliezu-sistemas/",
-      "photo": "images/videx-gx53-track-kit-hallway.png"
+      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-track-kit-hallway.png"
     },
     {
       "id": "videx-gx53-8w-3000k-hallway",
@@ -1323,7 +1323,7 @@
         "videx-gx53-track-kit-hallway"
       ],
       "manufacturerUrl": "https://ledveikals.lv/tagi/gx53/",
-      "photo": "images/videx-gx53-8w-3000k-hallway.webp"
+      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-8w-3000k-hallway.webp"
     }
   ],
   "subcategories": {
