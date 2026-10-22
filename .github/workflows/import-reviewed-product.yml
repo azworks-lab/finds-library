@@ -25,3 +25,8 @@ jobs:
           git add data/products.json images/
           git rm -f --ignore-unmatch data/product-import-request.json
           git diff --cached --quiet || (git commit -m "Import reviewed FINDS product and image" && git push)
+      - name: Trigger offline rebuild after successful import
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-offline.yml --ref finds-v2-image-test
