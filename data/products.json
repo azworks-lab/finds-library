@@ -1060,14 +1060,15 @@
       "id": "ikea-myggspray",
       "name": "IKEA MYGGSPRAY",
       "category": "Освещение и электрика",
-      "subcategory": "Датчики движения",
+      "subcategory": "Ванная",
       "status": "Кандидат",
       "brand": "IKEA",
       "specs": "Беспроводной датчик движения, Matter over Thread, IP67, 2×AAA, ширина 40 мм",
-      "note": "Для автоматизации освещения. Для интеграции через телефон требуется Thread Border Router (например IKEA DIRIGERA); совместимость с существующей системой Sonoff/Tuya нужно проверить отдельно. Батарейки не входят в комплект.",
+      "note": "Датчик движения для ванной, в составе системы подсветки IKEA зеркального шкафа FAXÄLVEN / SILVERGLANS. Планируется автоматическое включение подсветки при движении. Не относится к Sonoff/Tuya.",
       "tags": [
         "IKEA",
-        "умный дом",
+        "ванная",
+        "подсветка",
         "датчик движения",
         "Matter",
         "Thread"
@@ -1092,14 +1093,15 @@
         {
           "label": "Цена IKEA Латвия",
           "value": "7,99 € (проверено 22.10.2026)"
-        },
-        {
-          "label": "Подключение",
-          "value": "Нужен Thread Border Router для управления с телефона"
         }
       ],
       "sku": "306.246.95",
-      "manufacturerUrl": "https://www.ikea.com/lv/ru/p/myggspray-besprovodnoy-datchik-dvizheniya-umnyy-dom-30624695/"
+      "manufacturerUrl": "https://www.ikea.com/lv/ru/p/myggspray-besprovodnoy-datchik-dvizheniya-umnyy-dom-30624695/",
+      "related": [
+        "ikea-faxalven",
+        "ikea-silverglans",
+        "ikea-bilresa"
+      ]
     }
   ]
 }
