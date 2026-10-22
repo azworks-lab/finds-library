@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "products": [
     {
       "id": "ikea-angsjon-100",
@@ -48,8 +48,8 @@
     {
       "id": "ikea-orrsjon",
       "name": "IKEA ORRSJÖN",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Сантехника",
+      "subcategory": "Раковины",
       "status": "Куплено",
       "brand": "IKEA",
       "sku": "705.450.69",
@@ -83,7 +83,8 @@
       ],
       "related": [
         "ikea-angsjon-100",
-        "ikea-rannilen"
+        "ikea-rannilen",
+        "hansgrohe-logis-100"
       ],
       "manufacturerUrl": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/",
       "photo": "images/ikea-orrsjon.jpg"
@@ -150,8 +151,8 @@
     {
       "id": "ikea-rannilen",
       "name": "IKEA RÄNNILEN",
-      "category": "Мебель и интерьер",
-      "subcategory": "Ванная",
+      "category": "Сантехника",
+      "subcategory": "Сифоны и сливы",
       "status": "Куплено",
       "brand": "IKEA",
       "specs": "Сифон для раковины IKEA ORRSJÖN",
@@ -176,7 +177,8 @@
       ],
       "related": [
         "ikea-angsjon-100",
-        "ikea-orrsjon"
+        "ikea-orrsjon",
+        "hansgrohe-logis-100"
       ],
       "sku": "205.545.32",
       "sourceNote": "Ссылка ведёт на комплект раковины с сифоном, не на отдельную карточку RÄNNILEN.",
@@ -1084,6 +1086,62 @@
         "ikea-bilresa"
       ],
       "photo": "images/ikea-myggspray.jpg"
+    },
+    {
+      "id": "hansgrohe-logis-100",
+      "name": "hansgrohe Logis 100",
+      "category": "Сантехника",
+      "subcategory": "Смесители",
+      "status": "Выбрано",
+      "brand": "hansgrohe",
+      "sku": "71100000",
+      "specs": "Смеситель для раковины, хром; излив 93 мм, вылет 108 мм, расход до 5 л/мин",
+      "note": "Рассматривается для раковины IKEA ORRSJÖN в ванной. Артикул 71100000 — вариант с донным клапаном на тяге; перед покупкой проверить совместимость сливной арматуры с раковиной и сифоном IKEA. Не отмечен как купленный.",
+      "tags": [
+        "сантехника",
+        "смеситель",
+        "ванная",
+        "Logis"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "Logis 100"
+        },
+        {
+          "label": "Артикул",
+          "value": "71100000"
+        },
+        {
+          "label": "Покрытие",
+          "value": "Хром"
+        },
+        {
+          "label": "Высота излива",
+          "value": "93 мм"
+        },
+        {
+          "label": "Вылет излива",
+          "value": "108 мм"
+        },
+        {
+          "label": "Расход при 3 бар",
+          "value": "5 л/мин"
+        },
+        {
+          "label": "Подключение",
+          "value": "Шланги G 3/8"
+        },
+        {
+          "label": "Сливная арматура",
+          "value": "Клапан с тягой G 1¼, совместимость с IKEA требует проверки"
+        }
+      ],
+      "related": [
+        "ikea-orrsjon",
+        "ikea-rannilen"
+      ],
+      "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000"
     }
   ]
 }
