@@ -44,7 +44,7 @@ jobs:
                   payload = z.read(entry)
                   ext = match.group(2).lower()
                   valid = ((ext in ('jpg', 'jpeg') and payload.startswith(b'\xff\xd8\xff') and payload.endswith(b'\xff\xd9')) or
-                           (ext == 'png' and payload.startswith(b'\x89PNG\r\n\x1a\n') and payload[-12:-8] == b'IEND') or
+                           (ext == 'png' and payload.startswith(b'\x89PNG\r\n\x1a\n') and payload[-8:-4] == b'IEND') or
                            (ext == 'webp' and payload[:4] == b'RIFF' and payload[8:12] == b'WEBP'))
                   if not valid:
                       raise SystemExit(f'Invalid or incomplete image: {name}')
