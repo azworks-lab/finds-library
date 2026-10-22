@@ -431,7 +431,7 @@
       "related": [
         "sonoff-r5",
         "sonoff-minir4",
-        "sonoff-r4mini"
+        "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5"
     },
@@ -485,7 +485,7 @@
       "related": [
         "sonoff-m5",
         "sonoff-minir4",
-        "sonoff-r4mini"
+        "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller"
     },
@@ -496,8 +496,8 @@
       "subcategory": "Умный дом",
       "status": "Куплено",
       "brand": "Sonoff",
-      "specs": "2 мини-реле",
-      "note": "Куплены два мини-реле для управления освещением спальни. При настройке выполнялся сброс и проверка работы; назначение и окончательная схема подключения уточняются по месту.",
+      "specs": "4 мини-реле: 2 для потолочного освещения и 2 для прикроватных бра",
+      "note": "Куплены четыре реле MINIR4: два для потолочного освещения и два для прикроватных бра в спальне. При настройке выполнялись сброс и проверка работы; окончательная схема подключения уточняется по месту.",
       "tags": [
         "спальня",
         "Sonoff"
@@ -535,7 +535,7 @@
       "related": [
         "sonoff-m5",
         "sonoff-r5",
-        "sonoff-r4mini"
+        "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4"
     },
@@ -785,44 +785,6 @@
       ],
       "sourceNote": "По примечанию 11 документации производителя LPV-100 не предназначен для применения в LED-светильниках в ЕС и Китае; для таких применений рекомендуются другие серии. Перед монтажом проверить назначение изделия и нормативную применимость.",
       "manufacturerUrl": "https://www.mean-well.ru/uploads/files/datasheets/LPV-100-24.pdf"
-    },
-    {
-      "id": "sonoff-r4mini",
-      "name": "Sonoff R4 mini",
-      "category": "Электрика и освещение",
-      "subcategory": "Умный дом",
-      "status": "Куплено",
-      "brand": "Sonoff",
-      "specs": "2 мини-реле для бра",
-      "note": "Куплены два мини-реле для управления прикроватными бра в спальне.",
-      "tags": [
-        "спальня",
-        "Sonoff"
-      ],
-      "addedAt": "2026-10-20",
-      "details": [
-        {
-          "label": "Тип",
-          "value": "Мини-реле"
-        },
-        {
-          "label": "Количество",
-          "value": "2 шт."
-        },
-        {
-          "label": "Назначение",
-          "value": "Прикроватные бра"
-        },
-        {
-          "label": "Экосистема",
-          "value": "eWeLink"
-        }
-      ],
-      "related": [
-        "sonoff-m5",
-        "sonoff-r5",
-        "sonoff-minir4"
-      ]
     },
     {
       "id": "tuya-led-controller",
