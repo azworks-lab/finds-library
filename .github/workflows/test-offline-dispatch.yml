@@ -1,0 +1,23 @@
+name: Test automatic offline rebuild dispatch
+on:
+  push:
+    branches:
+      - finds-v2-image-test
+    paths:
+      - '.github/workflows/test-offline-dispatch.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: write
+jobs:
+  dispatch:
+    if: github.ref == 'refs/heads/finds-v2-image-test'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger offline builder without manual intervention
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh workflow run build-offline.yml --ref finds-v2-image-test
+          echo "Offline builder dispatched by GitHub Actions."
