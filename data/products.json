@@ -1143,7 +1143,8 @@
         "schell-comfort-049070699"
       ],
       "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000",
-      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/ab104ca74c3d38b538cff698e58abeccd854126b/images/hansgrohe-logis-100.png"
+      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/ab104ca74c3d38b538cff698e58abeccd854126b/images/hansgrohe-logis-100.png",
+      "addedAt": "2026-10-21"
     },
     {
       "id": "schell-comfort-049070699",
@@ -1225,7 +1226,8 @@
       ],
       "manufacturerUrl": "https://www.schell.eu/worldwide-en/products/regulating-angle-valves/angle-valves-special-angle-valves/details/artikel/049070699.html",
       "price": "5,34 € / шт. (DEPO); 10,68 € за 2 шт.",
-      "photo": "images/schell-comfort-049070699.jpg"
+      "photo": "images/schell-comfort-049070699.jpg",
+      "addedAt": "2026-10-22"
     },
     {
       "id": "videx-gx53-track-kit-hallway",
@@ -1268,7 +1270,8 @@
         "videx-gx53-8w-3000k-hallway"
       ],
       "manufacturerUrl": "https://ledveikals.lv/produktu-kategorijas/videx-3/1-fazu-sliezu-sistemas/",
-      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-track-kit-hallway.png"
+      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-track-kit-hallway.png",
+      "addedAt": "2026-10-22"
     },
     {
       "id": "videx-gx53-8w-3000k-hallway",
@@ -1323,7 +1326,8 @@
         "videx-gx53-track-kit-hallway"
       ],
       "manufacturerUrl": "https://ledveikals.lv/tagi/gx53/",
-      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-8w-3000k-hallway.webp"
+      "photo": "https://raw.githubusercontent.com/azworks-lab/finds-library/bb5e714377fd40932145aeb92f402c42284758a5/images/videx-gx53-8w-3000k-hallway.webp",
+      "addedAt": "2026-10-22"
     }
   ],
   "subcategories": {
