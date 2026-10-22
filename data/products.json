@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-20",
+  "updated": "2026-10-22",
   "products": [
     {
       "id": "ikea-angsjon-100",
@@ -1085,6 +1085,62 @@
         "ikea-bilresa"
       ],
       "photo": "images/ikea-myggspray.jpg"
+    },
+    {
+      "id": "hansgrohe-logis-e100-71161000",
+      "name": "Hansgrohe Logis E 100",
+      "category": "Сантехника",
+      "subcategory": "Смесители",
+      "status": "Куплено",
+      "brand": "Hansgrohe",
+      "model": "71161000",
+      "sku": "71161000",
+      "specs": "Смеситель для раковины, хром, ComfortZone 100, излив 119 мм, расход 5 л/мин при 3 бар",
+      "note": "Выбран для ванной с раковиной IKEA ORRSJÖN. В комплекте донный клапан с тягой G 1¼; совместимость сливного узла с раковиной IKEA требует отдельной проверки.",
+      "tags": [
+        "ванная",
+        "смеситель"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "71161000"
+        },
+        {
+          "label": "EAN",
+          "value": "4011097834450"
+        },
+        {
+          "label": "Цвет",
+          "value": "Хром"
+        },
+        {
+          "label": "Высота излива",
+          "value": "94 мм"
+        },
+        {
+          "label": "Вынос излива",
+          "value": "119 мм"
+        },
+        {
+          "label": "Расход при 3 бар",
+          "value": "5 л/мин"
+        },
+        {
+          "label": "Картридж",
+          "value": "Керамический"
+        },
+        {
+          "label": "Донный клапан",
+          "value": "С тягой, G 1¼"
+        }
+      ],
+      "related": [
+        "ikea-orrsjon"
+      ],
+      "manufacturerUrl": "https://pro.hansgrohe.fr/articledetail-logis-e-mitigeur-de-lavabo-100-avec-tirette-et-vidage-71161000",
+      "photo": "https://assets.hansgrohe.com/mam/celum/celum_assets/154__hpr01749_tif.png",
+      "sourceNote": "Изображение загружается непосредственно с официального сервера Hansgrohe."
     }
   ]
 }
