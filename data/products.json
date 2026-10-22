@@ -1226,6 +1226,102 @@
       "manufacturerUrl": "https://www.schell.eu/worldwide-en/products/regulating-angle-valves/angle-valves-special-angle-valves/details/artikel/049070699.html",
       "price": "5,34 € / шт. (DEPO); 10,68 € за 2 шт.",
       "photo": "images/schell-comfort-049070699.jpg"
+    },
+    {
+      "id": "videx-gx53-track-kit-hallway",
+      "name": "VIDEX — трековая система GX53, 2 м + 4 светильника",
+      "category": "Электрика и освещение",
+      "subcategory": "Трековые системы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "Однофазная чёрная шина 2 м и 4 трековых светильника GX53, без ламп",
+      "price": "39,99 € (комплект)",
+      "note": "Куплено для прихожей в LEDveikals.lv. Комплект из 2-метровой однофазной шины и четырёх чёрных светильников GX53. Лампы куплены отдельно. По скриншоту заказа; монтаж не подтверждён.",
+      "tags": [
+        "прихожая",
+        "трек",
+        "GX53"
+      ],
+      "details": [
+        {
+          "label": "Комплект",
+          "value": "Шина 2 м + 4 светильника GX53"
+        },
+        {
+          "label": "Система",
+          "value": "1-фазная"
+        },
+        {
+          "label": "Цвет",
+          "value": "Чёрный"
+        },
+        {
+          "label": "Цена комплекта",
+          "value": "39,99 €"
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-8w-3000k-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/produktu-kategorijas/videx-3/1-fazu-sliezu-sistemas/"
+    },
+    {
+      "id": "videx-gx53-8w-3000k-hallway",
+      "name": "VIDEX LED GX53 — 8 Вт, 3000 K",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-лампы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "4 лампы GX53, 8 Вт, 3000 K, 730 лм, угол 140°",
+      "price": "11,96 € за 4 шт. (2,99 €/шт.)",
+      "note": "Куплены для трековой системы прихожей в LEDveikals.lv. Четыре лампы по 2,99 €.",
+      "tags": [
+        "прихожая",
+        "GX53",
+        "3000K"
+      ],
+      "details": [
+        {
+          "label": "Количество",
+          "value": "4 шт."
+        },
+        {
+          "label": "Цоколь",
+          "value": "GX53"
+        },
+        {
+          "label": "Мощность",
+          "value": "8 Вт / лампа"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "3000 K"
+        },
+        {
+          "label": "Световой поток",
+          "value": "730 лм / лампа"
+        },
+        {
+          "label": "Угол света",
+          "value": "140°"
+        },
+        {
+          "label": "Цена",
+          "value": "2,99 € / шт.; 11,96 € за 4 шт."
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-track-kit-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/tagi/gx53/"
     }
   ],
   "subcategories": {
