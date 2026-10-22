@@ -1139,9 +1139,82 @@
       ],
       "related": [
         "ikea-orrsjon",
-        "ikea-rannilen"
+        "ikea-rannilen",
+        "schell-comfort-049070699"
       ],
       "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000"
+    },
+    {
+      "id": "schell-comfort-049070699",
+      "name": "SCHELL COMFORT 04 907 06 99",
+      "brand": "SCHELL",
+      "category": "Сантехника",
+      "subcategory": "Подключение и арматура",
+      "status": "Куплено",
+      "sku": "049070699",
+      "specs": "Угловой регулирующий вентиль, G 1/2″ × G 3/8″, хром, 2 шт.",
+      "note": "Куплены 2 угловых вентиля SCHELL для подключения смесителя hansgrohe Logis 100 в ванной. Приобретены в DEPO; точная цена покупки пока не указана. В комплекте удлинённый корпус и декоративная розетка. Исполнение без самоуплотняющейся резьбы ASAG.",
+      "tags": [
+        "ванная",
+        "угловой вентиль",
+        "запорная арматура",
+        "DEPO"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "SCHELL COMFORT 04 907 06 99"
+        },
+        {
+          "label": "Количество",
+          "value": "2 шт."
+        },
+        {
+          "label": "Вход",
+          "value": "DN 15, G 1/2″, наружная резьба"
+        },
+        {
+          "label": "Выход",
+          "value": "DN 10, G 3/8″, наружная резьба"
+        },
+        {
+          "label": "Поверхность",
+          "value": "Хром"
+        },
+        {
+          "label": "Ручка",
+          "value": "COMFORT"
+        },
+        {
+          "label": "Комплектация",
+          "value": "Удлинённый корпус, декоративная розетка Ø 54 мм"
+        },
+        {
+          "label": "Резьба ASAG",
+          "value": "Нет (без самоуплотнения)"
+        },
+        {
+          "label": "Класс шума",
+          "value": "I"
+        },
+        {
+          "label": "Страна производства",
+          "value": "Германия"
+        },
+        {
+          "label": "EAN",
+          "value": "4021163105292"
+        },
+        {
+          "label": "Магазин",
+          "value": "DEPO"
+        }
+      ],
+      "related": [
+        "hansgrohe-logis-100",
+        "ikea-orrsjon"
+      ],
+      "manufacturerUrl": "https://www.schell.eu/worldwide-en/products/regulating-angle-valves/angle-valves-special-angle-valves/details/artikel/049070699.html"
     }
   ],
   "subcategories": {
