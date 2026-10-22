@@ -1,0 +1,40 @@
+name: Test remote image import
+on:
+  push:
+    paths:
+      - 'data/image-import-test.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  test-download:
+    if: github.ref == 'refs/heads/finds-v2-image-test'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download and validate image
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, pathlib, urllib.request
+          cfg=json.loads(pathlib.Path('data/image-import-test.json').read_text())
+          url=cfg['url']
+          if not url.startswith('https://raw.githubusercontent.com/azworks-lab/finds-library/'):
+              raise SystemExit('URL not in allowlist')
+          req=urllib.request.Request(url,headers={'User-Agent':'FINDS-image-test'})
+          with urllib.request.urlopen(req,timeout=25) as response:
+              data=response.read(5_000_001)
+          if len(data)>5_000_000 or not (data.startswith(b'\xff\xd8\xff') and data.endswith(b'\xff\xd9')):
+              raise SystemExit('Invalid JPEG or file too large')
+          digest=hashlib.sha256(data).hexdigest()
+          pathlib.Path('images').mkdir(exist_ok=True)
+          pathlib.Path('images/test-remote-import-schell.jpg').write_bytes(data)
+          pathlib.Path('data/image-import-test-result.json').write_text(json.dumps({'bytes':len(data),'sha256':digest},indent=2)+'\n')
+          print('VALIDATED bytes=',len(data),'sha256=',digest)
+          PY
+      - name: Commit test results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/test-remote-import-schell.jpg data/image-import-test-result.json
+          git diff --cached --quiet || git commit -m "Test remote JPEG import in image-test branch"
+          git push
