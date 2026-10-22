@@ -152,7 +152,7 @@
       "id": "ikea-rannilen",
       "name": "IKEA RÄNNILEN",
       "category": "Сантехника",
-      "subcategory": "Сифоны и сливы",
+      "subcategory": "Подключение и арматура",
       "status": "Куплено",
       "brand": "IKEA",
       "specs": "Сифон для раковины IKEA ORRSJÖN",
@@ -1143,5 +1143,13 @@
       ],
       "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000"
     }
-  ]
+  ],
+  "subcategories": {
+    "Сантехника": [
+      "Раковины",
+      "Смесители",
+      "Подключение и арматура",
+      "Душевая зона"
+    ]
+  }
 }
