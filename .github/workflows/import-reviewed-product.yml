@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 jobs:
   import:
     if: github.ref == 'refs/heads/finds-v2-image-test'
