@@ -17,8 +17,8 @@ jobs:
           import json, pathlib, urllib.request, urllib.parse, io, struct, re, html
           from html.parser import HTMLParser
           def get(url):
-              if not url.startswith('https://ledveikals.lv/') and not url.startswith('https://www.ledveikals.lv/'):
-                  raise ValueError('URL outside LEDveikals.lv')
+              if not url.startswith('https://'):
+                  raise ValueError('Only HTTPS images supported')
               req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
               with urllib.request.urlopen(req,timeout=30) as response:
                   return response.read(6_000_001)
@@ -35,16 +35,12 @@ jobs:
           byid={p['id']:p for p in data['products']}
           updates=[]
           for job in jobs:
-              query=urllib.parse.quote(job['search'])
-              api='https://ledveikals.lv/wp-json/wc/store/v1/products?search='+query+'&per_page=40'
-              products=json.loads(get(api))
-              matches=[p for p in products if all(x.lower() in html.unescape(p.get('name','')).lower() for x in job['must_contain']) and not any(x.lower() in html.unescape(p.get('name','')).lower() for x in job['must_not_contain'])]
-              print(job['id'],'matches:',[(p.get('id'),p.get('name')) for p in matches])
-              if len(matches)!=1: raise SystemExit('Expected exactly one matching product for '+job['id'])
-              product=matches[0]
-              imgs=product.get('images') or []
-              if not imgs: raise SystemExit('No image for '+job['id'])
-              url=imgs[0]['src']
+              page=get(job['url']).decode('utf-8','replace')
+              meta=ProductMeta()
+              meta.feed(page)
+              if not meta.images: raise SystemExit('No og:image on product page '+job['id'])
+              url=urllib.parse.urljoin(job['url'],html.unescape(meta.images[0]))
+              print('Product:',job['id'],'title:',meta.title,'image:',url)
               raw=get(url)
               if len(raw)>6_000_000 or len(raw)<1000: raise SystemExit('Invalid image size')
               if raw.startswith(bytes([255,216,255])) and raw.endswith(bytes([255,217])):
