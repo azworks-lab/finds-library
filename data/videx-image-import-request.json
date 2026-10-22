@@ -10,7 +10,8 @@
       ],
       "must_not_contain": [
         "Balti"
-      ]
+      ],
+      "url": "https://ledveikals.lv/product/zx-1-fazes-2m-sliede-4-gab-sliezu-gaismekli-silvio-gu10-60mm-1-fazes-melni/"
     },
     {
       "id": "videx-gx53-8w-3000k-hallway",
@@ -24,7 +25,8 @@
       "must_not_contain": [
         "12W",
         "4100K"
-      ]
+      ],
+      "url": "https://ledveikals.lv/product/videx-led-spuldze-gx53-3000k-8w-730-lm-140/"
     }
   ]
 }
