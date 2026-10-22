@@ -542,8 +542,7 @@
       ],
       "related": [
         "sonoff-m5",
-        "sonoff-r5",
-        "sonoff-minir4"
+        "sonoff-r5"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4",
       "photo": "images/sonoff-minir4.jpg"
