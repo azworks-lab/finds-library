@@ -1,0 +1,1535 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FINDS — Тест поиска</title><link rel="manifest" href="./manifest.webmanifest?v=2"><link rel="icon" href="./icon.svg" type="image/svg+xml"><meta name="theme-color" content="#101827"><style>
+:root{font-family:system-ui,-apple-system,sans-serif;color-scheme:dark;background:#0e121b;color:#eef2f8}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button{cursor:pointer;color:inherit}.app{max-width:800px;margin:auto;padding:16px 14px 50px}.brand{font-size:17px;letter-spacing:.06em;font-weight:750;margin:6px 0 23px}.recenthead{display:flex;justify-content:space-between;align-items:center;margin-bottom:7px}.recenthead b{font-size:15px}.iconbtn{border:0;background:transparent;color:#bac7db;padding:8px 12px;font-size:19px}.recent{display:grid;gap:5px}.recent button{border:1px solid #303f56;border-radius:9px;background:#192233;text-align:left;padding:9px 12px;min-height:40px;font-size:14px}.recent button:active,.cat button:active,.sub button:active{opacity:.75}.searchwrap{margin:19px 0 12px;display:flex;align-items:center;border:1px solid #455670;border-radius:13px;background:#172132;min-height:52px}.searchwrap .glass{font-size:21px;padding:0 10px 0 14px;color:#b5c3d7}.searchwrap input{flex:1;width:0;min-width:0;background:transparent;color:#fff;border:0;outline:0;font-size:16px;padding:13px 0}.searchwrap button{border:0;background:transparent;color:#bcc9da;font-size:22px;padding:8px 14px}.toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.toolbar strong{font-size:16px}.filterbtn{border:1px solid #455670;background:#1b293b;border-radius:10px;padding:9px 12px;font-size:14px}.nav{border:1px solid #34445b;border-radius:13px;overflow:hidden;margin-bottom:14px}.navhead{width:100%;display:flex;justify-content:space-between;align-items:center;background:#202c3f;border:0;text-align:left;padding:12px 14px;font-weight:650}.columns{display:grid;grid-template-columns:42% 58%;height:310px;min-height:0}.cat,.sub{overflow-y:auto;overscroll-behavior:contain;padding:6px}.cat{background:#192336;border-right:1px solid #34445b}.sub{background:#111a28}.cat button,.sub button{display:block;width:100%;text-align:left;background:transparent;border:0;border-radius:8px;padding:12px 8px;font-size:14px;line-height:1.3;overflow-wrap:anywhere;min-height:44px}.cat button.active,.sub button.active{background:#dce8fc;color:#132035;font-weight:750}.sub button.group{color:#bdcde4;font-weight:650;border-bottom:1px solid #2c3a4d;border-radius:0}.sub button.group[aria-expanded="true"]{color:#fff}.sub button.child{padding-left:17px;font-size:13px}.results{display:flex;align-items:center;justify-content:space-between;margin:12px 0 7px}.results small{color:#a9b7c9}.card{border:1px solid #35465f;border-radius:12px;background:#192335;margin:8px 0;overflow:hidden}.card summary{padding:12px 14px;cursor:pointer;list-style:none}.card summary::-webkit-details-marker{display:none}.card .title{font-size:17px;font-weight:700;margin:3px 0}.card .meta{color:#adbed3;font-size:12px}.card .status{font-size:12px;color:#a8c9ff}.card .status.bought{color:#8bd4a6}.card .body{border-top:1px solid #35465f;padding:12px 14px;color:#cbd6e5;font-size:14px;line-height:1.5}.card .body p{margin:0 0 9px}.card .body p:last-child{margin:0}.empty{color:#afbdd0;padding:25px 5px}.foot{color:#8696ab;font-size:11px;margin-top:28px}.shade[hidden]{display:none}.shade{position:fixed;inset:0;background:#0009;z-index:5;display:flex;align-items:flex-end;justify-content:center}.sheet{width:min(100%,800px);background:#172235;border:1px solid #42526b;border-radius:17px 17px 0 0;padding:18px 17px 30px}.sheethead{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.sheethead b{font-size:19px}.sheet label{display:block;font-size:13px;color:#b8c8dd;margin:14px 0 6px}.sheet select{width:100%;padding:13px;border:1px solid #42536c;border-radius:10px;background:#111a29;color:#fff}.sheet .row{display:flex;gap:10px;margin-top:22px}.sheet .row button{flex:1;border-radius:10px;padding:13px;background:#273851;border:1px solid #4c617e}.sheet .row .primary{background:#dce8fc;color:#142033;font-weight:750}
+
+/* 2.3 — compact, informative product cards */
+.card summary{padding:11px 13px}.card .title{font-size:16px;margin:0;line-height:1.3}.card .meta{font-size:11px;margin-top:7px}.card .status{font-size:11px;font-weight:650;white-space:nowrap;border:1px solid #506784;border-radius:7px;padding:3px 7px}.card .status.bought{border-color:#416f56}.card .cardtop{display:flex;align-items:flex-start;justify-content:space-between;gap:9px}.card .cardtop .title{flex:1;min-width:0}.card .chevron{font-size:16px;color:#a7b8cf;flex-shrink:0;transition:transform .15s}.card[open] .chevron{transform:rotate(90deg)}.card .preview{font-size:13px;line-height:1.4;color:#c7d4e6;margin:7px 0 0}.card .body{padding:11px 13px}.card .body dl{display:grid;grid-template-columns:85px 1fr;gap:7px 10px;margin:0}.card .body dt{color:#8fa6c3}.card .body dd{margin:0;overflow-wrap:anywhere}.card .body .note{margin-top:12px;padding-top:10px;border-top:1px solid #35465f}.card .body .note b{color:#9fb3cc;font-weight:600}.card .body .note p{margin:5px 0 0}.card:focus-within{border-color:#7593b9}.card summary:focus-visible{outline:2px solid #8db5ed;outline-offset:-3px}
+.more-label{display:block;margin-top:10px;text-align:center;border:1px solid #405575;border-radius:9px;padding:8px;font-size:13px;font-weight:650;color:#d6e6ff}.card[open] .more-label{font-size:0}.card[open] .more-label:after{content:'Свернуть ↑';font-size:13px}.mw-detail h3{font-size:15px;color:#fff;margin:15px 0 8px}.mw-detail a{color:#9ec6ff}.mw-detail .muted{font-size:12px;color:#aebdd0}.mw-detail dl{display:grid;grid-template-columns:42% 58%;gap:6px 8px}.mw-detail dt{color:#9fb1c9}.mw-detail dd{margin:0;color:#e5ecf6}
+/* Hidden must override grid/flex display; otherwise navigation never collapses */
+[hidden]{display:none!important}
+.card[open] summary .more-label{display:none}
+.card .bottom-collapse{display:block;width:100%;margin-top:16px;padding:12px;border:1px solid #405575;border-radius:9px;background:transparent;color:#d6e6ff;font-weight:650}
+.mw-detail{margin-top:16px;border-top:1px solid #35465f;padding-top:3px}
+.mw-detail dl{margin:8px 0 14px}
+.mw-detail dd{overflow-wrap:anywhere}
+ .related{display:grid;gap:8px;margin:8px 0 12px}.related button{border:1px solid #506483;background:#23324a;border-radius:10px;padding:12px;text-align:left;display:flex;justify-content:space-between;gap:8px;font-weight:600;color:#e4eeff}.related button span{color:#a9c7f8}#focusBar{margin:6px 0 10px}#focusBar[hidden]{display:none}#goBack{width:auto;padding:8px 15px;background:#25334b;border:1px solid #536784;border-radius:11px;text-align:left;color:#e1ecff;font-weight:650} .card{scroll-margin-top:12px} 
+/* v3.0: mobile-safe definition list */
+.card .body dl,.mw-detail dl{display:grid;grid-template-columns:minmax(0, 38%) minmax(0, 1fr);gap:8px 12px;align-items:start}
+.card .body dt,.mw-detail dt{min-width:0;overflow-wrap:anywhere;word-break:normal;line-height:1.4}
+.card .body dd,.mw-detail dd{min-width:0;overflow-wrap:anywhere;line-height:1.45}
+@media(max-width:390px){.card .body dl,.mw-detail dl{grid-template-columns:minmax(0, 36%) minmax(0, 1fr);gap:9px 9px}}
+.related button{align-items:center;min-width:0}.related button span:first-child{min-width:0;overflow-wrap:anywhere}
+
+/* Navigation return integrated in the expanded card header */
+.card .cardtop{display:flex;align-items:center;gap:8px}
+.card .cardtop .title{flex:1;min-width:0}
+.card .card-back{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;border:0;border-radius:0;background:transparent;color:#e4eeff;font-size:28px;font-weight:800;cursor:pointer;flex-shrink:0}
+.card .card-back:focus-visible{outline:2px solid #a9c7f8;outline-offset:2px}
+a{color:#a9c7f8;text-underline-offset:3px}.product-photo{max-width:100%;max-height:280px;object-fit:contain;border-radius:10px;margin-top:12px}.source-note{font-size:12px;color:#a5adba}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;appearance:none;display:none}/* Card detail readability refinements */
+.card .body dl{display:grid;grid-template-columns:minmax(105px,38%) minmax(0,1fr);column-gap:12px;row-gap:10px;margin:0 0 16px}
+.card .body dl dt,.card .body dl dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.card .body dl dt{color:#94a3b8}
+.card .body dl dd{color:#e6edf8}
+.card .body a{overflow-wrap:anywhere}
+.card .body .bottom-collapse{min-height:42px}
+@media(max-width:390px){.card .body dl{grid-template-columns:minmax(96px,36%) minmax(0,1fr);column-gap:10px}}
+/* FINDS v2 — compact mobile-first visual system */
+:root{--surface:#192335;--raised:#243247;--stroke:#35465f;--accent:#a9c7f8}
+.app{max-width:720px;padding:19px 14px 54px}
+.brand{display:flex;align-items:center;gap:11px;margin:0 0 20px;letter-spacing:normal}
+.brand img{flex:none}.brand strong{display:block;font-size:25px;letter-spacing:.085em;line-height:1.1}.brand small{display:block;color:#94a3b8;font-size:11px;font-weight:400;margin-top:4px}
+.searchwrap{margin:0 0 12px;border-color:#34445b;background:var(--raised)}
+.toolbar{gap:9px;margin-bottom:14px}.filterbtn{width:50%;min-height:45px;text-align:center;background:var(--raised);border:1px solid var(--stroke);font-weight:600}
+.nav{border:0;margin:0}.columns{height:auto;max-height:350px;grid-template-columns:1fr;overflow-y:auto;border:1px solid var(--stroke);border-radius:12px;margin-bottom:12px}
+.cat,.sub{overflow:visible}.cat{border-right:0;border-bottom:1px solid var(--stroke)}.cat button,.sub button{padding:11px 13px}.cat button.active,.sub button.active{background:#334766;color:#fff}
+.results{align-items:center;margin:4px 0 11px;gap:10px}.results>div:first-child{min-width:0}.results strong{font-size:16px;display:block}.results small{display:block;margin-top:3px;font-size:12px}
+.sort-actions{display:flex;gap:5px}.sortbtn{font-size:12px;padding:9px 10px;border:1px solid var(--stroke);border-radius:9px;background:var(--raised);white-space:nowrap}.sortbtn.active{border-color:#9bbbe9;color:#dce9ff}
+#activeFilters{display:flex;flex-wrap:wrap;gap:6px}#activeFilters:empty{display:none}#activeFilters button{border:1px solid #4a6383;border-radius:20px;background:#273851;color:#d9e8fc;padding:7px 10px;font-size:12px;margin-bottom:8px}
+.card{margin:8px 0;border-radius:13px}.card summary{padding:9px}.card .cardtop{align-items:center;gap:11px}.card .thumb{width:72px;height:72px;flex:0 0 72px;border-radius:9px;background:#263449;display:grid;place-items:center;overflow:hidden}.card .thumb img{width:100%;height:100%;object-fit:contain}.card .thumb span{font-size:26px;color:var(--accent)}.card .card-intro{flex:1;min-width:0}.card .title{font-size:14px;line-height:1.28;margin:0 0 5px}.card .preview{font-size:12px;line-height:1.3;margin:0 0 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.card .status{display:inline-block;font-size:11px;border:0;padding:0;color:var(--accent)}.card .status.bought{color:#8bd4a6}.card .chevron{font-size:19px;transform:none!important}.card[open] .chevron{transform:rotate(180deg)!important}.card .body{padding:13px}.card .meta,.card .more-label{display:none}.product-photo{display:block;margin:15px auto;max-height:260px}
+.card .card-back{min-width:35px;min-height:44px;font-size:22px}.mw-detail h3{font-size:14px;margin:17px 0 8px}.card .body .note{margin-top:10px}
+.columns .cat[hidden],.columns .sub[hidden]{display:none!important}.columns .cat,.columns .sub{width:100%}.columns{display:block;overflow:visible;max-height:none!important}.columns .cat{border-bottom:0}.columns .sub{overflow:visible;max-height:none}.columns .sub .nav-selected{font-size:15px}.columns .cat button{font-size:13px}.columns .sub button{font-size:14px} .card .status.candidate{color:#efbf77}.card .status.included{color:#b9c2d0}#goBack{margin:4px 0 10px} .brand-home{display:flex;align-items:center;gap:11px;width:100%;padding:0;background:none;border:0;text-align:left;letter-spacing:normal}.brand-home strong{display:block;font-size:20px;letter-spacing:.075em}.brand-home small{display:block;font-size:12px;font-weight:400;color:#9baec8;margin-top:3px}.toolbar .filterbtn{min-height:44px;padding:8px 11px;font-size:13px;line-height:1.2}.toolbar{gap:10px}.toolbar .filterbtn{flex:1}.brand-home:focus-visible{outline:2px solid #a9c7f8;border-radius:8px}.columns{display:flex;flex-direction:column;height:auto;max-height:60vh}.cat{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;overflow:visible;border-right:0;border-bottom:1px solid #34445b;padding:7px}.cat button{font-size:12px;padding:8px;min-height:38px}.sub{max-height:220px;overflow-y:auto;padding:6px}.sub button{min-height:38px;padding:9px 12px}.nav{margin-bottom:10px}.cat[hidden]{display:none}.columns{max-height:none}.sub{max-height:none}.nav-back{color:#a9c7f8!important;font-size:13px!important}.nav-selected{padding:8px 12px;font-weight:750;color:#f0f5fc;border-bottom:1px solid #35465f}.cat{grid-template-columns:1fr 1fr}.cat button{min-height:46px} @media(max-width:370px){.app{padding-left:10px;padding-right:10px}.card .cardtop{gap:8px}.card .thumb{width:64px;height:64px;flex-basis:64px}.sortbtn{padding:8px}}
+</style></head><body><main class="app"><button type="button" class="brand brand-home" id="homeButton" aria-label="FINDS — на главную"><img src="./finds-mark.svg?v=20261022-contrast" alt="" width="34" height="34"><span><strong>FINDS</strong><small>Личная библиотека товаров</small></span></button><section class="recent-section" hidden><div class="recenthead"><b>Недавно добавлено</b><button class="iconbtn" id="toggleRecent" aria-label="Свернуть последние товары" aria-expanded="false">⌄</button></div><div class="recent" id="recent" hidden></div></section><div class="searchwrap"><span class="glass">⌕</span><input id="search" type="search" placeholder="Поиск по библиотеке…" aria-label="Поиск по библиотеке"><button id="clearSearch" aria-label="Очистить поиск" hidden>×</button></div><div class="toolbar"><button id="navToggle" class="filterbtn nav-trigger" aria-expanded="false">▤ Разделы <span id="navArrow">⌄</span></button><button id="filterOpen" class="filterbtn">☷ Фильтры</button></div><div class="nav"><div class="columns" id="navColumns" hidden><div id="categories" class="cat"></div><div id="subcategories" class="sub"></div></div></div><div class="results"><div><strong id="navLabel">Все товары</strong><small id="resultCount"></small></div><div class="sort-actions"><button type="button" id="newSort" class="sortbtn active">Новые</button><button type="button" id="alphaSort" class="sortbtn">А–Я</button></div></div><div id="activeFilters"></div><div id="focusBar" hidden></div><div id="cards"></div><p class="foot" id="stats"></p></main><div class="shade" id="filterShade" hidden><div class="sheet" role="dialog" aria-modal="true" aria-label="Фильтры"><div class="sheethead"><b>Фильтры</b><button id="filterClose" class="iconbtn" aria-label="Закрыть">×</button></div><label for="status">Статус</label><select id="status"><option value="">Все статусы</option><option>Куплено</option><option>Выбрано</option><option>В комплекте</option><option>Кандидат</option></select><input id="sort" type="hidden" value="new"><div class="row"><button id="resetAll">Сбросить всё</button><button id="applyFilters" class="primary">Показать товары</button></div></div></div><script>
+let catalogSubcategories={},products=[]
+const $=id=>document.getElementById(id);let focusName=null,historyStack=[];let category='Все',subcategory='Все',activeCategory='Все',expandedGroup='',navExpanded=false;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function recentCollapse(){if(!$('recent').hidden){$('recent').hidden=true;$('toggleRecent').textContent='⌄';$('toggleRecent').setAttribute('aria-expanded','false');$('toggleRecent').setAttribute('aria-label','Показать последние товары')}}
+function detailsFor(p){
+const modelLabel=p.model||p.sku||p.name;const modelRow='<dt>Модель</dt><dd>'+(p.retailerUrl?'<a href="'+esc(p.retailerUrl)+'" target="_blank" rel="noopener noreferrer">'+esc(modelLabel)+' ↗</a>':esc(modelLabel))+'</dd>';const rows=modelRow+(p.details||[]).filter(x=>x.label!=='Модель').map(x=>'<dt>'+esc(x.label)+'</dt><dd>'+esc(x.value)+'</dd>').join('');
+const linked=(p.related||[]).filter(name=>products.some(item=>item.id===name||item.name===name));
+const relatedHtml=linked.length?'<h3>Связанные товары</h3><div class="related">'+linked.map(name=>{
+const item=products.find(x=>x.id===name||x.name===name);
+return '<button type="button" data-related="'+esc(item.id)+'"><span>'+esc(item.name)+'</span><span>›</span></button>';
+}).join('')+'</div>':'';
+return '<div class="mw-detail">'+(p.photo?'<img class="product-photo" loading="lazy" src="'+esc(p.photo)+'" alt="Фото '+esc(p.name)+'">':'')+'<h3>Технические характеристики</h3><dl>'+rows+'</dl>'+
+(p.note?'<h3>Наши заметки</h3><p>'+esc(p.note)+'</p>':'')+relatedHtml+''+(p.sourceNote?'<p class="source-note">'+esc(p.sourceNote)+'</p>':'')+'</div>';
+}
+function searchRank(p,q){const fields=[[p.name,p.brand],[p.sku||'',p.specs],[p.category,p.subcategory],[(p.note||''),...(p.details||[]).map(x=>x.label+' '+x.value)]];for(let i=0;i<fields.length;i++)if(fields[i].some(v=>String(v||'').toLocaleLowerCase('ru').includes(q)))return i;return 99;}
+function render(){let q=$('search').value.trim().toLocaleLowerCase('ru'),status=$('status').value,sort=$('sort').value;$('activeFilters').hidden=!!q;let arr=products.filter(p=>focusName?p.name===focusName:(q?true:((category==='Все'||p.category===category)&&(subcategory==='Все'||p.subcategory===subcategory)))&&(focusName||!status||p.status===status)&&(focusName||[p.name,p.brand,p.specs,p.category,p.subcategory,p.sku||'',p.note||'',...(p.details||[]).map(x=>x.label+' '+x.value)].join(' ').toLocaleLowerCase('ru').includes(q)));arr.sort((a,b)=>{if(q){const ra=searchRank(a,q),rb=searchRank(b,q);if(ra!==rb)return ra-rb;}return sort==='az'?a.name.localeCompare(b.name,'ru'):sort==='za'?b.name.localeCompare(a.name,'ru'):(b.addedAt||'').localeCompare(a.addedAt||'')||(b._catalogIndex??0)-(a._catalogIndex??0);});$('focusBar').hidden=!focusName;$('focusBar').innerHTML=focusName?'<button type="button" id="goBack">← Назад к списку</button>':'';$('cards').innerHTML=arr.length?arr.map(p=>'<details class="card"><summary><div class="cardtop"><div class="thumb">'+(p.photo?'<img src="'+esc(p.photo)+'" alt="" loading="lazy">':'<span>◇</span>')+'</div><div class="card-intro"><div class="title">'+esc(p.name)+'</div><div class="preview">'+esc(p.specs)+'</div><span class="status '+(p.status==='Куплено'?'bought':p.status==='Кандидат'?'candidate':p.status==='В комплекте'?'included':'')+'">'+esc(p.status)+'</span></div><span class="chevron" aria-hidden="true">⌄</span>'+'</div></summary><div class="body"><dl><dt>Бренд</dt><dd>'+(p.manufacturerUrl?'<a href="'+esc(p.manufacturerUrl)+'" target="_blank" rel="noopener noreferrer">'+esc(p.brand||'Производитель')+' ↗</a>':esc(p.brand||'—'))+'</dd>'+(p.sku?'<dt>Артикул</dt><dd>'+esc(p.sku)+'</dd>':'')+(p.price?'<dt>Цена</dt><dd>'+esc(p.price)+'</dd>':'')+'</dl>' +detailsFor(p)+'<button type="button" class="bottom-collapse" onclick="this.closest(\'details\').open=false;this.closest(\'details\').scrollIntoView({behavior: \'smooth\',block: \'nearest\'})">Свернуть ↑</button></div></details>').join(''):'<div class="empty">Ничего не найдено.</div>' ;$('resultCount').textContent=(focusName?'Связанная карточка':'Найдено: '+arr.length+' из '+products.length);$('newSort').classList.toggle('active',sort==='new');$('alphaSort').classList.toggle('active',sort!=='new');$('alphaSort').textContent=sort==='za'?'Я–А':'А–Я';$('activeFilters').innerHTML=(!q&&category!=='Все'?'<button data-clear="category">'+esc(category+(subcategory!=='Все'?' / '+subcategory:''))+' ×</button>':'')+(status?'<button data-clear="status">'+esc(status)+' ×</button>':'');$('navLabel').textContent=q?'Поиск по всей библиотеке':focusName?'Связанный товар':category==='Все'?'Все товары':subcategory==='Все'?category:category+' / '+subcategory;$('clearSearch').hidden=!$('search').value}
+function jumpTo(name){const target=products.find(p=>p.id===name||p.name===name);if(!target)return;historyStack.push({focusName,scrollY:window.scrollY,openCards:[...document.querySelectorAll("#cards details")].map((el,i)=>el.open?i:-1).filter(i=>i>=0)});focusName=target.name;render();let card=$('cards').querySelector('details');if(card){card.open=true;requestAnimationFrame(()=>card.scrollIntoView({block:'start',behavior:'instant'}))}}
+$('cards').addEventListener('toggle',e=>{if(e.target.matches('details.card')&&e.target.open&&!focusName){requestAnimationFrame(()=>e.target.scrollIntoView({behavior:'smooth',block:'nearest'}))}},true);
+$('focusBar').addEventListener('click',e=>{if(e.target.closest('#goBack'))goBack()});$('cards').addEventListener('click',e=>{const back=e.target.closest('.card-back');if(back){e.preventDefault();e.stopPropagation();goBack();return}const b=e.target.closest('[data-related]');if(b)jumpTo(b.dataset.related)});
+function goBack(){const previous=historyStack.pop();if(!previous){focusName=null;render();return}focusName=previous.focusName;render();if(previous.openCards){const cards=[...$('cards').querySelectorAll('details')];previous.openCards.forEach(i=>{if(cards[i])cards[i].open=true})}requestAnimationFrame(()=>window.scrollTo({top:previous.scrollY,behavior:'instant'}))}
+function menu(){const cats=['Все',...new Set(products.map(p=>p.category))].sort((a,b)=>a==='Все'?-1:b==='Все'?1:a.localeCompare(b,'ru'));$('categories').innerHTML=cats.map(c=>'<button data-cat="'+esc(c)+'" class="'+(activeCategory===c?'active':'')+'">'+esc(c==='Все'?'Все товары':c)+'</button>').join('');$('categories').hidden=activeCategory!=='Все';$('subcategories').hidden=activeCategory==='Все';let subs=activeCategory==='Все'?[]:[...new Set(products.filter(p=>p.category===activeCategory).map(p=>p.subcategory))].sort((a,b)=>a.localeCompare(b,'ru'));$('subcategories').innerHTML=(activeCategory==='Все'?'':'<button type="button" class="nav-back" id="navBack">← К разделам</button><div class="nav-selected">'+esc(activeCategory)+'</div>')+'<button data-sub="Все" class="'+(category===activeCategory&&subcategory==='Все'?'active':'')+'">'+(activeCategory==='Все'?'Показать все товары':'Все товары раздела')+' →</button>'+subs.map(s=>'<button data-sub="'+esc(s)+'" class="'+(category===activeCategory&&subcategory===s?'active':'')+'">'+esc(s)+' →</button>').join('')}
+function setNav(open){navExpanded=open;if(open){activeCategory='Все';menu()}$('navColumns').hidden=!open;$('navArrow').textContent=open?'⌃':'⌄';$('navToggle').setAttribute('aria-expanded',String(open))}
+$('homeButton').onclick=()=>{focusName=null;historyStack=[];category='Все';subcategory='Все';activeCategory='Все';$('search').value='';$('status').value='';$('sort').value='new';menu();setNav(false);closeFilters();render();window.scrollTo({top:0,behavior:'smooth'})};$('navToggle').onclick=()=>{if(navExpanded){setNav(false)}else{activeCategory=category==='Все'?'Все':category;menu();setNav(true)}};$('categories').onclick=e=>{const b=e.target.closest('[data-cat]');if(!b)return;activeCategory=b.dataset.cat;if(activeCategory==='Все'){category='Все';subcategory='Все';focusName=null;historyStack=[];setNav(false);render()}else{category=activeCategory;subcategory='Все';focusName=null;historyStack=[];$('search').value='';recentCollapse();menu();setNav(false);render();document.querySelector('.results').scrollIntoView({behavior:'smooth',block:'start'})}};$('subcategories').onclick=e=>{if(e.target.closest('#navBack')){activeCategory='Все';menu();return}const b=e.target.closest('[data-sub]');if(!b)return;category=activeCategory;subcategory=b.dataset.sub;focusName=null;historyStack=[];$('search').value='';recentCollapse();setNav(false);render();document.querySelector('.results').scrollIntoView({behavior:'smooth',block:'start'})};
+$('search').oninput=()=>{focusName=null;historyStack=[];if($('search').value){recentCollapse();setNav(false)}render()};$('clearSearch').onclick=()=>{focusName=null;historyStack=[];$('search').value='';$('search').blur();render()};$('toggleRecent').onclick=()=>{let next=$('recent').hidden;$('recent').hidden=!next;$('toggleRecent').textContent=next?'⌃':'⌄';$('toggleRecent').setAttribute('aria-expanded',String(next));$('toggleRecent').setAttribute('aria-label',next?'Свернуть последние товары':'Показать последние товары')};
+$('recent').onclick=e=>{focusName=null;historyStack=[];const b=e.target.closest('[data-recent]');if(!b)return;$('search').value=b.dataset.recent;category='Все';subcategory='Все';$('status').value='';recentCollapse();setNav(false);render();let card=$('cards').querySelector('details');if(card){card.open=true;card.scrollIntoView({behavior:'smooth',block:'center'})}};
+$('newSort').onclick=()=>{$('sort').value='new';render()};$('alphaSort').onclick=()=>{$('sort').value=$('sort').value==='az'?'za':'az';render()};$('activeFilters').onclick=e=>{const b=e.target.closest('[data-clear]');if(!b)return;if(b.dataset.clear==='category'){category='Все';subcategory='Все';activeCategory='Все';menu()}else $('status').value='';render()};$('cards').addEventListener('toggle',e=>{if(!e.target.matches('details.card')||!e.target.open)return;for(const d of $('cards').querySelectorAll('details.card'))if(d!==e.target)d.open=false},true);const closeFilters=()=>{$('filterShade').hidden=true;document.body.style.overflow=''};$('filterOpen').onclick=()=>{$('filterShade').hidden=false;document.body.style.overflow='hidden'};$('filterClose').onclick=closeFilters;$('filterShade').onclick=e=>{if(e.target===$('filterShade'))closeFilters()};$('applyFilters').onclick=()=>{closeFilters();recentCollapse();render()};$('resetAll').onclick=()=>{focusName=null;historyStack=[];$('status').value='';$('sort').value='new';$('search').value='';category='Все';subcategory='Все';activeCategory='Все';menu();render();closeFilters()};document.addEventListener('keydown',e=>{if(e.key==='Escape')closeFilters()});Promise.resolve({
+  "version": "2.0",
+  "updated": "2026-10-22",
+  "products": [
+    {
+      "id": "ikea-angsjon-100",
+      "name": "IKEA ÄNGSJÖN",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Подвесная тумба, светлый дуб, 2 ящика, 100×48×63 см",
+      "note": "Куплена и закреплена в ванной. Подвесная тумба установлена у левого простенка; монтажная шина: верхняя кромка 680 мм от пола. Раковина ORRSJÖN уложена сверху. Проверка окончательной герметизации и слива — отдельно.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ],
+      "details": [
+        {
+          "label": "Габариты",
+          "value": "100 × 48 × 63 см"
+        },
+        {
+          "label": "Конструкция",
+          "value": "Подвесная тумба, 2 ящика"
+        },
+        {
+          "label": "Отделка",
+          "value": "Светлый дуб"
+        },
+        {
+          "label": "Монтаж",
+          "value": "Закреплена на стене, верх монтажной шины 680 мм от пола"
+        },
+        {
+          "label": "Гарантия",
+          "value": "10 лет"
+        }
+      ],
+      "related": [
+        "ikea-orrsjon",
+        "ikea-rannilen"
+      ],
+      "sku": "505.350.90",
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/aengsjoen-wash-stand-with-drawers-oak-effect-50535090/",
+      "photo": "images/ikea-angsjon-100.jpg"
+    },
+    {
+      "id": "ikea-orrsjon",
+      "name": "IKEA ORRSJÖN",
+      "category": "Сантехника",
+      "subcategory": "Раковины",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "sku": "705.450.69",
+      "specs": "Белая керамическая раковина, 102×49 см; комплект с тумбой арт. 096.296.47",
+      "note": "Куплена для комплекта с ÄNGSJÖN. Раковина уложена на тумбу; зазор до левого простенка около 8–12 мм, заделан силиконом. При монтаже возникли сложности с подключением слива к близкому стеновому выпуску.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ],
+      "details": [
+        {
+          "label": "Габариты",
+          "value": "102 × 49 см"
+        },
+        {
+          "label": "Материал",
+          "value": "Белая керамика"
+        },
+        {
+          "label": "Артикул раковины",
+          "value": "705.450.69"
+        },
+        {
+          "label": "Артикул комплекта с тумбой",
+          "value": "096.296.47"
+        },
+        {
+          "label": "Точные размеры IKEA",
+          "value": "102,3 × 49,4 × 6,4 см"
+        }
+      ],
+      "related": [
+        "ikea-angsjon-100",
+        "ikea-rannilen",
+        "hansgrohe-logis-100"
+      ],
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/orrsjoen-wash-basin-white-70545069/",
+      "photo": "images/ikea-orrsjon.jpg"
+    },
+    {
+      "id": "ikea-faxalven",
+      "name": "IKEA FAXÄLVEN",
+      "category": "Мебель и интерьер",
+      "subcategory": "Ванная",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Зеркальный шкаф, светлый дуб, 100×15×95 см, подсветка SILVERGLANS",
+      "note": "Куплен и установлен в ванной у левого простенка. Штатная система освещения с драйвером SILVERGLANS входила в комплект шкафа. Беспроводной пульт BILRESA приобретён отдельно, сопряжён и работает. Оба компонента доступны в каталоге как связанные товары в разделе электрики.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ],
+      "details": [
+        {
+          "label": "Габариты",
+          "value": "100 × 15 × 95 см"
+        },
+        {
+          "label": "Отделка",
+          "value": "Светлый дуб"
+        },
+        {
+          "label": "Подсветка",
+          "value": "SILVERGLANS в комплекте"
+        },
+        {
+          "label": "Управление",
+          "value": "Беспроводной пульт IKEA BILRESA, сопряжён"
+        },
+        {
+          "label": "Световой поток",
+          "value": "1630 лм"
+        },
+        {
+          "label": "Потребление",
+          "value": "26,8 Вт"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "2700 K"
+        },
+        {
+          "label": "Степень защиты освещения",
+          "value": "IP44"
+        },
+        {
+          "label": "Гарантия",
+          "value": "10 лет"
+        }
+      ],
+      "related": [
+        "ikea-bilresa",
+        "ikea-silverglans"
+      ],
+      "sku": "495.167.14",
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "photo": "images/ikea-faxalven.jpg"
+    },
+    {
+      "id": "ikea-rannilen",
+      "name": "IKEA RÄNNILEN",
+      "category": "Сантехника",
+      "subcategory": "Подключение и арматура",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "Сифон для раковины IKEA ORRSJÖN",
+      "note": "Сифон из комплекта раковины ORRSJÖN. При монтаже возникла проблема: канализационный выпуск в стене расположен близко, соединению не хватает места. Подбор короткого переходника остаётся открытым.",
+      "tags": [
+        "IKEA",
+        "ванная"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "205.545.32"
+        },
+        {
+          "label": "Назначение",
+          "value": "Сифон для раковины IKEA ORRSJÖN"
+        },
+        {
+          "label": "Особенность монтажа",
+          "value": "Ограниченное пространство до канализационного выпуска в стене"
+        }
+      ],
+      "related": [
+        "ikea-angsjon-100",
+        "ikea-orrsjon",
+        "hansgrohe-logis-100"
+      ],
+      "sku": "205.545.32",
+      "sourceNote": "Ссылка ведёт на комплект раковины с сифоном, не на отдельную карточку RÄNNILEN.",
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/raennilen-water-trap-w-flexible-pipe-1-bowl-20554532/",
+      "photo": "images/ikea-rannilen.jpg"
+    },
+    {
+      "id": "kanlux-alren",
+      "name": "Kanlux ALREN R DTL-B",
+      "category": "Электрика и освещение",
+      "subcategory": "Потолочные светильники",
+      "status": "Куплено",
+      "brand": "Kanlux",
+      "specs": "6 встраиваемых чёрных светильников под GU10",
+      "price": "4,49 € / шт.",
+      "note": "Куплено 6 штук для потолка спальни. Цена 4,49 € за штуку. Матовый чёрный корпус, лампы GU10 устанавливаются отдельно.",
+      "tags": [
+        "спальня",
+        "GU10"
+      ],
+      "details": [
+        {
+          "label": "Количество",
+          "value": "6 шт."
+        },
+        {
+          "label": "Цвет",
+          "value": "Чёрный"
+        },
+        {
+          "label": "Цоколь лампы",
+          "value": "GU10"
+        },
+        {
+          "label": "Цена за штуку",
+          "value": "4,49 €"
+        },
+        {
+          "label": "Артикул",
+          "value": "26757"
+        },
+        {
+          "label": "EAN",
+          "value": "5905339267573"
+        },
+        {
+          "label": "Габариты",
+          "value": "99 × 99 × 25 мм"
+        },
+        {
+          "label": "Монтажное отверстие",
+          "value": "80 × 80 мм"
+        },
+        {
+          "label": "Степень защиты",
+          "value": "IP20"
+        },
+        {
+          "label": "Регулировка",
+          "value": "В двух плоскостях, 60°/60°"
+        },
+        {
+          "label": "Максимальная мощность лампы",
+          "value": "10 Вт"
+        },
+        {
+          "label": "Тип лампы",
+          "value": "GU10"
+        }
+      ],
+      "sku": "26757",
+      "sourceNote": "",
+      "manufacturerUrl": "https://www.kanlux.com/storage/products/techniczna/pl/26757.pdf",
+      "photo": "images/kanlux-alren.jpg"
+    },
+    {
+      "id": "btf-fcob",
+      "name": "BTF-LIGHTING FCOB",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-ленты",
+      "status": "Куплено",
+      "brand": "BTF-LIGHTING",
+      "specs": "2700 K, 5 м, 528 LED/м, CRI 90+, 24 V, 70 W, 10 мм",
+      "note": "Куплена для акцентной подсветки шторной ниши спальни. Номинально 70 Вт / 24 В (~2,92 А); выбран блок питания Mean Well LPV-100-24, приобретён контроллер S100-NO-W1.",
+      "tags": [
+        "спальня",
+        "LED"
+      ],
+      "details": [
+        {
+          "label": "Напряжение",
+          "value": "24 В DC"
+        },
+        {
+          "label": "Номинальная мощность",
+          "value": "70 Вт на 5 м"
+        },
+        {
+          "label": "Длина",
+          "value": "5 м"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "2700 K"
+        },
+        {
+          "label": "Плотность",
+          "value": "528 LED/м"
+        },
+        {
+          "label": "Цветопередача",
+          "value": "CRI 90+"
+        },
+        {
+          "label": "Ширина",
+          "value": "10 мм"
+        },
+        {
+          "label": "Расчётный ток",
+          "value": "~2,92 А"
+        }
+      ],
+      "related": [
+        "visional-hb17",
+        "meanwell-lpv10024",
+        "tuya-led-controller"
+      ],
+      "photo": "images/btf-fcob.jpg"
+    },
+    {
+      "id": "visional-hb17",
+      "name": "VISIONAL HB-17.5×7M",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-профили",
+      "status": "Куплено",
+      "brand": "VISIONAL",
+      "specs": "Прямой алюминиевый профиль для LED-ленты",
+      "note": "Куплен ранее. Прямой профиль; для ниши штор выбран и куплен отдельный угловой VISIONAL. Сохранён в каталоге как отдельная покупка.",
+      "tags": [
+        "спальня",
+        "LED"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Прямой алюминиевый профиль для LED-ленты"
+        },
+        {
+          "label": "Особенность",
+          "value": "Для направленного света под 45° может понадобиться иной крепёж или угловой профиль"
+        }
+      ],
+      "related": [
+        "btf-fcob",
+        "meanwell-lpv10024",
+        "tuya-led-controller"
+      ],
+      "photo": "images/visional-hb17.jpg"
+    },
+    {
+      "id": "visional-hb158x158",
+      "name": "VISIONAL HB-15.8×15.8CM — угловой LED-профиль",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-профили",
+      "status": "Куплено",
+      "brand": "VISIONAL",
+      "specs": "Угловой алюминиевый профиль 3000 × 15,8 × 15,8 мм, молочный рассеиватель",
+      "note": "Куплен в Euroled. Модель CM и EAN 4752233009676 подтверждены фотографиями заводской упаковки. Перед установкой проверить ширину посадочного места под LED-ленту 10 мм.",
+      "tags": [
+        "спальня",
+        "LED",
+        "ниша штор"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "HB-15.8×15.8CM"
+        },
+        {
+          "label": "Артикул Euroled",
+          "value": "05-716"
+        },
+        {
+          "label": "EAN",
+          "value": "4752233009676"
+        },
+        {
+          "label": "Размер",
+          "value": "3000 × 15,8 × 15,8 мм"
+        },
+        {
+          "label": "Посадочное место LED",
+          "value": "9 мм — может быть несовместимо с лентой 10 мм"
+        },
+        {
+          "label": "Рассеиватель",
+          "value": "Молочный (Milky White)"
+        },
+        {
+          "label": "Цена покупки",
+          "value": "8,85 € за 3 м"
+        },
+        {
+          "label": "Продавец",
+          "value": "Euroled.lv"
+        }
+      ],
+      "related": [
+        "btf-fcob",
+        "visional-hb17",
+        "meanwell-lpv10024"
+      ],
+      "retailerUrl": "https://euroled.lv/ru/castnoe-osveshhenie/vnutrennee-osveschenie/gostinie-i-holli/alyuminievie-profili/profili-dlya-led-lenti/uglovoi-anodirovannii-alyuminievii-profil-dlya-led-lenti-hb-158x158cm2",
+      "sku": "05-716",
+      "photo": "images/visional-hb158x158.jpg"
+    },
+    {
+      "id": "sonoff-m5",
+      "name": "Sonoff M5",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "Настенный умный выключатель",
+      "note": "Куплен для входа в спальню. При проверке обнаружилась проблема с подключением: рабочего нуля в подрозетнике не нашли; устройство включалось, но освещение не переключалось. Схема требует диагностики.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Настенный умный выключатель"
+        },
+        {
+          "label": "Назначение",
+          "value": "Управление светом у входа в спальню"
+        },
+        {
+          "label": "Монтаж",
+          "value": "Рабочий ноль в подрозетнике не обнаружен; схема требует проверки"
+        },
+        {
+          "label": "Экосистема",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц, IEEE 802.11 b/g/n"
+        },
+        {
+          "label": "Питание",
+          "value": "100–240 В AC, 50/60 Гц"
+        },
+        {
+          "label": "Исполнение",
+          "value": "1/2/3 клавиши; 80/86/120 — параметры зависят от версии"
+        }
+      ],
+      "related": [
+        "sonoff-r5",
+        "sonoff-minir4"
+      ],
+      "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5",
+      "photo": "images/sonoff-m5.jpg"
+    },
+    {
+      "id": "sonoff-r5",
+      "name": "Sonoff R5",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "2 беспроводных пульта управления",
+      "note": "Куплены два беспроводных пульта для управления освещением с обеих сторон кровати.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Беспроводной пульт управления"
+        },
+        {
+          "label": "Количество",
+          "value": "2 шт."
+        },
+        {
+          "label": "Расположение",
+          "value": "У кровати, с двух сторон"
+        },
+        {
+          "label": "Экосистема",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Питание",
+          "value": "2 × CR2032"
+        },
+        {
+          "label": "Кнопки",
+          "value": "6"
+        },
+        {
+          "label": "Размеры",
+          "value": "86 × 86 × 13,5 мм"
+        },
+        {
+          "label": "Управление",
+          "value": "eWeLink-Remote, одинарное/двойное/долгое нажатие"
+        }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-minir4"
+      ],
+      "manufacturerUrl": "https://sonoff.tech/products/sonoff-switchman-r5-scene-controller",
+      "photo": "images/sonoff-r5.jpg"
+    },
+    {
+      "id": "sonoff-minir4",
+      "name": "Sonoff MINIR4",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "Sonoff",
+      "specs": "4 мини-реле: 2 для потолочного освещения и 2 для прикроватных бра",
+      "note": "Куплены четыре реле MINIR4: два для потолочного освещения и два для прикроватных бра в спальне. При настройке выполнялись сброс и проверка работы; окончательная схема подключения уточняется по месту.",
+      "tags": [
+        "спальня",
+        "Sonoff"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Компактное реле управления освещением"
+        },
+        {
+          "label": "Количество",
+          "value": "4 шт."
+        },
+        {
+          "label": "Экосистема",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Питание",
+          "value": "100–240 В AC, 50/60 Гц"
+        },
+        {
+          "label": "Максимальная нагрузка",
+          "value": "10 А, активная"
+        },
+        {
+          "label": "Размеры",
+          "value": "39,5 × 33 × 16,8 мм"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц, IEEE 802.11 b/g/n"
+        }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-r5"
+      ],
+      "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4",
+      "photo": "images/sonoff-minir4.jpg"
+    },
+    {
+      "id": "schneider-sedna",
+      "name": "Schneider Electric Sedna",
+      "category": "Электрика и освещение",
+      "subcategory": "Розетки и рамки",
+      "status": "Куплено",
+      "brand": "Schneider Electric",
+      "specs": "Антрацитовые розетки и рамки",
+      "note": "Куплены розетки и рамки Schneider Sedna в цвете антрацит для спальни. Точные артикулы отдельных механизмов пока не внесены.",
+      "tags": [
+        "спальня"
+      ],
+      "details": [
+        {
+          "label": "Серия",
+          "value": "Sedna"
+        },
+        {
+          "label": "Цвет",
+          "value": "Антрацит"
+        },
+        {
+          "label": "Состав",
+          "value": "Розетки и рамки; артикулы отдельных механизмов пока не зафиксированы"
+        }
+      ],
+      "photo": "images/schneider-sedna.jpg"
+    },
+    {
+      "id": "jokari-super4",
+      "name": "Jokari Super 4 Plus",
+      "category": "Инструменты",
+      "subcategory": "Стрипперы",
+      "status": "Выбрано",
+      "brand": "Jokari",
+      "sku": "20050",
+      "specs": "Автоматический стриппер 0,2–6,0 мм²; ограничитель длины зачистки 6–15 мм; боковой резак до 2,5 мм²; сменные лезвия",
+      "note": "Выбрана модель Super 4 Plus (арт. 20050) для зачистки проводов. Покупка пока не подтверждена; ориентир бюджета до 25 €.",
+      "tags": [
+        "электрика"
+      ],
+      "ean": "4011391200500",
+      "mpn": "20050",
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "20050"
+        },
+        {
+          "label": "Сечение проводов",
+          "value": "0,2–6,0 мм²"
+        },
+        {
+          "label": "Ограничитель зачистки",
+          "value": "6–15 мм"
+        },
+        {
+          "label": "Боковой резак",
+          "value": "До 2,5 мм²"
+        },
+        {
+          "label": "Лезвия",
+          "value": "Сменные"
+        }
+      ],
+      "manufacturerUrl": "https://jokari.de/en/products/detail/automatic-wire-stripper-super-4-plus",
+      "photo": "images/jokari-super4.jpg"
+    },
+    {
+      "id": "stadler-erik",
+      "name": "Stadler Form Erik E-020E",
+      "category": "Отопление и вентиляция",
+      "subcategory": "Обогреватели",
+      "status": "Выбрано",
+      "brand": "Stadler Form",
+      "specs": "Напольный обогреватель для спальни ~12 м²",
+      "note": "Выбран как основной вариант дополнительного обогрева спальни около 12 м². Ранее ориентир цены около 111 €; покупка не подтверждена.",
+      "tags": [
+        "спальня"
+      ],
+      "details": [
+        {
+          "label": "Назначение",
+          "value": "Дополнительный обогрев спальни около 12 м²"
+        },
+        {
+          "label": "Ценовой ориентир",
+          "value": "~111 € (исторический ориентир, не цена покупки)"
+        }
+      ],
+      "photo": "images/stadler-erik.jpg"
+    },
+    {
+      "id": "bosch-smv4hax71e",
+      "name": "Bosch SMV4HAX71E",
+      "category": "Бытовая техника",
+      "subcategory": "Посудомоечные машины",
+      "status": "Выбрано",
+      "brand": "Bosch",
+      "specs": "Встраиваемая посудомоечная машина",
+      "note": "Выбрана для дальнейшего мониторинга цены. Важна возможность размещения крупной чаши диаметром около 27 см и высотой 18 см; вместимость для этого предмета пока не проверена.",
+      "tags": [
+        "кухня"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Встраиваемая посудомоечная машина"
+        },
+        {
+          "label": "Критерий подбора",
+          "value": "Размещение чаши диаметром около 27 см и высотой 18 см; не проверено"
+        }
+      ],
+      "photo": "images/bosch-smv4hax71e.jpg"
+    },
+    {
+      "id": "ikea-gu10",
+      "name": "IKEA SOLHETTA GU10",
+      "category": "Электрика и освещение",
+      "subcategory": "Лампы GU10",
+      "status": "Куплено",
+      "brand": "IKEA",
+      "specs": "GU10, 345 лм, 2,5 Вт, диммируемая; 2700 K, CRI 90 (ранее уточнены); класс C, ресурс 25 000 ч, запуск <1 с",
+      "note": "Купленные лампы IKEA. Модель LED2315R3 и характеристики 2,5 Вт / 345 лм подтверждены скриншотом IKEA. Тёплый свет 2700 K и CRI 90 — по предыдущему уточнению. Удачный вариант по соотношению цены и качества.",
+      "tags": [
+        "IKEA",
+        "GU10"
+      ],
+      "sku": "205.840.96",
+      "price": "2,49 € / шт. (цена на скриншоте IKEA, не подтверждена как цена покупки)",
+      "details": [
+        {
+          "label": "Модель",
+          "value": "LED2315R3"
+        },
+        {
+          "label": "Цоколь",
+          "value": "GU10"
+        },
+        {
+          "label": "Мощность",
+          "value": "2,5 Вт"
+        },
+        {
+          "label": "Световой поток",
+          "value": "345 лм"
+        },
+        {
+          "label": "Диммирование",
+          "value": "Да"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "2700 K (по предыдущему уточнению)"
+        },
+        {
+          "label": "Цветопередача",
+          "value": "CRI 90 (по предыдущему уточнению)"
+        },
+        {
+          "label": "Класс энергоэффективности",
+          "value": "C"
+        },
+        {
+          "label": "Ресурс",
+          "value": "25 000 ч"
+        },
+        {
+          "label": "Время запуска",
+          "value": "Менее 1 секунды"
+        },
+        {
+          "label": "Угол луча",
+          "value": "40°"
+        },
+        {
+          "label": "Диаметр",
+          "value": "50 мм"
+        }
+      ],
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/solhetta-led-bulb-gu10-345-lumen-dimmable-20584096/",
+      "photo": "images/ikea-gu10.jpg"
+    },
+    {
+      "id": "meanwell-lpv10024",
+      "name": "Mean Well LPV-100-24",
+      "category": "Электрика и освещение",
+      "subcategory": "Блоки питания",
+      "status": "Куплено",
+      "brand": "Mean Well",
+      "specs": "Блок питания 24 В, 100 Вт для LED-ленты",
+      "note": "Выбран для LED-ленты BTF-LIGHTING FCOB 24 В / 70 Вт. Выход 24 В DC, 4,2 А, 100,8 Вт; IP67, размеры 190×52×37 мм. Номинальный запас мощности около 44% относительно 70 Вт ленты. Куплен (подтверждено владельцем).",
+      "tags": [
+        "спальня",
+        "LED"
+      ],
+      "addedAt": "2026-10-20",
+      "details": [
+        {
+          "label": "Выход",
+          "value": "24 В DC, 4,2 А"
+        },
+        {
+          "label": "Номинальная мощность",
+          "value": "100,8 Вт"
+        },
+        {
+          "label": "Вход",
+          "value": "90–264 В AC, 47–63 Гц"
+        },
+        {
+          "label": "Габариты",
+          "value": "190 × 52 × 37 мм"
+        },
+        {
+          "label": "Степень защиты",
+          "value": "IP67"
+        },
+        {
+          "label": "КПД",
+          "value": "Типично 88%"
+        },
+        {
+          "label": "Охлаждение",
+          "value": "Естественная конвекция"
+        },
+        {
+          "label": "Совместимая лента",
+          "value": "BTF-LIGHTING FCOB, 24 В, 70 Вт"
+        },
+        {
+          "label": "Запас мощности",
+          "value": "~30,8 Вт, или ~44% относительно нагрузки"
+        },
+        {
+          "label": "Защита корпуса",
+          "value": "IP67"
+        },
+        {
+          "label": "КПД (тип.)",
+          "value": "88 %"
+        }
+      ],
+      "related": [
+        "btf-fcob",
+        "visional-hb17",
+        "tuya-led-controller"
+      ],
+      "sourceNote": "По примечанию 11 документации производителя LPV-100 не предназначен для применения в LED-светильниках в ЕС и Китае; для таких применений рекомендуются другие серии. Перед монтажом проверить назначение изделия и нормативную применимость.",
+      "manufacturerUrl": "https://www.mean-well.ru/uploads/files/datasheets/LPV-100-24.pdf",
+      "photo": "images/meanwell-lpv10024.jpg"
+    },
+    {
+      "id": "tuya-led-controller",
+      "name": "Wi-Fi LED Dimmer S100-NO-W1",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "brand": "S100-NO-W1 (производитель не установлен)",
+      "specs": "Одноцветный LED-диммер, DC 12–24 В, до 10 А; 120 Вт (12 В) / 240 Вт (24 В); Wi-Fi 2,4 ГГц",
+      "note": "Куплен для BTF-LIGHTING FCOB 24 В / 70 Вт. Контроллер S100-NO-W1 работает через Tuya — подтверждено пользователем.",
+      "tags": [
+        "спальня",
+        "LED"
+      ],
+      "addedAt": "2026-10-20",
+      "sku": "S100-NO-W1",
+      "details": [
+        {
+          "label": "Модель",
+          "value": "S100-NO-W1"
+        },
+        {
+          "label": "Вход",
+          "value": "DC 12–24 В"
+        },
+        {
+          "label": "Максимальный ток",
+          "value": "10 А"
+        },
+        {
+          "label": "Мощность при 12 В",
+          "value": "До 120 Вт"
+        },
+        {
+          "label": "Мощность при 24 В",
+          "value": "До 240 Вт"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц (надпись на корпусе)"
+        },
+        {
+          "label": "Рабочая температура",
+          "value": "−20…+60 °C"
+        },
+        {
+          "label": "Выходные клеммы",
+          "value": "Две пары +/−"
+        },
+        {
+          "label": "Лента",
+          "value": "BTF-LIGHTING FCOB, 24 В, 70 Вт (~2,92 А)"
+        },
+        {
+          "label": "Приложение",
+          "value": "Tuya (подтверждено работой устройства)"
+        }
+      ],
+      "related": [
+        "btf-fcob",
+        "visional-hb17",
+        "meanwell-lpv10024"
+      ],
+      "photo": "images/tuya-led-controller.jpg"
+    },
+    {
+      "id": "anza-microfibre8",
+      "name": "Anza Microfibre 8 мм",
+      "category": "Инструменты",
+      "subcategory": "Малярный инструмент",
+      "status": "Куплено",
+      "brand": "Anza",
+      "specs": "Малярный валик, микрофибра, ворс 8 мм",
+      "note": "Куплен малярный валик Anza Microfibre с ворсом 8 мм для окраски стен спальни.",
+      "tags": [
+        "спальня",
+        "покраска"
+      ],
+      "addedAt": "2026-10-20",
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Малярный валик"
+        },
+        {
+          "label": "Материал",
+          "value": "Микрофибра"
+        },
+        {
+          "label": "Длина ворса",
+          "value": "8 мм"
+        },
+        {
+          "label": "Назначение",
+          "value": "Окраска стен спальни"
+        }
+      ],
+      "photo": "images/anza-microfibre8.jpg"
+    },
+    {
+      "id": "orno-or-cr-282",
+      "name": "ORNO OR-CR-282",
+      "category": "Электрика и освещение",
+      "subcategory": "Датчики движения",
+      "status": "Куплено",
+      "brand": "ORNO",
+      "sku": "OR-CR-282",
+      "specs": "Миниатюрный микроволновый датчик движения, 230 В / 50 Гц; нагрузка до 1200 Вт, LED до 300 Вт; IP20",
+      "note": "Приобретён для прихожей. На упаковке указаны: угол обнаружения 360°/180°, дальность 2/5/8 м, порог освещённости 5/30/150/2000 лк, задержка отключения 5/30/90 с или 3/5/10 мин. Настройка DIP-переключателями. Гарантия на упаковке 5 лет. Данные переписаны с фотографий упаковки; монтаж и работоспособность пока не подтверждены.",
+      "tags": [
+        "прихожая",
+        "датчик движения"
+      ],
+      "addedAt": "2026-10-20",
+      "details": [
+        {
+          "label": "Питание",
+          "value": "230 В AC, 50 Гц"
+        },
+        {
+          "label": "Максимальная нагрузка",
+          "value": "1200 Вт"
+        },
+        {
+          "label": "Максимальная LED-нагрузка",
+          "value": "300 Вт"
+        },
+        {
+          "label": "Угол обнаружения",
+          "value": "360° / 180°"
+        },
+        {
+          "label": "Дальность",
+          "value": "2 / 5 / 8 м"
+        },
+        {
+          "label": "Порог освещённости",
+          "value": "5 / 30 / 150 / 2000 лк"
+        },
+        {
+          "label": "Задержка",
+          "value": "5 / 30 / 90 с; 3 / 5 / 10 мин"
+        },
+        {
+          "label": "Защита",
+          "value": "IP20"
+        },
+        {
+          "label": "Настройка",
+          "value": "DIP-переключатели"
+        },
+        {
+          "label": "Гарантия на упаковке",
+          "value": "5 лет"
+        }
+      ],
+      "photo": "images/orno-or-cr-282.jpg"
+    },
+    {
+      "id": "ikea-bilresa",
+      "name": "IKEA BILRESA",
+      "brand": "IKEA",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "sku": "706.178.72",
+      "price": "5 € (цена покупки в IKEA)",
+      "specs": "2 кнопки; Matter over Thread; 2 × AAA; 70 × 40 × 19 мм",
+      "details": [
+        {
+          "label": "Связь",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Питание",
+          "value": "2 × AAA"
+        },
+        {
+          "label": "Размеры",
+          "value": "70 × 40 × 19 мм"
+        },
+        {
+          "label": "Управление",
+          "value": "Свет, яркость, сцены; до 10 совместимых устройств"
+        },
+        {
+          "label": "Интеграция Matter",
+          "value": "Требуется совместимый Thread Border Router для подключения к Matter-системе"
+        }
+      ],
+      "note": "Отдельно приобретённый беспроводной пульт управления. Сопряжён с подсветкой зеркального шкафа IKEA FAXÄLVEN через систему SILVERGLANS; управление работает. Компонент можно использовать и в других совместимых системах IKEA. Zigbee не используется.",
+      "related": [
+        "ikea-faxalven",
+        "ikea-silverglans"
+      ],
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/bilresa-remote-control-white-smart-dual-button-70617872/",
+      "photo": "images/ikea-bilresa.jpg"
+    },
+    {
+      "id": "ikea-silverglans",
+      "name": "IKEA SILVERGLANS",
+      "category": "Электрика и освещение",
+      "subcategory": "Блоки питания",
+      "status": "В комплекте",
+      "brand": "IKEA",
+      "specs": "Драйвер подсветки зеркального шкафа FAXÄLVEN",
+      "note": "Электронный драйвер светодиодной подсветки IKEA. В данном случае входил в комплект зеркального шкафа FAXÄLVEN, установлен в ванной; подсветка работает с пультом BILRESA. Компонент относится к системе освещения, а не к мебели.",
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Драйвер светодиодной подсветки"
+        },
+        {
+          "label": "Комплектация",
+          "value": "Входит в FAXÄLVEN"
+        },
+        {
+          "label": "Максимальная мощность",
+          "value": "30 Вт"
+        },
+        {
+          "label": "КПД при полной нагрузке",
+          "value": "88 %"
+        }
+      ],
+      "tags": [
+        "ванная",
+        "подсветка"
+      ],
+      "related": [
+        "ikea-faxalven",
+        "ikea-bilresa"
+      ],
+      "sku": "104.747.72",
+      "sourceNote": "Официальная ссылка на комплект FAXÄLVEN, включающий драйвер SILVERGLANS. Ссылка ведёт на официальный комплект, а не отдельную страницу компонента.",
+      "manufacturerUrl": "https://www.ikea.com/lv/en/p/faxaelven-mirror-cabinet-w-built-in-lighting-oak-effect-s49516714/",
+      "photo": "images/ikea-silverglans.jpg"
+    },
+    {
+      "id": "ikea-myggspray",
+      "name": "IKEA MYGGSPRAY",
+      "category": "Электрика и освещение",
+      "subcategory": "Датчики движения",
+      "status": "Кандидат",
+      "brand": "IKEA",
+      "specs": "Беспроводной датчик движения, Matter over Thread, IP67, 2×AAA, ширина 40 мм",
+      "note": "Датчик движения для ванной, в составе системы подсветки IKEA зеркального шкафа FAXÄLVEN / SILVERGLANS. Планируется автоматическое включение подсветки при движении. Протокол связи — Matter over Thread, питание — 2×AAA.",
+      "tags": [
+        "IKEA",
+        "ванная",
+        "подсветка",
+        "датчик движения",
+        "Matter",
+        "Thread"
+      ],
+      "details": [
+        {
+          "label": "Протокол",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Защита",
+          "value": "IP67, помещение и улица"
+        },
+        {
+          "label": "Питание",
+          "value": "2×AAA, отдельно"
+        },
+        {
+          "label": "Размер",
+          "value": "Ширина 40 мм"
+        },
+        {
+          "label": "Цена IKEA Латвия",
+          "value": "7,99 € (проверено 22.10.2026)"
+        }
+      ],
+      "sku": "306.246.95",
+      "manufacturerUrl": "https://www.ikea.com/lv/ru/p/myggspray-besprovodnoy-datchik-dvizheniya-umnyy-dom-30624695/",
+      "related": [
+        "ikea-faxalven",
+        "ikea-silverglans",
+        "ikea-bilresa"
+      ],
+      "photo": "images/ikea-myggspray.jpg"
+    },
+    {
+      "id": "hansgrohe-logis-100",
+      "name": "hansgrohe Logis 100",
+      "category": "Сантехника",
+      "subcategory": "Смесители",
+      "status": "Куплено",
+      "brand": "hansgrohe",
+      "sku": "71100000",
+      "specs": "Смеситель для раковины, хром; излив 93 мм, вылет 108 мм, расход до 5 л/мин",
+      "note": "Куплен для раковины IKEA ORRSJÖN в ванной. При установке проверить совместимость донного клапана и сифона IKEA.",
+      "tags": [
+        "сантехника",
+        "смеситель",
+        "ванная",
+        "Logis"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "Logis 100"
+        },
+        {
+          "label": "Артикул",
+          "value": "71100000"
+        },
+        {
+          "label": "Покрытие",
+          "value": "Хром"
+        },
+        {
+          "label": "Высота излива",
+          "value": "93 мм"
+        },
+        {
+          "label": "Вылет излива",
+          "value": "108 мм"
+        },
+        {
+          "label": "Расход при 3 бар",
+          "value": "5 л/мин"
+        },
+        {
+          "label": "Подключение",
+          "value": "Шланги G 3/8"
+        },
+        {
+          "label": "Сливная арматура",
+          "value": "Клапан с тягой G 1¼, совместимость с IKEA требует проверки"
+        }
+      ],
+      "related": [
+        "ikea-orrsjon",
+        "ikea-rannilen",
+        "schell-comfort-049070699"
+      ],
+      "manufacturerUrl": "https://www.hansgrohe.com/articledetail-logis-single-lever-basin-mixer-100-with-pop-up-waste-set-71100000",
+      "photo": "images/hansgrohe-logis-100.png",
+      "addedAt": "2026-10-21"
+    },
+    {
+      "id": "schell-comfort-049070699",
+      "name": "SCHELL COMFORT 04 907 06 99",
+      "brand": "SCHELL",
+      "category": "Сантехника",
+      "subcategory": "Подключение и арматура",
+      "status": "Куплено",
+      "sku": "049070699",
+      "specs": "Угловой регулирующий вентиль, G 1/2″ × G 3/8″, хром, 2 шт.",
+      "note": "Куплены 2 угловых вентиля SCHELL для подключения смесителя hansgrohe Logis 100 в ванной. Приобретены в DEPO; точная цена покупки пока не указана. В комплекте удлинённый корпус и декоративная розетка. Исполнение без самоуплотняющейся резьбы ASAG.",
+      "tags": [
+        "ванная",
+        "угловой вентиль",
+        "запорная арматура",
+        "DEPO"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "SCHELL COMFORT 04 907 06 99"
+        },
+        {
+          "label": "Количество",
+          "value": "2 шт."
+        },
+        {
+          "label": "Вход",
+          "value": "DN 15, G 1/2″, наружная резьба"
+        },
+        {
+          "label": "Выход",
+          "value": "DN 10, G 3/8″, наружная резьба"
+        },
+        {
+          "label": "Поверхность",
+          "value": "Хром"
+        },
+        {
+          "label": "Ручка",
+          "value": "COMFORT"
+        },
+        {
+          "label": "Комплектация",
+          "value": "Удлинённый корпус, декоративная розетка Ø 54 мм"
+        },
+        {
+          "label": "Резьба ASAG",
+          "value": "Нет (без самоуплотнения)"
+        },
+        {
+          "label": "Класс шума",
+          "value": "I"
+        },
+        {
+          "label": "Страна производства",
+          "value": "Германия"
+        },
+        {
+          "label": "EAN",
+          "value": "4021163105292"
+        },
+        {
+          "label": "Магазин",
+          "value": "DEPO"
+        },
+        {
+          "label": "Цена за штуку",
+          "value": "5,34 € (DEPO)"
+        },
+        {
+          "label": "Стоимость 2 шт.",
+          "value": "10,68 €"
+        }
+      ],
+      "related": [
+        "hansgrohe-logis-100",
+        "ikea-orrsjon"
+      ],
+      "manufacturerUrl": "https://www.schell.eu/worldwide-en/products/regulating-angle-valves/angle-valves-special-angle-valves/details/artikel/049070699.html",
+      "price": "5,34 € / шт. (DEPO); 10,68 € за 2 шт.",
+      "photo": "images/schell-comfort-049070699.jpg",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "videx-gx53-track-kit-hallway",
+      "name": "VIDEX — трековая система GX53, 2 м + 4 светильника",
+      "category": "Электрика и освещение",
+      "subcategory": "Трековые системы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "Однофазная чёрная шина 2 м и 4 трековых светильника GX53, без ламп",
+      "price": "39,99 € (комплект)",
+      "note": "Куплено для прихожей в LEDveikals.lv. Комплект из 2-метровой однофазной шины и четырёх чёрных светильников GX53. Лампы куплены отдельно. По скриншоту заказа; монтаж не подтверждён.",
+      "tags": [
+        "прихожая",
+        "трек",
+        "GX53"
+      ],
+      "details": [
+        {
+          "label": "Комплект",
+          "value": "Шина 2 м + 4 светильника GX53"
+        },
+        {
+          "label": "Система",
+          "value": "1-фазная"
+        },
+        {
+          "label": "Цвет",
+          "value": "Чёрный"
+        },
+        {
+          "label": "Цена комплекта",
+          "value": "39,99 €"
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-8w-3000k-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/produktu-kategorijas/videx-3/1-fazu-sliezu-sistemas/",
+      "photo": "images/videx-gx53-track-kit-hallway.png",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "videx-gx53-8w-3000k-hallway",
+      "name": "VIDEX LED GX53 — 8 Вт, 3000 K",
+      "category": "Электрика и освещение",
+      "subcategory": "LED-лампы",
+      "status": "Куплено",
+      "brand": "VIDEX",
+      "specs": "4 лампы GX53, 8 Вт, 3000 K, 730 лм, угол 140°",
+      "price": "11,96 € за 4 шт. (2,99 €/шт.)",
+      "note": "Куплены для трековой системы прихожей в LEDveikals.lv. Четыре лампы по 2,99 €.",
+      "tags": [
+        "прихожая",
+        "GX53",
+        "3000K"
+      ],
+      "details": [
+        {
+          "label": "Количество",
+          "value": "4 шт."
+        },
+        {
+          "label": "Цоколь",
+          "value": "GX53"
+        },
+        {
+          "label": "Мощность",
+          "value": "8 Вт / лампа"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "3000 K"
+        },
+        {
+          "label": "Световой поток",
+          "value": "730 лм / лампа"
+        },
+        {
+          "label": "Угол света",
+          "value": "140°"
+        },
+        {
+          "label": "Цена",
+          "value": "2,99 € / шт.; 11,96 € за 4 шт."
+        },
+        {
+          "label": "Магазин",
+          "value": "LEDveikals.lv"
+        }
+      ],
+      "related": [
+        "videx-gx53-track-kit-hallway"
+      ],
+      "manufacturerUrl": "https://ledveikals.lv/tagi/gx53/",
+      "photo": "images/videx-gx53-8w-3000k-hallway.webp",
+      "addedAt": "2026-10-22"
+    },
+    {
+      "id": "emos-p3541",
+      "name": "EMOS P3541 — налобный фонарь",
+      "brand": "EMOS",
+      "category": "Инструменты",
+      "subcategory": "Фонари",
+      "status": "Кандидат",
+      "sku": "P3541",
+      "specs": "Налобный фонарь LED COB, до 380 лм, аккумулятор Li-Pol 1200 мА·ч",
+      "note": "Тест автоматического импорта FINDS V2. Модель рассматривается; покупка не подтверждена. Фотография с сервера производителя EMOS.",
+      "tags": [
+        "налобный фонарь",
+        "COB",
+        "P3541"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "P3541"
+        },
+        {
+          "label": "EAN",
+          "value": "8592920112571"
+        },
+        {
+          "label": "Световой поток",
+          "value": "до 380 лм"
+        },
+        {
+          "label": "Аккумулятор",
+          "value": "Li-Pol, 1200 мА·ч"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.emos.lv/cob-led-uzladejams-galvas-lukturis-p3541-380-lm-30-m-li-pol-1200-mah",
+      "addedAt": "2026-10-22",
+      "photo": "images/emos-p3541.jpg"
+    },
+    {
+      "id": "metabo-powermaxx-bs-12-bl-q-601749500",
+      "name": "Metabo PowerMaxx BS 12 BL Q — шуруповёрт 12 В",
+      "brand": "Metabo",
+      "category": "Инструменты",
+      "subcategory": "Шуруповёрты",
+      "status": "Выбрано",
+      "sku": "601749500",
+      "specs": "12 В, бесщёточный двигатель, 38/20 Н·м, быстросменный патрон Quick; комплект 2×2 А·ч, LC 40, кейс",
+      "note": "Выбранная модель шуруповёрта. Покупка не подтверждена. Фотография точного комплекта по EAN 4061792217843 (Toolnation).",
+      "tags": [
+        "шуруповёрт",
+        "12 В",
+        "бесщёточный",
+        "Quick"
+      ],
+      "details": [
+        {
+          "label": "Артикул",
+          "value": "601749500"
+        },
+        {
+          "label": "EAN",
+          "value": "4061792217843"
+        },
+        {
+          "label": "Крутящий момент",
+          "value": "38/20 Н·м"
+        },
+        {
+          "label": "Комплектация",
+          "value": "2×2 А·ч, LC 40, кейс"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.metabo.com/",
+      "addedAt": "2026-10-22",
+      "photo": "images/metabo-powermaxx-bs-12-bl-q-601749500.jpg"
+    },
+    {
+      "id": "olfa-l5-al",
+      "name": "OLFA L5-AL — нож 18 мм",
+      "brand": "OLFA",
+      "category": "Инструменты",
+      "subcategory": "Ножи",
+      "status": "Выбрано",
+      "sku": "L5-AL",
+      "specs": "18 мм, серия X-Design, автоматическая фиксация лезвия Auto-Lock, нескользящая рукоятка, металлический наконечник, лезвие Excel Black LBB",
+      "note": "Выбранный строительный нож OLFA L5-AL. Покупка не подтверждена. Фото точной модели с официального сайта OLFA.",
+      "tags": [
+        "нож",
+        "18 мм",
+        "Auto-Lock",
+        "X-Design"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "L5-AL"
+        },
+        {
+          "label": "Ширина лезвия",
+          "value": "18 мм"
+        },
+        {
+          "label": "Фиксация",
+          "value": "Auto-Lock"
+        },
+        {
+          "label": "Комплектное лезвие",
+          "value": "Excel Black LBB"
+        }
+      ],
+      "related": [],
+      "manufacturerUrl": "https://www.olfa.co.jp/en/products/376.html",
+      "addedAt": "2026-10-23",
+      "photo": "images/olfa-l5-al.jpg"
+    }
+  ],
+  "subcategories": {
+    "Сантехника": [
+      "Раковины",
+      "Смесители",
+      "Подключение и арматура",
+      "Душевая зона"
+    ]
+  }
+}
+).then(data=>{catalogSubcategories=data.subcategories||{};const raw=(data.products||[]).map((p,i)=>({...p,_catalogIndex:i})).filter(p=>['Куплено','Выбрано','В комплекте','Кандидат'].includes(p.status));const names=new Map(raw.map(p=>[p.id,p.name]));products=raw.map(p=>({...p,related:(p.related||[]).filter(id=>names.has(id))}));$('recent').innerHTML=raw.filter(p=>p.addedAt).sort((a,b)=>b.addedAt.localeCompare(a.addedAt)).slice(0,3).map(p=>'<button data-recent="'+esc(p.name)+'">'+esc(p.name)+'</button>').join('');$('stats').textContent=products.length+' карточки · '+products.filter(p=>p.status==='Куплено').length+' куплено · '+products.filter(p=>p.status==='Выбрано').length+' выбрано · '+products.filter(p=>p.status==='В комплекте').length+' в комплекте';menu();setNav(false);render()}).catch(e=>{$('cards').innerHTML='<p role="alert">Не удалось загрузить каталог. Проверьте подключение.</p>';console.error(e)});if('serviceWorker' in navigator&&location.protocol==='https:')window.addEventListener('load',()=>{if(location.hostname==='raw.githack.com'){navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.filter(r=>r.scope.startsWith(location.origin+location.pathname.replace(/[^/]*$/,''))).map(r=>r.unregister()))).catch(console.error);if('caches' in window)caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('finds-library-')).map(k=>caches.delete(k)))).catch(console.error)}else navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).catch(console.error)});
+</script></body></html>
