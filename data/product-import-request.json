@@ -1,0 +1,42 @@
+{
+  "product": {
+    "id": "olfa-l5-al",
+    "name": "OLFA L5-AL — нож 18 мм",
+    "brand": "OLFA",
+    "category": "Инструменты",
+    "subcategory": "Ножи",
+    "status": "Выбрано",
+    "sku": "L5-AL",
+    "specs": "18 мм, серия X-Design, автоматическая фиксация лезвия Auto-Lock, нескользящая рукоятка, металлический наконечник, лезвие Excel Black LBB",
+    "note": "Выбранный строительный нож OLFA L5-AL. Покупка не подтверждена. Фото точной модели с официального сайта OLFA.",
+    "tags": [
+      "нож",
+      "18 мм",
+      "Auto-Lock",
+      "X-Design"
+    ],
+    "details": [
+      {
+        "label": "Модель",
+        "value": "L5-AL"
+      },
+      {
+        "label": "Ширина лезвия",
+        "value": "18 мм"
+      },
+      {
+        "label": "Фиксация",
+        "value": "Auto-Lock"
+      },
+      {
+        "label": "Комплектное лезвие",
+        "value": "Excel Black LBB"
+      }
+    ],
+    "related": [],
+    "manufacturerUrl": "https://www.olfa.co.jp/en/products/376.html",
+    "addedAt": "2026-10-23"
+  },
+  "image_url": "https://www.olfa.co.jp/en/wordpress/wp-content/uploads/1586832574L5-AL_1.jpg",
+  "image_verified": true
+}
