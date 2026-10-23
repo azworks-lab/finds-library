@@ -11,6 +11,7 @@ on:
       - 'data/products.json'
       - 'index.html'
       - 'images/**'
+      - 'data/product-update-request.json'
   workflow_dispatch:
 permissions:
   contents: write
