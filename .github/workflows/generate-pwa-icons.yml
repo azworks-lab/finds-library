@@ -1,9 +1,9 @@
-name: Generate PWA icons
+name: Generate FINDS PWA icons
 on:
   workflow_dispatch:
   push:
-    paths:
-      - '.github/workflows/generate-pwa-icons.yml'
+    branches: [fix-pwa-icon-refresh-20261023]
+    paths: [.github/workflows/generate-pwa-icons.yml]
 permissions:
   contents: write
 jobs:
@@ -11,27 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Create PNG icons
+        with:
+          ref: fix-pwa-icon-refresh-20261023
+      - name: Generate PNG icons from approved FINDS mark
         run: |
-          python3 -m pip install --quiet pillow
-          python3 - <<'PY'
-          from PIL import Image, ImageDraw
-          for size in (192,512):
-              scale=4
-              s=size*scale
-              im=Image.new('RGB',(s,s),'#101827')
-              d=ImageDraw.Draw(im)
-              w=lambda n:round(n*s/512)
-              d.line([(w(142),w(264)),(w(219),w(341)),(w(370),w(172))],fill='#b8d7ff',width=w(39),joint='curve')
-              for x,y in [(142,264),(219,341),(370,172)]:
-                  rad=w(19)
-                  d.ellipse((w(x)-rad,w(y)-rad,w(x)+rad,w(y)+rad),fill='#b8d7ff')
-              d.line([(w(138),w(120)),(w(248),w(120))],fill='#7896bd',width=w(18))
-              im.resize((size,size),Image.Resampling.LANCZOS).save('icon-'+str(size)+'.png')
+          python -m pip install --quiet cairosvg
+          python - <<'PY'
+          import cairosvg
+          for size in (192, 512):
+              cairosvg.svg2png(url='finds-mark.svg',write_to=f'icon-{size}.png',output_width=size,output_height=size)
           PY
-      - name: Commit icons
+      - name: Commit generated icons
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add icon-192.png icon-512.png
-          git diff --cached --quiet || (git commit -m "Add installable PWA PNG icons [skip ci]" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "fix(pwa): add raster FINDS icons from approved SVG"
+            git push
+          fi
