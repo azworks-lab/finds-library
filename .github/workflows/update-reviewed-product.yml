@@ -2,7 +2,7 @@ name: Update reviewed FINDS product
 on:
   push:
     branches:
-      - test/logis-update-import
+      - main
     paths:
       - 'data/product-update-request.json'
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   actions: write
 jobs:
   update:
-    if: github.ref == 'refs/heads/test/logis-update-import'
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
