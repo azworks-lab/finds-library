@@ -1,11 +1,9 @@
 name: Test existing FINDS product update
 on:
   push:
-    branches:
-      - test/logis-update-import
+    branches: [test/logis-update-import]
     paths:
       - 'scripts/update_reviewed_product.py'
-      - 'data/product-update-request.json'
       - '.github/workflows/test-logis-update.yml'
   workflow_dispatch:
 permissions:
@@ -15,38 +13,42 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Check original Logis card and product count
-        run: |
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          data=json.loads(Path("data/products.json").read_text())
-          assert len(data["products"])==30
-          p=[p for p in data["products"] if p["id"]=="hansgrohe-logis-100"]
-          assert len(p)==1 and p[0]["photo"]=="images/hansgrohe-logis-100.png"
-          print("Baseline: 30 products, one Logis, photo exists")
-          PY
-      - name: Run update
-        run: python3 scripts/update_reviewed_product.py
-      - name: Validate all cards and photos
+      - name: Validate existing catalog
         run: python3 scripts/validate_catalog.py
-      - name: Verify update did not create duplicates or modify other products
+      - name: Test real HTTPS photo download in isolated workspace
         run: |
           python3 - <<'PY'
-          import json,subprocess
-          from pathlib import Path
-          before=json.loads(subprocess.check_output(["git","show","HEAD:data/products.json"]))
-          after=json.loads(Path("data/products.json").read_text())
-          assert len(before["products"])==len(after["products"])==30
-          old={p["id"]:p for p in before["products"]}
-          new={p["id"]:p for p in after["products"]}
-          assert old.keys()==new.keys()
-          for pid in old:
-              if pid=="hansgrohe-logis-100":
-                  assert {k:v for k,v in old[pid].items() if k!="photo"}=={k:v for k,v in new[pid].items() if k!="photo"}
-                  assert new[pid]["photo"]=="images/hansgrohe-logis-100-updated.png"
-                  assert Path(new[pid]["photo"]).read_bytes()==Path("images/hansgrohe-logis-100.png").read_bytes()
-              else:
-                  assert old[pid]==new[pid]
-          print("PASS: downloaded Logis photo; no duplicates or other card changes")
+          import json, pathlib, shutil, subprocess, tempfile
+          from urllib.request import urlopen
+          root=pathlib.Path.cwd()
+          before=json.loads((root/'data/products.json').read_text(encoding='utf-8'))
+          assert len(before['products'])==30
+          product=next(p for p in before['products'] if p['id']=='hansgrohe-logis-100')
+          assert product['photo']=='images/hansgrohe-logis-100.png'
+          with tempfile.TemporaryDirectory() as temp:
+              work=pathlib.Path(temp)
+              (work/'data').mkdir()
+              (work/'images').mkdir()
+              (work/'scripts').mkdir()
+              shutil.copy2(root/'data/products.json',work/'data/products.json')
+              shutil.copy2(root/'scripts/update_reviewed_product.py',work/'scripts/update_reviewed_product.py')
+              url='https://raw.githubusercontent.com/azworks-lab/finds-library/main/images/hansgrohe-logis-100.png'
+              request={'id':'hansgrohe-logis-100','changes':{'note':product['note']},'image_url':url,'image_verified':True}
+              (work/'data/product-update-request.json').write_text(json.dumps(request),encoding='utf-8')
+              subprocess.run(['python3',str(work/'scripts/update_reviewed_product.py')],check=True)
+              after=json.loads((work/'data/products.json').read_text(encoding='utf-8'))
+              assert len(after['products'])==len(before['products'])
+              old={p['id']:p for p in before['products']}
+              new={p['id']:p for p in after['products']}
+              assert old.keys()==new.keys()
+              for pid in old:
+                  if pid!='hansgrohe-logis-100':
+                      assert old[pid]==new[pid],f'Unexpected modification: {pid}'
+              updated=new['hansgrohe-logis-100']
+              assert updated['photo']=='images/hansgrohe-logis-100-updated.png'
+              assert {k:v for k,v in updated.items() if k!='photo'}=={k:v for k,v in product.items() if k!='photo'}
+              photo=work/updated['photo']
+              assert photo.is_file() and photo.stat().st_size>1000
+              assert photo.read_bytes()==(root/'images/hansgrohe-logis-100.png').read_bytes()
+              print('PASS: actual HTTPS download, 30 products preserved, no duplicates or unrelated changes')
           PY
