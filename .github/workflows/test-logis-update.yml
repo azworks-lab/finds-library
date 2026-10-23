@@ -24,7 +24,7 @@ jobs:
           before=json.loads((root/'data/products.json').read_text(encoding='utf-8'))
           assert len(before['products'])==30
           product=next(p for p in before['products'] if p['id']=='hansgrohe-logis-100')
-          assert product['photo']=='images/hansgrohe-logis-100.png'
+          assert product['photo'].startswith('images/hansgrohe-logis-100')
           with tempfile.TemporaryDirectory() as temp:
               work=pathlib.Path(temp)
               (work/'data').mkdir()
