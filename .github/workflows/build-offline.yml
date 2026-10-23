@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - finds-v2-image-test
+      - test/logis-update-import
       - main
     paths:
       - '.github/workflows/build-offline.yml'
@@ -15,7 +16,7 @@ permissions:
   contents: write
 jobs:
   build:
-    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/main')
+    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/test/logis-update-import' || github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
