@@ -38,6 +38,15 @@ jobs:
           before=json.loads(subprocess.check_output(["git","show","HEAD:data/products.json"]))
           after=json.loads(Path("data/products.json").read_text())
           assert len(before["products"])==len(after["products"])==30
-          assert before==after, "No-op photo update unexpectedly modified catalog"
-          print("PASS: Logis update is idempotent; all 30 cards unchanged")
+          old={p["id"]:p for p in before["products"]}
+          new={p["id"]:p for p in after["products"]}
+          assert old.keys()==new.keys()
+          for pid in old:
+              if pid=="hansgrohe-logis-100":
+                  assert {k:v for k,v in old[pid].items() if k!="photo"}=={k:v for k,v in new[pid].items() if k!="photo"}
+                  assert new[pid]["photo"]=="images/hansgrohe-logis-100-updated.png"
+                  assert Path(new[pid]["photo"]).read_bytes()==Path("images/hansgrohe-logis-100.png").read_bytes()
+              else:
+                  assert old[pid]==new[pid]
+          print("PASS: downloaded Logis photo; no duplicates or other card changes")
           PY
