@@ -1,10 +1,23 @@
 // FINDS: network-first updates with offline shell fallback.
-const CACHE="finds-library-v2-auto-update-20261023-b";
+const CACHE="finds-library-v2-offline-images-20261023";
 const SHELL=["./","./index.html","./manifest.webmanifest","./icon.svg","./finds-mark.svg","./data/products.json","./version.json"];
 self.addEventListener("install",event=>{
  event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);
   await cache.addAll(SHELL.map(path=>new Request(path,{cache:"reload"})));
+  try {
+   const response=await fetch(new Request("./data/products.json",{cache:"no-store"}));
+   if(response.ok){
+    const catalog=await response.json();
+    const photos=[...new Set((catalog.products||[]).map(p=>p.photo).filter(p=>typeof p==="string"&&p.startsWith("images/")))];
+    await Promise.all(photos.map(async path=>{
+     try{
+      const image=await fetch(new Request("./"+path,{cache:"reload"}));
+      if(image.ok)await cache.put("./"+path,image);
+     }catch(error){console.warn("Offline image cache:",path,error)}
+    }));
+   }
+  }catch(error){console.warn("Offline image precache:",error)}
   await self.skipWaiting();
  })());
 });
