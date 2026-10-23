@@ -1,0 +1,43 @@
+name: Test existing FINDS product update
+on:
+  push:
+    branches:
+      - test/logis-update-import
+    paths:
+      - 'scripts/update_reviewed_product.py'
+      - 'data/product-update-request.json'
+      - '.github/workflows/test-logis-update.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check original Logis card and product count
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path("data/products.json").read_text())
+          assert len(data["products"])==30
+          p=[p for p in data["products"] if p["id"]=="hansgrohe-logis-100"]
+          assert len(p)==1 and p[0]["photo"]=="images/hansgrohe-logis-100.png"
+          print("Baseline: 30 products, one Logis, photo exists")
+          PY
+      - name: Run update
+        run: python3 scripts/update_reviewed_product.py
+      - name: Validate all cards and photos
+        run: python3 scripts/validate_catalog.py
+      - name: Verify update did not create duplicates or modify other products
+        run: |
+          python3 - <<'PY'
+          import json,subprocess
+          from pathlib import Path
+          before=json.loads(subprocess.check_output(["git","show","HEAD:data/products.json"]))
+          after=json.loads(Path("data/products.json").read_text())
+          assert len(before["products"])==len(after["products"])==30
+          assert before==after, "No-op photo update unexpectedly modified catalog"
+          print("PASS: Logis update is idempotent; all 30 cards unchanged")
+          PY
