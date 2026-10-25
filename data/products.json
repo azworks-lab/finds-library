@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "products": [
     {
       "id": "ikea-angsjon-100",
@@ -1491,10 +1491,10 @@
       "brand": "OLFA",
       "category": "Инструменты",
       "subcategory": "Ножи",
-      "status": "Выбрано",
+      "status": "Куплено",
       "sku": "L5-AL",
       "specs": "18 мм, серия X-Design, автоматическая фиксация лезвия Auto-Lock, нескользящая рукоятка, металлический наконечник, лезвие Excel Black LBB",
-      "note": "Выбранный строительный нож OLFA L5-AL. Покупка не подтверждена. Фото точной модели с официального сайта OLFA.",
+      "note": "Куплен в ABC за 10,65 € по карте клиента.",
       "tags": [
         "нож",
         "18 мм",
@@ -1518,13 +1518,26 @@
         {
           "label": "Комплектное лезвие",
           "value": "Excel Black LBB"
+        },
+        {
+          "label": "Магазин",
+          "value": "ABC"
+        },
+        {
+          "label": "Цена покупки",
+          "value": "10,65 €"
+        },
+        {
+          "label": "Условия цены",
+          "value": "По карте клиента"
         }
       ],
       "related": [],
       "manufacturerUrl": "https://www.olfa.co.jp/en/products/376.html",
       "addedAt": "2026-10-23",
       "photo": "images/olfa-l5-al.jpg",
-      "preview": "Нож 18 мм с автофиксацией лезвия Auto-Lock"
+      "preview": "Нож 18 мм с автофиксацией лезвия Auto-Lock",
+      "price": 10.65
     },
     {
       "id": "knipex-cobra-87-01-180",
