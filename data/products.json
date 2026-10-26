@@ -1,7 +1,71 @@
 {
   "version": "2.0",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "products": [
+    {
+      "id": "sonoff-m5-3c-86m",
+      "name": "SONOFF M5 Matter — M5-3C-86M",
+      "brand": "SONOFF",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "sku": "M5-3C-86M",
+      "specs": "Настенный трёхклавишный Wi-Fi выключатель, Matter, формат 86 × 86 мм, цвет Dim Gray",
+      "note": "Куплен в Eltek.lv за 18,76 €. Для спальни: потолочный свет, бра и COB LED-лента. Сценарная работа с Tuya через Google Home подлежит проверке после установки.",
+      "tags": [
+        "умный дом",
+        "Sonoff",
+        "Matter",
+        "Wi-Fi",
+        "спальня",
+        "выключатель",
+        "управление освещением"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "M5-3C-86M"
+        },
+        {
+          "label": "Клавиши",
+          "value": "3"
+        },
+        {
+          "label": "Формат",
+          "value": "86 × 86 мм"
+        },
+        {
+          "label": "Цвет",
+          "value": "Dim Gray"
+        },
+        {
+          "label": "Протоколы",
+          "value": "Wi-Fi 2,4 ГГц, Matter"
+        },
+        {
+          "label": "EAN",
+          "value": "6920075743739"
+        },
+        {
+          "label": "Магазин",
+          "value": "Eltek.lv"
+        },
+        {
+          "label": "Цена покупки",
+          "value": "18,76 €"
+        }
+      ],
+      "related": [
+        "sonoff-m5",
+        "sonoff-minir4",
+        "sonoff-r5",
+        "tuya-led-controller"
+      ],
+      "productUrl": "https://eltek.lv/sonoff-m5-3c-86m-matter-wifi.5044160.p",
+      "manufacturerUrl": "https://sonoff.tech/en-uk/products/sonoff-switchman-smart-wall-switch-m5-matter",
+      "addedAt": "2026-10-26",
+      "preview": "Трёхклавишный Matter-выключатель для спальни, антрацит"
+    },
     {
       "id": "ikea-angsjon-100",
       "name": "IKEA ÄNGSJÖN",
