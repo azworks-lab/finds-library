@@ -1,5 +1,5 @@
 // FINDS: network-first updates with offline shell fallback.
-const CACHE="finds-library-v2-offline-images-20261023";
+const CACHE="finds-library-v2-price-compare-20261027";
 const SHELL=["./","./index.html","./manifest.webmanifest","./icon.svg","./finds-mark.svg","./data/products.json","./version.json"];
 self.addEventListener("install",event=>{
  event.waitUntil((async()=>{
