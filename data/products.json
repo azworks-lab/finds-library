@@ -11,7 +11,7 @@
       "status": "Куплено",
       "sku": "M5-3C-86M",
       "specs": "Настенный трёхклавишный Wi-Fi выключатель, Matter, формат 86 × 86 мм, цвет Dim Gray",
-      "note": "Куплен в Eltek.lv за 18,76 €. Для спальни: потолочный свет, бра и COB LED-лента. Сценарная работа с Tuya через Google Home подлежит проверке после установки.",
+      "note": "Оплачен в Doberman.lv за 17,50 €. Для спальни: потолочный свет, бра и COB LED-лента. Сценарная работа с Tuya через Google Home подлежит проверке после установки.",
       "tags": [
         "умный дом",
         "Sonoff",
@@ -48,11 +48,11 @@
         },
         {
           "label": "Магазин",
-          "value": "Eltek.lv"
+          "value": "Doberman.lv"
         },
         {
           "label": "Цена покупки",
-          "value": "18,76 €"
+          "value": "17,50 €"
         }
       ],
       "related": [
@@ -61,7 +61,7 @@
         "sonoff-r5",
         "tuya-led-controller"
       ],
-      "productUrl": "https://eltek.lv/sonoff-m5-3c-86m-matter-wifi.5044160.p",
+      "productUrl": "https://doberman.lv/lv/p/tv-audio-video-foto-optika/spelu-konsoles-un-piederumi/microsoft-xbox-one-speles/710058-sonoff-m5-3c-86m-matter-wifi-szary",
       "manufacturerUrl": "https://sonoff.tech/en-uk/products/sonoff-switchman-smart-wall-switch-m5-matter",
       "addedAt": "2026-10-26",
       "preview": "Трёхклавишный Matter-выключатель для спальни, антрацит",
