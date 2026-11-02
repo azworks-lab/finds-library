@@ -1,0 +1,30 @@
+name: FINDS i18n smoke checks
+on:
+  push:
+    branches: [feature/ru-en-localization]
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JSON and translation coverage
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const base=JSON.parse(fs.readFileSync('data/products.json'));
+          const en=JSON.parse(fs.readFileSync('data/products.en.json'));
+          const missing=base.products.filter(p=>!en.products[p.id]?.name||!en.products[p.id]?.preview);
+          if(missing.length)throw Error('Missing EN translations: '+missing.map(p=>p.id).join(', '));
+          console.log('English name and preview coverage:',base.products.length);
+          const html=fs.readFileSync('index.html','utf8');
+          for(const token of ['id="ruLanguage"','id="enLanguage"','function setLanguage','function bilingualSearch','data/products.en.json'])if(!html.includes(token))throw Error('Missing: '+token);
+          const sw=fs.readFileSync('sw.js','utf8');
+          if(!sw.includes('data/products.en.json'))throw Error('EN translations absent from offline cache');
+          const build=JSON.parse(fs.readFileSync('version.json')).build;
+          if(!html.includes("PAGE_BUILD='"+build+"'"))throw Error('PWA build mismatch');
+          console.log('Static smoke checks passed');
+          NODE
