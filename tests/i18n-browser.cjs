@@ -37,7 +37,7 @@ const assert=require('node:assert/strict');
    assert.equal(errors.length,0,'JS errors after English reload: '+errors.join('; '));
    const timing=await page.evaluate(()=>({domReady:Math.round(performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd||0),transfer:performance.getEntriesByType('resource').reduce((n,r)=>n+(r.transferSize||0),0)}));
    await page.locator('#filterOpen').click();
-   await page.locator('#status').selectOption({label:'Куплено'});
+   await page.locator('#status').selectOption('Куплено');
    await page.locator('#applyFilters').click();
    const filtered=await page.locator('#cards .card').count();
    assert(filtered>0&&filtered<=before,'Status filter invalid');
