@@ -12,11 +12,59 @@
     },
     "ikea-angsjon-100": {
       "name": "IKEA ÄNGSJÖN",
-      "preview": "Bathroom vanity cabinet"
+      "preview": "Bathroom vanity cabinet",
+      "specs": "Wall-mounted light oak vanity cabinet, two drawers, 100 × 48 × 63 cm",
+      "note": "Purchased and mounted in the bathroom next to the left wall return. The mounting rail's top edge is 680 mm above the floor. The ORRSJÖN washbasin is positioned on top. Final sealing and drainage still need separate verification.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "100 × 48 × 63 cm"
+        },
+        {
+          "label": "Construction",
+          "value": "Wall-mounted cabinet, two drawers"
+        },
+        {
+          "label": "Finish",
+          "value": "Light oak"
+        },
+        {
+          "label": "Installation",
+          "value": "Wall-mounted; mounting rail top 680 mm above floor"
+        },
+        {
+          "label": "Warranty",
+          "value": "10 years"
+        }
+      ]
     },
     "ikea-orrsjon": {
       "name": "IKEA ORRSJÖN",
-      "preview": "White ceramic washbasin, 102 × 49 cm"
+      "preview": "White ceramic washbasin, 102 × 49 cm",
+      "specs": "White ceramic washbasin, 102 × 49 cm; vanity set article 096.296.47",
+      "note": "Purchased for the ÄNGSJÖN cabinet. The basin has been positioned on the cabinet; an approximately 8–12 mm gap at the left wall return was sealed with silicone. The nearby wall drain outlet complicated the waste connection.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "102 × 49 cm"
+        },
+        {
+          "label": "Material",
+          "value": "White ceramic"
+        },
+        {
+          "label": "Washbasin article number",
+          "value": "705.450.69"
+        },
+        {
+          "label": "Vanity set article number",
+          "value": "096.296.47"
+        },
+        {
+          "label": "Exact IKEA dimensions",
+          "value": "102.3 × 49.4 × 6.4 cm"
+        }
+      ]
     },
     "ikea-faxalven": {
       "name": "IKEA FAXÄLVEN",
@@ -24,7 +72,23 @@
     },
     "ikea-rannilen": {
       "name": "IKEA RÄNNILEN",
-      "preview": "Washbasin drain trap"
+      "preview": "Washbasin drain trap",
+      "specs": "Waste trap for the IKEA ORRSJÖN washbasin",
+      "note": "Trap supplied with the ORRSJÖN washbasin. During installation, the nearby wall drain outlet left insufficient room for the connection. Finding a short adapter remains unresolved.",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "205.545.32"
+        },
+        {
+          "label": "Purpose",
+          "value": "Waste trap for IKEA ORRSJÖN washbasin"
+        },
+        {
+          "label": "Installation constraint",
+          "value": "Limited clearance to the wall drain outlet"
+        }
+      ]
     },
     "kanlux-alren": {
       "name": "Kanlux ALREN R DTL-B",
@@ -100,7 +164,39 @@
     },
     "ikea-myggspray": {
       "name": "IKEA MYGGSPRAY",
-      "preview": "Wireless Matter motion sensor, IP67"
+      "preview": "Wireless Matter motion sensor, IP67",
+      "specs": "Wireless motion sensor, Matter over Thread, IP67, two AAA batteries, 40 mm wide",
+      "note": "Purchased at IKEA for €7.99. Intended for bathroom motion-triggered control of the FAXÄLVEN / SILVERGLANS lighting.",
+      "details": [
+        {
+          "label": "Protocol",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP67; indoor and outdoor use"
+        },
+        {
+          "label": "Power",
+          "value": "2 × AAA batteries, sold separately"
+        },
+        {
+          "label": "Size",
+          "value": "40 mm wide"
+        },
+        {
+          "label": "IKEA Latvia price",
+          "value": "€7.99 (checked 22 October 2026)"
+        },
+        {
+          "label": "Retailer",
+          "value": "IKEA"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€7.99"
+        }
+      ]
     },
     "hansgrohe-logis-100": {
       "name": "hansgrohe Logis 100",
@@ -196,7 +292,27 @@
     },
     "knipex-cobra-87-01-180": {
       "name": "Knipex Cobra 87 01 180",
-      "preview": "180 mm adjustable water pump pliers"
+      "preview": "180 mm adjustable water pump pliers",
+      "specs": "180 mm adjustable water-pump pliers with push-button adjustment; nut capacity up to 36 mm, pipe capacity up to Ø42 mm",
+      "note": "Purchased for domestic plumbing work, including taps, flexible supply hoses and fittings. The discussed product link was from Inserv; the actual purchase amount is unconfirmed.",
+      "details": [
+        {
+          "label": "Length",
+          "value": "180 mm"
+        },
+        {
+          "label": "Maximum nut capacity",
+          "value": "36 mm"
+        },
+        {
+          "label": "Maximum pipe capacity",
+          "value": "Ø42 mm"
+        },
+        {
+          "label": "Mechanism",
+          "value": "Push-button adjustment, serrated jaws"
+        }
+      ]
     },
     "modee-ml-flws4000k50w-a2n": {
       "name": "Modee A2 — portable 50 W LED work light",
