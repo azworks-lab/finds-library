@@ -30,3 +30,18 @@ jobs:
           if(!html.includes("PAGE_BUILD='"+build+"'"))throw Error('PWA build mismatch');
           const start=html.indexOf('<script>'),end=html.indexOf('</script>',start);if(start<0||end<0)throw Error('Inline script not found');const script=html.slice(start+8,end);new (require('vm').Script)(script,{filename:'index-inline.js'});console.log('JavaScript syntax and static smoke checks passed');
           NODE
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Chromium test runtime
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Test desktop and mobile UI
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/finds-server.log 2>&1 &
+          node tests/i18n-browser.cjs
