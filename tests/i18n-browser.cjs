@@ -36,6 +36,16 @@ const assert=require('node:assert/strict');
    await page.reload();assert.equal(await page.locator('html').getAttribute('lang'),'en','English preference not persisted');
    assert.equal(errors.length,0,'JS errors after English reload: '+errors.join('; '));
    const timing=await page.evaluate(()=>({domReady:Math.round(performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd||0),transfer:performance.getEntriesByType('resource').reduce((n,r)=>n+(r.transferSize||0),0)}));
+   await page.locator('#filterOpen').click();
+   await page.locator('#status').selectOption({label:'Куплено'});
+   await page.locator('#applyFilters').click();
+   const filtered=await page.locator('#cards .card').count();
+   assert(filtered>0&&filtered<=before,'Status filter invalid');
+   await page.locator('#filterOpen').click();
+   await page.locator('#resetAll').click();
+   await page.locator('#applyFilters').click();
+   assert.equal(await page.locator('#cards .card').count(),before,'Reset did not restore all products');
+   console.log('PASS filters',width,'filtered',filtered);
    console.log('PASS viewport',width,'products',before,'DOM ready ms',timing.domReady,'resource transfer bytes',timing.transfer);
    if(width===390){
     await page.goto('http://127.0.0.1:8765/');
