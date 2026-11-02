@@ -89,9 +89,9 @@ const translations={en:{'Личная библиотека товаров':'Pers
 function translate(value){return language==='en'?(translations.en[value]||value):value}
 function setLanguage(value){language=value;try{localStorage.setItem('finds-language',value)}catch(e){}document.documentElement.lang=value;document.getElementById('ruLanguage').setAttribute('aria-pressed',String(value==='ru'));document.getElementById('enLanguage').setAttribute('aria-pressed',String(value==='en'));document.querySelector('.brand small').textContent=translate('Личная библиотека товаров');document.getElementById('search').placeholder=translate('Поиск по библиотеке…');document.getElementById('filterOpen').textContent='☷ '+translate('Фильтры');document.getElementById('newSort').textContent=translate('Новые');if(products.length){menu();render()}}
 document.getElementById('ruLanguage').onclick=()=>setLanguage('ru');document.getElementById('enLanguage').onclick=()=>setLanguage('en');
-let catalogSubcategories={},products=[]
+let catalogSubcategories={},products=[];
+setLanguage(language)
 const $=id=>document.getElementById(id);let focusName=null,historyStack=[];let category='Все',subcategory='Все',activeCategory='Все',expandedGroup='',navExpanded=false;
-setLanguage(language);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function recentCollapse(){if(!$('recent').hidden){$('recent').hidden=true;$('toggleRecent').textContent='⌄';$('toggleRecent').setAttribute('aria-expanded','false');$('toggleRecent').setAttribute('aria-label','Показать последние товары')}}
 function detailsFor(p){
