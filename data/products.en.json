@@ -108,11 +108,79 @@
     },
     "sonoff-m5": {
       "name": "Sonoff M5",
-      "preview": "Smart wall switch"
+      "preview": "Smart wall switch",
+      "specs": "Smart wall switch",
+      "note": "Purchased for the bedroom entrance. During installation checks, no working neutral conductor was found in the wall box. The device powered on but did not switch the lighting. The wiring requires diagnosis.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Smart wall switch"
+        },
+        {
+          "label": "Purpose",
+          "value": "Bedroom entrance lighting control"
+        },
+        {
+          "label": "Installation",
+          "value": "No working neutral found in wall box; wiring needs checking"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz, IEEE 802.11 b/g/n"
+        },
+        {
+          "label": "Power supply",
+          "value": "100–240 V AC, 50/60 Hz"
+        },
+        {
+          "label": "Variants",
+          "value": "1/2/3 gangs; 80/86/120 form factors depend on version"
+        }
+      ]
     },
     "sonoff-r5": {
       "name": "Sonoff R5",
-      "preview": "Wireless scene controller"
+      "preview": "Wireless scene controller",
+      "specs": "Two wireless scene controllers",
+      "note": "Two wireless controllers purchased for bedside lighting control, one on each side of the bed.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Wireless remote controller"
+        },
+        {
+          "label": "Quantity",
+          "value": "2 units"
+        },
+        {
+          "label": "Location",
+          "value": "Both sides of the bed"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Battery",
+          "value": "2 × CR2032"
+        },
+        {
+          "label": "Buttons",
+          "value": "6"
+        },
+        {
+          "label": "Dimensions",
+          "value": "86 × 86 × 13.5 mm"
+        },
+        {
+          "label": "Control",
+          "value": "eWeLink-Remote; single, double and long press"
+        }
+      ]
     },
     "sonoff-minir4": {
       "name": "Sonoff MINIR4",
@@ -120,7 +188,23 @@
     },
     "schneider-sedna": {
       "name": "Schneider Electric Sedna",
-      "preview": "Electrical sockets and frames"
+      "preview": "Electrical sockets and frames",
+      "specs": "Anthracite wall sockets and frames",
+      "note": "Schneider Sedna sockets and frames in anthracite purchased for the bedroom. Exact article numbers of individual components have not yet been recorded.",
+      "details": [
+        {
+          "label": "Series",
+          "value": "Sedna"
+        },
+        {
+          "label": "Color",
+          "value": "Anthracite"
+        },
+        {
+          "label": "Components",
+          "value": "Sockets and frames; individual article numbers not yet recorded"
+        }
+      ]
     },
     "jokari-super4": {
       "name": "Jokari Super 4 Plus",
@@ -128,7 +212,19 @@
     },
     "stadler-erik": {
       "name": "Stadler Form Erik E-020E",
-      "preview": "Electric heater"
+      "preview": "Electric heater",
+      "specs": "Freestanding supplementary heater for a bedroom of approximately 12 m²",
+      "note": "Selected as the primary supplementary heating option for a bedroom of approximately 12 m². Earlier reference price was around €111; purchase not confirmed.",
+      "details": [
+        {
+          "label": "Purpose",
+          "value": "Supplementary heating for an approximately 12 m² bedroom"
+        },
+        {
+          "label": "Reference price",
+          "value": "Approx. €111 (historical estimate, not a purchase price)"
+        }
+      ]
     },
     "bosch-smv4hax71e": {
       "name": "Bosch SMV4HAX71E",
@@ -148,7 +244,27 @@
     },
     "anza-microfibre8": {
       "name": "Anza Microfibre 8 mm",
-      "preview": "Paint roller"
+      "preview": "Paint roller",
+      "specs": "Microfibre paint roller with 8 mm pile",
+      "note": "Anza Microfibre roller with 8 mm pile purchased for painting the bedroom walls.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Paint roller"
+        },
+        {
+          "label": "Material",
+          "value": "Microfibre"
+        },
+        {
+          "label": "Pile length",
+          "value": "8 mm"
+        },
+        {
+          "label": "Purpose",
+          "value": "Painting bedroom walls"
+        }
+      ]
     },
     "orno-or-cr-282": {
       "name": "ORNO OR-CR-282",
@@ -160,7 +276,27 @@
     },
     "ikea-silverglans": {
       "name": "IKEA SILVERGLANS",
-      "preview": "LED lighting driver"
+      "preview": "LED lighting driver",
+      "specs": "LED lighting driver for the FAXÄLVEN mirror cabinet",
+      "note": "IKEA electronic LED driver supplied with the FAXÄLVEN mirror cabinet installed in the bathroom. The lighting works with the BILRESA remote. This component belongs to the lighting system rather than the furniture.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "LED lighting driver"
+        },
+        {
+          "label": "Included with",
+          "value": "FAXÄLVEN"
+        },
+        {
+          "label": "Maximum power",
+          "value": "30 W"
+        },
+        {
+          "label": "Efficiency at full load",
+          "value": "88%"
+        }
+      ]
     },
     "ikea-myggspray": {
       "name": "IKEA MYGGSPRAY",
