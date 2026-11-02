@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-29",
+  "updated": "2026-11-02",
   "products": [
     {
       "id": "dewalt-dch263p1-qw",
@@ -1711,6 +1711,64 @@
       "addedAt": "2026-10-24",
       "photo": "images/knipex-cobra-87-01-180.jpg",
       "preview": "Переставные сантехнические клещи, 180 мм"
+    },
+    {
+      "id": "modee-ml-flws4000k50w-a2n",
+      "name": "Modee A2 — переносной LED-прожектор 50 Вт",
+      "brand": "Modee",
+      "category": "Инструменты",
+      "subcategory": "Рабочее освещение",
+      "status": "Выбрано",
+      "sku": "ML-FLWS4000K50W-A2N",
+      "specs": "50 Вт, 4000 K, заявлено 6500 лм, CRI >80, угол 120°, IP65, 220–240 В, кабель 1,5 м, регулируемая складная подставка",
+      "note": "Выбран 02.11.2026 для ремонта квартиры. Не куплен. Цена Latelektro 22,50 € по скриншоту; самовывоз в Риге. Заявленный световой поток не проверялся независимыми измерениями.",
+      "tags": [
+        "прожектор",
+        "рабочее освещение",
+        "LED",
+        "переносной",
+        "сетевой",
+        "складная подставка"
+      ],
+      "details": [
+        {
+          "label": "Питание",
+          "value": "220–240 В"
+        },
+        {
+          "label": "Мощность",
+          "value": "50 Вт"
+        },
+        {
+          "label": "Цветовая температура",
+          "value": "4000 K"
+        },
+        {
+          "label": "Световой поток (заявлено)",
+          "value": "6500 лм"
+        },
+        {
+          "label": "Защита",
+          "value": "IP65"
+        },
+        {
+          "label": "Кабель",
+          "value": "1,5 м"
+        },
+        {
+          "label": "Магазин",
+          "value": "Latelektro, Рига"
+        },
+        {
+          "label": "Цена выбора",
+          "value": "22,50 €"
+        }
+      ],
+      "related": [],
+      "productUrl": "https://latelektro.lv/produkti/apgaismojums/led-prozektori/1/4999/parnesajams-led-smd-prozektors-50w-6500lm-ip65-melns-4000k-b-stylebackground-color-rgb255-255-102modee-b",
+      "addedAt": "2026-11-02",
+      "preview": "Сетевой прожектор 4000 K на регулируемой складной подставке",
+      "price": 22.5
     }
   ],
   "subcategories": {
