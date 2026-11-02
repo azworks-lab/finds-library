@@ -43,7 +43,6 @@ const assert=require('node:assert/strict');
    assert(filtered>0&&filtered<=before,'Status filter invalid');
    await page.locator('#filterOpen').click();
    await page.locator('#resetAll').click();
-   await page.locator('#applyFilters').click();
    assert.equal(await page.locator('#cards .card').count(),before,'Reset did not restore all products');
    console.log('PASS filters',width,'filtered',filtered);
    console.log('PASS viewport',width,'products',before,'DOM ready ms',timing.domReady,'resource transfer bytes',timing.transfer);
