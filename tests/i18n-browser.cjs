@@ -33,10 +33,11 @@ const assert=require('node:assert/strict');
    console.log('PASS viewport',width,'products',before);
    if(width===390){
     await page.goto('http://127.0.0.1:8765/');
-    await page.evaluate(async()=>{await navigator.serviceWorker.ready;const reg=await navigator.serviceWorker.getRegistration();await reg?.update()});
+    await page.waitForFunction(()=>navigator.serviceWorker.controller!==null,{timeout:15000}).catch(()=>{});
+    await page.evaluate(async()=>{const reg=await navigator.serviceWorker.getRegistration();if(!reg)throw Error('PWA service worker not registered');await Promise.race([navigator.serviceWorker.ready,new Promise((_,reject)=>setTimeout(()=>reject(Error('Service worker activation timeout')),20000))])});
     await page.reload();await page.locator('#cards .card').first().waitFor();
     await context.setOffline(true);
-    await page.reload({waitUntil:'domcontentloaded'});
+    await page.reload({waitUntil:'domcontentloaded',timeout:15000});
     await page.locator('#cards .card').first().waitFor({timeout:12000});
     assert.equal(await page.locator('html').getAttribute('lang'),'en','Offline language preference lost');
     assert.equal(errors.length,0,'Offline JS errors: '+errors.join('; '));
