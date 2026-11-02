@@ -4,11 +4,71 @@
   "products": {
     "dewalt-dch263p1-qw": {
       "name": "DeWalt DCH263P1-QW — cordless rotary hammer",
-      "preview": "Brushless 18 V SDS-Plus rotary hammer, 3 J"
+      "preview": "Brushless 18 V SDS-Plus rotary hammer, 3 J",
+      "specs": "Cordless 18 V XR SDS-Plus rotary hammer with brushless motor and 3.0 J impact energy; kit includes one 5 Ah battery, charger and case",
+      "note": "Selected for occasional concrete work. Purchase not confirmed. Jobbi.lv offer: €261.82 including VAT, free collection or €5 delivery (offer price, not purchase price).",
+      "details": [
+        {
+          "label": "Kit model",
+          "value": "DCH263P1-QW"
+        },
+        {
+          "label": "Impact energy",
+          "value": "3.0 J"
+        },
+        {
+          "label": "Power",
+          "value": "18 V XR"
+        },
+        {
+          "label": "Kit contents",
+          "value": "1 × 5 Ah battery, charger, case"
+        },
+        {
+          "label": "Jobbi.lv offer",
+          "value": "€261.82 incl. VAT; free collection"
+        }
+      ]
     },
     "sonoff-m5-3c-86m": {
       "name": "SONOFF M5 Matter — M5-3C-86M",
-      "preview": "Three-gang Matter wall switch, dark gray"
+      "preview": "Three-gang Matter wall switch, dark gray",
+      "specs": "Three-gang Wi-Fi wall switch with Matter, 86 × 86 mm, Dim Gray",
+      "note": "Planned bedroom control: ceiling lights, wall lights and COB LED strip. Tuya control through Google Home needs checking after installation.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "M5-3C-86M"
+        },
+        {
+          "label": "Gangs",
+          "value": "3"
+        },
+        {
+          "label": "Size",
+          "value": "86 × 86 mm"
+        },
+        {
+          "label": "Color",
+          "value": "Dim Gray"
+        },
+        {
+          "label": "Protocols",
+          "value": "2.4 GHz Wi-Fi, Matter"
+        },
+        {
+          "label": "EAN",
+          "value": "6920075743739"
+        },
+        {
+          "label": "Retailer",
+          "value": "Doberman.lv"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€17.50"
+        }
+      ]
     },
     "ikea-angsjon-100": {
       "name": "IKEA ÄNGSJÖN",
@@ -68,7 +128,47 @@
     },
     "ikea-faxalven": {
       "name": "IKEA FAXÄLVEN",
-      "preview": "Illuminated mirror cabinet, light oak, 100 cm"
+      "preview": "Illuminated mirror cabinet, light oak, 100 cm",
+      "specs": "Light oak mirror cabinet, 100 × 15 × 95 cm, with SILVERGLANS lighting",
+      "note": "Purchased and installed in the bathroom beside the left wall return. SILVERGLANS lighting driver was included. BILRESA wireless remote was purchased separately, paired and works. Both lighting components are linked products in the electrical section.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "100 × 15 × 95 cm"
+        },
+        {
+          "label": "Finish",
+          "value": "Light oak"
+        },
+        {
+          "label": "Lighting",
+          "value": "SILVERGLANS included"
+        },
+        {
+          "label": "Control",
+          "value": "IKEA BILRESA wireless remote, paired"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "1630 lm"
+        },
+        {
+          "label": "Power consumption",
+          "value": "26.8 W"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K"
+        },
+        {
+          "label": "Lighting ingress protection",
+          "value": "IP44"
+        },
+        {
+          "label": "Warranty",
+          "value": "10 years"
+        }
+      ]
     },
     "ikea-rannilen": {
       "name": "IKEA RÄNNILEN",
@@ -92,11 +192,99 @@
     },
     "kanlux-alren": {
       "name": "Kanlux ALREN R DTL-B",
-      "preview": "Recessed ceiling light fitting"
+      "preview": "Recessed ceiling light fitting",
+      "specs": "Six recessed black GU10 ceiling light fittings",
+      "note": "Six fittings purchased for the bedroom ceiling at €4.49 each. Matte black housing; GU10 bulbs installed separately.",
+      "details": [
+        {
+          "label": "Quantity",
+          "value": "6 units"
+        },
+        {
+          "label": "Color",
+          "value": "Black"
+        },
+        {
+          "label": "Lamp base",
+          "value": "GU10"
+        },
+        {
+          "label": "Unit price",
+          "value": "€4.49"
+        },
+        {
+          "label": "Article number",
+          "value": "26757"
+        },
+        {
+          "label": "EAN",
+          "value": "5905339267573"
+        },
+        {
+          "label": "Dimensions",
+          "value": "99 × 99 × 25 mm"
+        },
+        {
+          "label": "Cutout",
+          "value": "80 × 80 mm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP20"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Two axes, 60°/60°"
+        },
+        {
+          "label": "Maximum lamp power",
+          "value": "10 W"
+        },
+        {
+          "label": "Lamp type",
+          "value": "GU10"
+        }
+      ]
     },
     "btf-fcob": {
       "name": "BTF-LIGHTING FCOB",
-      "preview": "24 V COB LED strip"
+      "preview": "24 V COB LED strip",
+      "specs": "2700 K, 5 m, 528 LEDs/m, CRI 90+, 24 V, 70 W, 10 mm wide",
+      "note": "Purchased for accent lighting in the bedroom curtain recess. Rated 70 W at 24 V (approximately 2.92 A). Mean Well LPV-100-24 power supply selected; S100-NO-W1 controller purchased.",
+      "details": [
+        {
+          "label": "Voltage",
+          "value": "24 V DC"
+        },
+        {
+          "label": "Rated power",
+          "value": "70 W per 5 m"
+        },
+        {
+          "label": "Length",
+          "value": "5 m"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K"
+        },
+        {
+          "label": "LED density",
+          "value": "528 LEDs/m"
+        },
+        {
+          "label": "Color rendering",
+          "value": "CRI 90+"
+        },
+        {
+          "label": "Width",
+          "value": "10 mm"
+        },
+        {
+          "label": "Calculated current",
+          "value": "Approx. 2.92 A"
+        }
+      ]
     },
     "visional-hb17": {
       "name": "VISIONAL HB-17.5×7M",
@@ -116,7 +304,43 @@
     },
     "visional-hb158x158": {
       "name": "VISIONAL HB-15.8×15.8CM — corner LED profile",
-      "preview": "45° corner LED profile, 3 m, with diffuser"
+      "preview": "45° corner LED profile, 3 m, with diffuser",
+      "specs": "Corner aluminum profile, 3000 × 15.8 × 15.8 mm, milky diffuser",
+      "note": "Purchased from Euroled. CM model and EAN 4752233009676 confirmed by photos of the original packaging. Check the mounting channel width before fitting the 10 mm LED strip.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "HB-15.8×15.8CM"
+        },
+        {
+          "label": "Euroled article",
+          "value": "05-716"
+        },
+        {
+          "label": "EAN",
+          "value": "4752233009676"
+        },
+        {
+          "label": "Dimensions",
+          "value": "3000 × 15.8 × 15.8 mm"
+        },
+        {
+          "label": "LED channel width",
+          "value": "9 mm — may not fit a 10 mm strip"
+        },
+        {
+          "label": "Diffuser",
+          "value": "Milky white"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€8.85 for 3 m"
+        },
+        {
+          "label": "Retailer",
+          "value": "Euroled.lv"
+        }
+      ]
     },
     "sonoff-m5": {
       "name": "Sonoff M5",
@@ -196,7 +420,39 @@
     },
     "sonoff-minir4": {
       "name": "Sonoff MINIR4",
-      "preview": "Compact smart lighting relays, 4 units"
+      "preview": "Compact smart lighting relays, 4 units",
+      "specs": "Four compact relays: two for ceiling lighting and two for bedside wall lights",
+      "note": "Four MINIR4 relays purchased: two for ceiling lighting and two for bedside wall lights in the bedroom. Reset and operation checks were carried out during setup; final wiring arrangement is to be confirmed on site.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Compact lighting relay"
+        },
+        {
+          "label": "Quantity",
+          "value": "4 units"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Power supply",
+          "value": "100–240 V AC, 50/60 Hz"
+        },
+        {
+          "label": "Maximum load",
+          "value": "10 A resistive"
+        },
+        {
+          "label": "Dimensions",
+          "value": "39.5 × 33 × 16.8 mm"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz, IEEE 802.11 b/g/n"
+        }
+      ]
     },
     "schneider-sedna": {
       "name": "Schneider Electric Sedna",
