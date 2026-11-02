@@ -852,7 +852,43 @@
     },
     "hansgrohe-logis-100": {
       "name": "hansgrohe Logis 100",
-      "preview": "Chrome washbasin faucet, 93 mm spout"
+      "preview": "Chrome washbasin faucet, 93 mm spout",
+      "specs": "Chrome basin mixer tap; spout height 93 mm, projection 108 mm, flow rate up to 5 L/min",
+      "note": "Purchased for the IKEA ORRSJÖN bathroom washbasin. Check compatibility of the pop-up waste valve with the IKEA trap during installation.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "Logis 100"
+        },
+        {
+          "label": "Article number",
+          "value": "71100000"
+        },
+        {
+          "label": "Finish",
+          "value": "Chrome"
+        },
+        {
+          "label": "Spout height",
+          "value": "93 mm"
+        },
+        {
+          "label": "Spout projection",
+          "value": "108 mm"
+        },
+        {
+          "label": "Flow rate at 3 bar",
+          "value": "5 L/min"
+        },
+        {
+          "label": "Connection",
+          "value": "G 3/8 hoses"
+        },
+        {
+          "label": "Waste fitting",
+          "value": "G 1¼ pop-up waste; IKEA compatibility requires checking"
+        }
+      ]
     },
     "schell-comfort-049070699": {
       "name": "SCHELL COMFORT 04 907 06 99",
@@ -860,7 +896,31 @@
     },
     "videx-gx53-track-kit-hallway": {
       "name": "VIDEX — GX53 track lighting kit, 2 m + 4 fixtures",
-      "preview": "Black GX53 track, 2 m, four fixtures"
+      "preview": "Black GX53 track, 2 m, four fixtures",
+      "specs": "Black 2 m single-circuit track with four GX53 track fixtures, bulbs not included",
+      "note": "Purchased for the hallway from LEDveikals.lv. Kit contains a 2 m single-circuit track and four black GX53 fixtures. Bulbs purchased separately. Based on order screenshot; installation not confirmed.",
+      "details": [
+        {
+          "label": "Kit",
+          "value": "2 m track + 4 GX53 fixtures"
+        },
+        {
+          "label": "System",
+          "value": "Single-circuit"
+        },
+        {
+          "label": "Color",
+          "value": "Black"
+        },
+        {
+          "label": "Kit price",
+          "value": "€39.99"
+        },
+        {
+          "label": "Retailer",
+          "value": "LEDveikals.lv"
+        }
+      ]
     },
     "videx-gx53-8w-3000k-hallway": {
       "name": "VIDEX LED GX53 — 8 W, 3000 K",
