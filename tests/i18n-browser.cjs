@@ -44,6 +44,15 @@ const assert=require('node:assert/strict');
    await page.locator('#filterOpen').click();
    await page.locator('#resetAll').click();
    assert.equal(await page.locator('#cards .card').count(),before,'Reset did not restore all products');
+   const linked=page.locator('#cards .card').filter({has:page.locator('[data-related]')}).first();
+   await linked.locator('summary').click();
+   const linkedName=await linked.locator('.title').innerText();
+   await linked.locator('[data-related]').first().click();
+   assert.equal(await page.locator('#cards .card').count(),1,'Related-product navigation did not focus');
+   await page.locator('#goBack').click();
+   assert.equal(await page.locator('#cards .card').count(),before,'In-app back did not restore catalog');
+   assert.equal(await page.locator('#cards .card').filter({hasText:linkedName}).count()>0,true,'Original product missing after in-app back');
+   console.log('PASS related navigation',width);
    console.log('PASS filters',width,'filtered',filtered);
    console.log('PASS viewport',width,'products',before,'DOM ready ms',timing.domReady,'resource transfer bytes',timing.transfer);
    if(width===390){
