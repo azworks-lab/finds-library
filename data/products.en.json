@@ -1,0 +1,1186 @@
+{
+  "version": 1,
+  "language": "en",
+  "products": {
+    "dewalt-dch263p1-qw": {
+      "name": "DeWalt DCH263P1-QW — cordless rotary hammer",
+      "preview": "Brushless 18 V SDS-Plus rotary hammer, 3 J",
+      "specs": "Cordless 18 V XR SDS-Plus rotary hammer with brushless motor and 3.0 J impact energy; kit includes one 5 Ah battery, charger and case",
+      "note": "Selected for occasional concrete work. Purchase not confirmed. Jobbi.lv offer: €261.82 including VAT, free collection or €5 delivery (offer price, not purchase price).",
+      "details": [
+        {
+          "label": "Kit model",
+          "value": "DCH263P1-QW"
+        },
+        {
+          "label": "Impact energy",
+          "value": "3.0 J"
+        },
+        {
+          "label": "Power",
+          "value": "18 V XR"
+        },
+        {
+          "label": "Kit contents",
+          "value": "1 × 5 Ah battery, charger, case"
+        },
+        {
+          "label": "Jobbi.lv offer",
+          "value": "€261.82 incl. VAT; free collection"
+        }
+      ]
+    },
+    "sonoff-m5-3c-86m": {
+      "name": "SONOFF M5 Matter — M5-3C-86M",
+      "preview": "Three-gang Matter wall switch, dark gray",
+      "specs": "Three-gang Wi-Fi wall switch with Matter, 86 × 86 mm, Dim Gray",
+      "note": "Planned bedroom control: ceiling lights, wall lights and COB LED strip. Tuya control through Google Home needs checking after installation.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "M5-3C-86M"
+        },
+        {
+          "label": "Gangs",
+          "value": "3"
+        },
+        {
+          "label": "Size",
+          "value": "86 × 86 mm"
+        },
+        {
+          "label": "Color",
+          "value": "Dim Gray"
+        },
+        {
+          "label": "Protocols",
+          "value": "2.4 GHz Wi-Fi, Matter"
+        },
+        {
+          "label": "EAN",
+          "value": "6920075743739"
+        },
+        {
+          "label": "Retailer",
+          "value": "Doberman.lv"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€17.50"
+        }
+      ]
+    },
+    "ikea-angsjon-100": {
+      "name": "IKEA ÄNGSJÖN",
+      "preview": "Bathroom vanity cabinet",
+      "specs": "Wall-mounted light oak vanity cabinet, two drawers, 100 × 48 × 63 cm",
+      "note": "Purchased and mounted in the bathroom next to the left wall return. The mounting rail's top edge is 680 mm above the floor. The ORRSJÖN washbasin is positioned on top. Final sealing and drainage still need separate verification.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "100 × 48 × 63 cm"
+        },
+        {
+          "label": "Construction",
+          "value": "Wall-mounted cabinet, two drawers"
+        },
+        {
+          "label": "Finish",
+          "value": "Light oak"
+        },
+        {
+          "label": "Installation",
+          "value": "Wall-mounted; mounting rail top 680 mm above floor"
+        },
+        {
+          "label": "Warranty",
+          "value": "10 years"
+        }
+      ]
+    },
+    "ikea-orrsjon": {
+      "name": "IKEA ORRSJÖN",
+      "preview": "White ceramic washbasin, 102 × 49 cm",
+      "specs": "White ceramic washbasin, 102 × 49 cm; vanity set article 096.296.47",
+      "note": "Purchased for the ÄNGSJÖN cabinet. The basin has been positioned on the cabinet; an approximately 8–12 mm gap at the left wall return was sealed with silicone. The nearby wall drain outlet complicated the waste connection.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "102 × 49 cm"
+        },
+        {
+          "label": "Material",
+          "value": "White ceramic"
+        },
+        {
+          "label": "Washbasin article number",
+          "value": "705.450.69"
+        },
+        {
+          "label": "Vanity set article number",
+          "value": "096.296.47"
+        },
+        {
+          "label": "Exact IKEA dimensions",
+          "value": "102.3 × 49.4 × 6.4 cm"
+        }
+      ]
+    },
+    "ikea-faxalven": {
+      "name": "IKEA FAXÄLVEN",
+      "preview": "Illuminated mirror cabinet, light oak, 100 cm",
+      "specs": "Light oak mirror cabinet, 100 × 15 × 95 cm, with SILVERGLANS lighting",
+      "note": "Purchased and installed in the bathroom beside the left wall return. SILVERGLANS lighting driver was included. BILRESA wireless remote was purchased separately, paired and works. Both lighting components are linked products in the electrical section.",
+      "details": [
+        {
+          "label": "Dimensions",
+          "value": "100 × 15 × 95 cm"
+        },
+        {
+          "label": "Finish",
+          "value": "Light oak"
+        },
+        {
+          "label": "Lighting",
+          "value": "SILVERGLANS included"
+        },
+        {
+          "label": "Control",
+          "value": "IKEA BILRESA wireless remote, paired"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "1630 lm"
+        },
+        {
+          "label": "Power consumption",
+          "value": "26.8 W"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K"
+        },
+        {
+          "label": "Lighting ingress protection",
+          "value": "IP44"
+        },
+        {
+          "label": "Warranty",
+          "value": "10 years"
+        }
+      ]
+    },
+    "ikea-rannilen": {
+      "name": "IKEA RÄNNILEN",
+      "preview": "Washbasin drain trap",
+      "specs": "Waste trap for the IKEA ORRSJÖN washbasin",
+      "note": "Trap supplied with the ORRSJÖN washbasin. During installation, the nearby wall drain outlet left insufficient room for the connection. Finding a short adapter remains unresolved.",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "205.545.32"
+        },
+        {
+          "label": "Purpose",
+          "value": "Waste trap for IKEA ORRSJÖN washbasin"
+        },
+        {
+          "label": "Installation constraint",
+          "value": "Limited clearance to the wall drain outlet"
+        }
+      ]
+    },
+    "kanlux-alren": {
+      "name": "Kanlux ALREN R DTL-B",
+      "preview": "Recessed ceiling light fitting",
+      "specs": "Six recessed black GU10 ceiling light fittings",
+      "note": "Six fittings purchased for the bedroom ceiling at €4.49 each. Matte black housing; GU10 bulbs installed separately.",
+      "details": [
+        {
+          "label": "Quantity",
+          "value": "6 units"
+        },
+        {
+          "label": "Color",
+          "value": "Black"
+        },
+        {
+          "label": "Lamp base",
+          "value": "GU10"
+        },
+        {
+          "label": "Unit price",
+          "value": "€4.49"
+        },
+        {
+          "label": "Article number",
+          "value": "26757"
+        },
+        {
+          "label": "EAN",
+          "value": "5905339267573"
+        },
+        {
+          "label": "Dimensions",
+          "value": "99 × 99 × 25 mm"
+        },
+        {
+          "label": "Cutout",
+          "value": "80 × 80 mm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP20"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Two axes, 60°/60°"
+        },
+        {
+          "label": "Maximum lamp power",
+          "value": "10 W"
+        },
+        {
+          "label": "Lamp type",
+          "value": "GU10"
+        }
+      ]
+    },
+    "btf-fcob": {
+      "name": "BTF-LIGHTING FCOB",
+      "preview": "24 V COB LED strip",
+      "specs": "2700 K, 5 m, 528 LEDs/m, CRI 90+, 24 V, 70 W, 10 mm wide",
+      "note": "Purchased for accent lighting in the bedroom curtain recess. Rated 70 W at 24 V (approximately 2.92 A). Mean Well LPV-100-24 power supply selected; S100-NO-W1 controller purchased.",
+      "details": [
+        {
+          "label": "Voltage",
+          "value": "24 V DC"
+        },
+        {
+          "label": "Rated power",
+          "value": "70 W per 5 m"
+        },
+        {
+          "label": "Length",
+          "value": "5 m"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K"
+        },
+        {
+          "label": "LED density",
+          "value": "528 LEDs/m"
+        },
+        {
+          "label": "Color rendering",
+          "value": "CRI 90+"
+        },
+        {
+          "label": "Width",
+          "value": "10 mm"
+        },
+        {
+          "label": "Calculated current",
+          "value": "Approx. 2.92 A"
+        }
+      ]
+    },
+    "visional-hb17": {
+      "name": "VISIONAL HB-17.5×7M",
+      "preview": "LED aluminum profile",
+      "specs": "Straight aluminum LED strip profile",
+      "note": "Purchased previously. This is a straight profile; a separate VISIONAL corner profile was selected and purchased for the curtain recess. Retained as a separate purchase.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Straight aluminum LED strip profile"
+        },
+        {
+          "label": "Consideration",
+          "value": "A different bracket or angled profile may be needed for 45° directional light"
+        }
+      ]
+    },
+    "visional-hb158x158": {
+      "name": "VISIONAL HB-15.8×15.8CM — corner LED profile",
+      "preview": "45° corner LED profile, 3 m, with diffuser",
+      "specs": "Corner aluminum profile, 3000 × 15.8 × 15.8 mm, milky diffuser",
+      "note": "Purchased from Euroled. CM model and EAN 4752233009676 confirmed by photos of the original packaging. Check the mounting channel width before fitting the 10 mm LED strip.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "HB-15.8×15.8CM"
+        },
+        {
+          "label": "Euroled article",
+          "value": "05-716"
+        },
+        {
+          "label": "EAN",
+          "value": "4752233009676"
+        },
+        {
+          "label": "Dimensions",
+          "value": "3000 × 15.8 × 15.8 mm"
+        },
+        {
+          "label": "LED channel width",
+          "value": "9 mm — may not fit a 10 mm strip"
+        },
+        {
+          "label": "Diffuser",
+          "value": "Milky white"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€8.85 for 3 m"
+        },
+        {
+          "label": "Retailer",
+          "value": "Euroled.lv"
+        }
+      ]
+    },
+    "sonoff-m5": {
+      "name": "Sonoff M5",
+      "preview": "Smart wall switch",
+      "specs": "Smart wall switch",
+      "note": "Purchased for the bedroom entrance. During installation checks, no working neutral conductor was found in the wall box. The device powered on but did not switch the lighting. The wiring requires diagnosis.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Smart wall switch"
+        },
+        {
+          "label": "Purpose",
+          "value": "Bedroom entrance lighting control"
+        },
+        {
+          "label": "Installation",
+          "value": "No working neutral found in wall box; wiring needs checking"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz, IEEE 802.11 b/g/n"
+        },
+        {
+          "label": "Power supply",
+          "value": "100–240 V AC, 50/60 Hz"
+        },
+        {
+          "label": "Variants",
+          "value": "1/2/3 gangs; 80/86/120 form factors depend on version"
+        }
+      ]
+    },
+    "sonoff-r5": {
+      "name": "Sonoff R5",
+      "preview": "Wireless scene controller",
+      "specs": "Two wireless scene controllers",
+      "note": "Two wireless controllers purchased for bedside lighting control, one on each side of the bed.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Wireless remote controller"
+        },
+        {
+          "label": "Quantity",
+          "value": "2 units"
+        },
+        {
+          "label": "Location",
+          "value": "Both sides of the bed"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Battery",
+          "value": "2 × CR2032"
+        },
+        {
+          "label": "Buttons",
+          "value": "6"
+        },
+        {
+          "label": "Dimensions",
+          "value": "86 × 86 × 13.5 mm"
+        },
+        {
+          "label": "Control",
+          "value": "eWeLink-Remote; single, double and long press"
+        }
+      ]
+    },
+    "sonoff-minir4": {
+      "name": "Sonoff MINIR4",
+      "preview": "Compact smart lighting relays, 4 units",
+      "specs": "Four compact relays: two for ceiling lighting and two for bedside wall lights",
+      "note": "Four MINIR4 relays purchased: two for ceiling lighting and two for bedside wall lights in the bedroom. Reset and operation checks were carried out during setup; final wiring arrangement is to be confirmed on site.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Compact lighting relay"
+        },
+        {
+          "label": "Quantity",
+          "value": "4 units"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink"
+        },
+        {
+          "label": "Power supply",
+          "value": "100–240 V AC, 50/60 Hz"
+        },
+        {
+          "label": "Maximum load",
+          "value": "10 A resistive"
+        },
+        {
+          "label": "Dimensions",
+          "value": "39.5 × 33 × 16.8 mm"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz, IEEE 802.11 b/g/n"
+        }
+      ]
+    },
+    "schneider-sedna": {
+      "name": "Schneider Electric Sedna",
+      "preview": "Electrical sockets and frames",
+      "specs": "Anthracite wall sockets and frames",
+      "note": "Schneider Sedna sockets and frames in anthracite purchased for the bedroom. Exact article numbers of individual components have not yet been recorded.",
+      "details": [
+        {
+          "label": "Series",
+          "value": "Sedna"
+        },
+        {
+          "label": "Color",
+          "value": "Anthracite"
+        },
+        {
+          "label": "Components",
+          "value": "Sockets and frames; individual article numbers not yet recorded"
+        }
+      ]
+    },
+    "jokari-super4": {
+      "name": "Jokari Super 4 Plus",
+      "preview": "Automatic wire stripper, 0.2–6 mm²",
+      "specs": "Automatic wire stripper for 0.2–6.0 mm² conductors; 6–15 mm strip-length stop; side cutter up to 2.5 mm²; replaceable blades",
+      "note": "Super 4 Plus (article 20050) selected for wire stripping. Purchase not confirmed; target budget up to €25.",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "20050"
+        },
+        {
+          "label": "Wire cross-section",
+          "value": "0.2–6.0 mm²"
+        },
+        {
+          "label": "Strip-length stop",
+          "value": "6–15 mm"
+        },
+        {
+          "label": "Side cutter",
+          "value": "Up to 2.5 mm²"
+        },
+        {
+          "label": "Blades",
+          "value": "Replaceable"
+        }
+      ]
+    },
+    "stadler-erik": {
+      "name": "Stadler Form Erik E-020E",
+      "preview": "Electric heater",
+      "specs": "Freestanding supplementary heater for a bedroom of approximately 12 m²",
+      "note": "Selected as the primary supplementary heating option for a bedroom of approximately 12 m². Earlier reference price was around €111; purchase not confirmed.",
+      "details": [
+        {
+          "label": "Purpose",
+          "value": "Supplementary heating for an approximately 12 m² bedroom"
+        },
+        {
+          "label": "Reference price",
+          "value": "Approx. €111 (historical estimate, not a purchase price)"
+        }
+      ]
+    },
+    "bosch-smv4hax71e": {
+      "name": "Bosch SMV4HAX71E",
+      "preview": "Built-in dishwasher",
+      "specs": "Built-in dishwasher",
+      "note": "Selected for further price monitoring. It is important that a large cooking pot insert approximately 27 cm in diameter and 18 cm high can fit; clearance for this item has not yet been verified.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Built-in dishwasher"
+        },
+        {
+          "label": "Selection requirement",
+          "value": "Fit an approximately 27 cm diameter, 18 cm high pot insert; unverified"
+        }
+      ]
+    },
+    "ikea-gu10": {
+      "name": "IKEA SOLHETTA GU10",
+      "preview": "GU10 LED bulb, 345 lm, 2700 K",
+      "specs": "Dimmable GU10 bulb, 345 lm, 2.5 W; 2700 K and CRI 90 (previously noted); energy class C, 25,000 h lifetime",
+      "note": "Purchased IKEA bulbs. Model LED2315R3 and 2.5 W / 345 lm confirmed by IKEA screenshot. 2700 K and CRI 90 were recorded earlier.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "LED2315R3"
+        },
+        {
+          "label": "Base",
+          "value": "GU10"
+        },
+        {
+          "label": "Power",
+          "value": "2.5 W"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "345 lm"
+        },
+        {
+          "label": "Dimmable",
+          "value": "Yes"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K (previously noted)"
+        },
+        {
+          "label": "Color rendering",
+          "value": "CRI 90 (previously noted)"
+        },
+        {
+          "label": "Energy class",
+          "value": "C"
+        },
+        {
+          "label": "Lifetime",
+          "value": "25,000 h"
+        },
+        {
+          "label": "Startup",
+          "value": "Under 1 second"
+        },
+        {
+          "label": "Beam angle",
+          "value": "40°"
+        },
+        {
+          "label": "Diameter",
+          "value": "50 mm"
+        }
+      ]
+    },
+    "meanwell-lpv10024": {
+      "name": "Mean Well LPV-100-24",
+      "preview": "24 V LED power supply",
+      "specs": "24 V, 100 W LED strip power supply",
+      "note": "Selected and purchased for the BTF-LIGHTING FCOB 24 V / 70 W strip. Output 24 V DC, 4.2 A, 100.8 W; IP67; 190 × 52 × 37 mm. Rated power headroom about 44%.",
+      "details": [
+        {
+          "label": "Output",
+          "value": "24 V DC, 4.2 A"
+        },
+        {
+          "label": "Rated power",
+          "value": "100.8 W"
+        },
+        {
+          "label": "Input",
+          "value": "90–264 V AC, 47–63 Hz"
+        },
+        {
+          "label": "Dimensions",
+          "value": "190 × 52 × 37 mm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP67"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Typically 88%"
+        },
+        {
+          "label": "Cooling",
+          "value": "Natural convection"
+        },
+        {
+          "label": "Compatible strip",
+          "value": "BTF-LIGHTING FCOB, 24 V, 70 W"
+        },
+        {
+          "label": "Power headroom",
+          "value": "Approx. 30.8 W, or 44% of load"
+        },
+        {
+          "label": "Enclosure protection",
+          "value": "IP67"
+        },
+        {
+          "label": "Typical efficiency",
+          "value": "88%"
+        }
+      ]
+    },
+    "tuya-led-controller": {
+      "name": "Wi-Fi LED Dimmer S100-NO-W1",
+      "preview": "Wi-Fi single-color LED strip dimmer, 12–24 V",
+      "specs": "Single-color LED dimmer, 12–24 V DC, up to 10 A; 120 W at 12 V / 240 W at 24 V; 2.4 GHz Wi-Fi",
+      "note": "Purchased for BTF-LIGHTING FCOB 24 V / 70 W. S100-NO-W1 operation via Tuya confirmed by the user.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "S100-NO-W1"
+        },
+        {
+          "label": "Input",
+          "value": "12–24 V DC"
+        },
+        {
+          "label": "Maximum current",
+          "value": "10 A"
+        },
+        {
+          "label": "Power at 12 V",
+          "value": "Up to 120 W"
+        },
+        {
+          "label": "Power at 24 V",
+          "value": "Up to 240 W"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz (marked on housing)"
+        },
+        {
+          "label": "Operating temperature",
+          "value": "−20 to +60 °C"
+        },
+        {
+          "label": "Output terminals",
+          "value": "Two +/− pairs"
+        },
+        {
+          "label": "LED strip",
+          "value": "BTF-LIGHTING FCOB, 24 V, 70 W (approx. 2.92 A)"
+        },
+        {
+          "label": "App",
+          "value": "Tuya (operation confirmed)"
+        }
+      ]
+    },
+    "anza-microfibre8": {
+      "name": "Anza Microfibre 8 mm",
+      "preview": "Paint roller",
+      "specs": "Microfibre paint roller with 8 mm pile",
+      "note": "Anza Microfibre roller with 8 mm pile purchased for painting the bedroom walls.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Paint roller"
+        },
+        {
+          "label": "Material",
+          "value": "Microfibre"
+        },
+        {
+          "label": "Pile length",
+          "value": "8 mm"
+        },
+        {
+          "label": "Purpose",
+          "value": "Painting bedroom walls"
+        }
+      ]
+    },
+    "orno-or-cr-282": {
+      "name": "ORNO OR-CR-282",
+      "preview": "Compact microwave motion sensor, 230 V",
+      "specs": "Compact microwave motion sensor, 230 V / 50 Hz; 1200 W maximum load, LED up to 300 W; IP20",
+      "note": "Purchased for the hallway. Packaging lists 360°/180° detection, 2/5/8 m range, 5/30/150/2000 lx light threshold and 5/30/90 s or 3/5/10 min switch-off delay. DIP switch settings. Five-year warranty stated on packaging. Data transcribed from packaging photos; installation and operation were not confirmed at the time.",
+      "details": [
+        {
+          "label": "Power",
+          "value": "230 V AC, 50 Hz"
+        },
+        {
+          "label": "Maximum load",
+          "value": "1200 W"
+        },
+        {
+          "label": "Maximum LED load",
+          "value": "300 W"
+        },
+        {
+          "label": "Detection angle",
+          "value": "360° / 180°"
+        },
+        {
+          "label": "Range",
+          "value": "2 / 5 / 8 m"
+        },
+        {
+          "label": "Light threshold",
+          "value": "5 / 30 / 150 / 2000 lx"
+        },
+        {
+          "label": "Switch-off delay",
+          "value": "5 / 30 / 90 s; 3 / 5 / 10 min"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "Adjustment",
+          "value": "DIP switches"
+        },
+        {
+          "label": "Packaging warranty",
+          "value": "5 years"
+        }
+      ]
+    },
+    "ikea-bilresa": {
+      "name": "IKEA BILRESA",
+      "preview": "Wireless remote control",
+      "specs": "Two buttons; Matter over Thread; 2 × AAA; 70 × 40 × 19 mm",
+      "note": "Separately purchased wireless controller. Paired with the IKEA FAXÄLVEN mirror cabinet lighting via SILVERGLANS; control works. May also be used with other compatible IKEA systems. Zigbee is not used.",
+      "details": [
+        {
+          "label": "Connectivity",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Power",
+          "value": "2 × AAA"
+        },
+        {
+          "label": "Dimensions",
+          "value": "70 × 40 × 19 mm"
+        },
+        {
+          "label": "Controls",
+          "value": "Light, brightness and scenes; up to 10 compatible devices"
+        },
+        {
+          "label": "Matter integration",
+          "value": "A compatible Thread Border Router is required for connection to a Matter system"
+        }
+      ]
+    },
+    "ikea-silverglans": {
+      "name": "IKEA SILVERGLANS",
+      "preview": "LED lighting driver",
+      "specs": "LED lighting driver for the FAXÄLVEN mirror cabinet",
+      "note": "IKEA electronic LED driver supplied with the FAXÄLVEN mirror cabinet installed in the bathroom. The lighting works with the BILRESA remote. This component belongs to the lighting system rather than the furniture.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "LED lighting driver"
+        },
+        {
+          "label": "Included with",
+          "value": "FAXÄLVEN"
+        },
+        {
+          "label": "Maximum power",
+          "value": "30 W"
+        },
+        {
+          "label": "Efficiency at full load",
+          "value": "88%"
+        }
+      ]
+    },
+    "ikea-myggspray": {
+      "name": "IKEA MYGGSPRAY",
+      "preview": "Wireless Matter motion sensor, IP67",
+      "specs": "Wireless motion sensor, Matter over Thread, IP67, two AAA batteries, 40 mm wide",
+      "note": "Purchased at IKEA for €7.99. Intended for bathroom motion-triggered control of the FAXÄLVEN / SILVERGLANS lighting.",
+      "details": [
+        {
+          "label": "Protocol",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP67; indoor and outdoor use"
+        },
+        {
+          "label": "Power",
+          "value": "2 × AAA batteries, sold separately"
+        },
+        {
+          "label": "Size",
+          "value": "40 mm wide"
+        },
+        {
+          "label": "IKEA Latvia price",
+          "value": "€7.99 (checked 22 October 2026)"
+        },
+        {
+          "label": "Retailer",
+          "value": "IKEA"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€7.99"
+        }
+      ]
+    },
+    "hansgrohe-logis-100": {
+      "name": "hansgrohe Logis 100",
+      "preview": "Chrome washbasin faucet, 93 mm spout",
+      "specs": "Chrome basin mixer tap; spout height 93 mm, projection 108 mm, flow rate up to 5 L/min",
+      "note": "Purchased for the IKEA ORRSJÖN bathroom washbasin. Check compatibility of the pop-up waste valve with the IKEA trap during installation.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "Logis 100"
+        },
+        {
+          "label": "Article number",
+          "value": "71100000"
+        },
+        {
+          "label": "Finish",
+          "value": "Chrome"
+        },
+        {
+          "label": "Spout height",
+          "value": "93 mm"
+        },
+        {
+          "label": "Spout projection",
+          "value": "108 mm"
+        },
+        {
+          "label": "Flow rate at 3 bar",
+          "value": "5 L/min"
+        },
+        {
+          "label": "Connection",
+          "value": "G 3/8 hoses"
+        },
+        {
+          "label": "Waste fitting",
+          "value": "G 1¼ pop-up waste; IKEA compatibility requires checking"
+        }
+      ]
+    },
+    "schell-comfort-049070699": {
+      "name": "SCHELL COMFORT 04 907 06 99",
+      "preview": "Angle valve",
+      "specs": "Chrome angle regulating valve, G 1/2″ × G 3/8″, two units",
+      "note": "Two SCHELL angle valves purchased for the hansgrohe Logis 100 basin mixer. Purchased at DEPO; exact actual purchase price not recorded. Extended body and decorative escutcheon included. No ASAG self-sealing thread.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "SCHELL COMFORT 04 907 06 99"
+        },
+        {
+          "label": "Quantity",
+          "value": "2 units"
+        },
+        {
+          "label": "Inlet",
+          "value": "DN 15, G 1/2″ male thread"
+        },
+        {
+          "label": "Outlet",
+          "value": "DN 10, G 3/8″ male thread"
+        },
+        {
+          "label": "Finish",
+          "value": "Chrome"
+        },
+        {
+          "label": "Handle",
+          "value": "COMFORT"
+        },
+        {
+          "label": "Included",
+          "value": "Extended body, Ø54 mm escutcheon"
+        },
+        {
+          "label": "ASAG thread",
+          "value": "No (not self-sealing)"
+        },
+        {
+          "label": "Noise class",
+          "value": "I"
+        },
+        {
+          "label": "Country of manufacture",
+          "value": "Germany"
+        },
+        {
+          "label": "EAN",
+          "value": "4021163105292"
+        },
+        {
+          "label": "Retailer",
+          "value": "DEPO"
+        },
+        {
+          "label": "Listed unit price",
+          "value": "€5.34 (DEPO)"
+        },
+        {
+          "label": "Listed total for two",
+          "value": "€10.68"
+        }
+      ]
+    },
+    "videx-gx53-track-kit-hallway": {
+      "name": "VIDEX — GX53 track lighting kit, 2 m + 4 fixtures",
+      "preview": "Black GX53 track, 2 m, four fixtures",
+      "specs": "Black 2 m single-circuit track with four GX53 track fixtures, bulbs not included",
+      "note": "Purchased for the hallway from LEDveikals.lv. Kit contains a 2 m single-circuit track and four black GX53 fixtures. Bulbs purchased separately. Based on order screenshot; installation not confirmed.",
+      "details": [
+        {
+          "label": "Kit",
+          "value": "2 m track + 4 GX53 fixtures"
+        },
+        {
+          "label": "System",
+          "value": "Single-circuit"
+        },
+        {
+          "label": "Color",
+          "value": "Black"
+        },
+        {
+          "label": "Kit price",
+          "value": "€39.99"
+        },
+        {
+          "label": "Retailer",
+          "value": "LEDveikals.lv"
+        }
+      ]
+    },
+    "videx-gx53-8w-3000k-hallway": {
+      "name": "VIDEX LED GX53 — 8 W, 3000 K",
+      "preview": "GX53 LED lamp",
+      "specs": "Four GX53 lamps, 8 W, 3000 K, 730 lm, 140° beam",
+      "note": "Purchased for the hallway track lighting system from LEDveikals.lv. Four lamps at €2.99 each.",
+      "details": [
+        {
+          "label": "Quantity",
+          "value": "4 units"
+        },
+        {
+          "label": "Base",
+          "value": "GX53"
+        },
+        {
+          "label": "Power",
+          "value": "8 W per lamp"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3000 K"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "730 lm per lamp"
+        },
+        {
+          "label": "Beam angle",
+          "value": "140°"
+        },
+        {
+          "label": "Price",
+          "value": "€2.99 each; €11.96 for four"
+        },
+        {
+          "label": "Retailer",
+          "value": "LEDveikals.lv"
+        }
+      ]
+    },
+    "emos-p3541": {
+      "name": "EMOS P3541 — headlamp",
+      "preview": "Rechargeable COB headlamp, up to 380 lm",
+      "specs": "COB LED headlamp, up to 380 lm, 1,200 mAh Li-Pol battery",
+      "note": "Purchased at DEPO for €11.21 with a loyalty card.",
+      "details": [
+        {
+          "label": "Product code",
+          "value": "P3541"
+        },
+        {
+          "label": "EAN",
+          "value": "8592920112571"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "Up to 380 lm"
+        },
+        {
+          "label": "Battery",
+          "value": "Li-Pol, 1,200 mAh"
+        },
+        {
+          "label": "Retailer",
+          "value": "DEPO"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€11.21"
+        },
+        {
+          "label": "Price condition",
+          "value": "Loyalty card"
+        }
+      ]
+    },
+    "metabo-powermaxx-bs-12-bl-q-601749500": {
+      "name": "Metabo PowerMaxx BS 12 BL Q — 12 V drill driver",
+      "preview": "Brushless 12 V drill driver with Quick chuck",
+      "specs": "12 V brushless drill/driver, 38/20 Nm torque, Quick-change chuck; kit with two 2 Ah batteries, LC 40 charger and case",
+      "note": "Selected drill/driver model. Purchase not confirmed. Photo of the exact kit matched by EAN 4061792217843 (Toolnation).",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "601749500"
+        },
+        {
+          "label": "EAN",
+          "value": "4061792217843"
+        },
+        {
+          "label": "Torque",
+          "value": "38/20 Nm"
+        },
+        {
+          "label": "Kit contents",
+          "value": "2 × 2 Ah batteries, LC 40 charger, case"
+        }
+      ]
+    },
+    "olfa-l5-al": {
+      "name": "OLFA L5-AL — 18 mm utility knife",
+      "preview": "18 mm utility knife with Auto-Lock blade",
+      "specs": "18 mm X-Design utility knife with Auto-Lock blade mechanism, non-slip grip, metal tip and Excel Black LBB blade",
+      "note": "Purchased at ABC for €10.65 with a loyalty card.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "L5-AL"
+        },
+        {
+          "label": "Blade width",
+          "value": "18 mm"
+        },
+        {
+          "label": "Locking mechanism",
+          "value": "Auto-Lock"
+        },
+        {
+          "label": "Included blade",
+          "value": "Excel Black LBB"
+        },
+        {
+          "label": "Retailer",
+          "value": "ABC"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€10.65"
+        },
+        {
+          "label": "Price condition",
+          "value": "Loyalty card"
+        }
+      ]
+    },
+    "knipex-cobra-87-01-180": {
+      "name": "Knipex Cobra 87 01 180",
+      "preview": "180 mm adjustable water pump pliers",
+      "specs": "180 mm adjustable water-pump pliers with push-button adjustment; nut capacity up to 36 mm, pipe capacity up to Ø42 mm",
+      "note": "Purchased for domestic plumbing work, including taps, flexible supply hoses and fittings. The discussed product link was from Inserv; the actual purchase amount is unconfirmed.",
+      "details": [
+        {
+          "label": "Length",
+          "value": "180 mm"
+        },
+        {
+          "label": "Maximum nut capacity",
+          "value": "36 mm"
+        },
+        {
+          "label": "Maximum pipe capacity",
+          "value": "Ø42 mm"
+        },
+        {
+          "label": "Mechanism",
+          "value": "Push-button adjustment, serrated jaws"
+        }
+      ]
+    },
+    "modee-ml-flws4000k50w-a2n": {
+      "name": "Modee A2 — portable 50 W LED work light",
+      "preview": "4000 K mains-powered floodlight with adjustable folding stand",
+      "specs": "50 W, 4000 K, claimed 6500 lm, CRI >80, 120° beam, IP65, 220–240 V, 1.5 m cable, adjustable folding stand",
+      "note": "Selected on 2 November 2026 for apartment renovation; not purchased. Latelektro price of €22.50 based on a screenshot, with pickup in Riga. The claimed luminous flux has not been independently measured.",
+      "details": [
+        {
+          "label": "Supply voltage",
+          "value": "220–240 V"
+        },
+        {
+          "label": "Power",
+          "value": "50 W"
+        },
+        {
+          "label": "Color temperature",
+          "value": "4000 K"
+        },
+        {
+          "label": "Luminous flux (claimed)",
+          "value": "6500 lm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Cable",
+          "value": "1.5 m"
+        },
+        {
+          "label": "Retailer",
+          "value": "Latelektro, Riga"
+        },
+        {
+          "label": "Selection price",
+          "value": "€22.50"
+        }
+      ]
+    }
+  }
+}

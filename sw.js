@@ -1,6 +1,6 @@
 // FINDS: network-first updates with offline shell fallback.
-const CACHE="finds-library-v2-modee-photo-20261102";
-const SHELL=["./","./index.html","./manifest.webmanifest","./icon.svg","./finds-mark.svg","./data/products.json","./version.json"];
+const CACHE="finds-library-v2-i18n-preview-20261102";
+const SHELL=["./","./index.html","./manifest.webmanifest","./icon.svg","./finds-mark.svg","./data/products.json","./data/products.en.json","./version.json"];
 self.addEventListener("install",event=>{
  event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);
