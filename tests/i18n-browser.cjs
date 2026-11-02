@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 (async()=>{
  const browser=await chromium.launch({headless:true});
  try{
-  for(const width of [390,1280]){
+  for(const width of [320,390,1280]){
    const context=await browser.newContext({viewport:{width,height:800}});
    const page=await context.newPage();
    const errors=[];page.on('pageerror',e=>errors.push(e.message));
