@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "language": "en",
+  "products": {
+    "dewalt-dch263p1-qw": {
+      "name": "DeWalt DCH263P1-QW — cordless rotary hammer",
+      "preview": "Brushless 18 V SDS-Plus rotary hammer, 3 J"
+    },
+    "sonoff-m5-3c-86m": {
+      "name": "SONOFF M5 Matter — M5-3C-86M",
+      "preview": "Three-gang Matter wall switch, dark gray"
+    },
+    "ikea-angsjon-100": {
+      "name": "IKEA ÄNGSJÖN",
+      "preview": "Bathroom vanity cabinet"
+    },
+    "ikea-orrsjon": {
+      "name": "IKEA ORRSJÖN",
+      "preview": "White ceramic washbasin, 102 × 49 cm"
+    },
+    "ikea-faxalven": {
+      "name": "IKEA FAXÄLVEN",
+      "preview": "Illuminated mirror cabinet, light oak, 100 cm"
+    },
+    "ikea-rannilen": {
+      "name": "IKEA RÄNNILEN",
+      "preview": "Washbasin drain trap"
+    },
+    "kanlux-alren": {
+      "name": "Kanlux ALREN R DTL-B",
+      "preview": "Recessed ceiling light fitting"
+    },
+    "btf-fcob": {
+      "name": "BTF-LIGHTING FCOB",
+      "preview": "24 V COB LED strip"
+    },
+    "visional-hb17": {
+      "name": "VISIONAL HB-17.5×7M",
+      "preview": "LED aluminum profile"
+    },
+    "visional-hb158x158": {
+      "name": "VISIONAL HB-15.8×15.8CM — corner LED profile",
+      "preview": "45° corner LED profile, 3 m, with diffuser"
+    },
+    "sonoff-m5": {
+      "name": "Sonoff M5",
+      "preview": "Smart wall switch"
+    },
+    "sonoff-r5": {
+      "name": "Sonoff R5",
+      "preview": "Wireless scene controller"
+    },
+    "sonoff-minir4": {
+      "name": "Sonoff MINIR4",
+      "preview": "Compact smart lighting relays, 4 units"
+    },
+    "schneider-sedna": {
+      "name": "Schneider Electric Sedna",
+      "preview": "Electrical sockets and frames"
+    },
+    "jokari-super4": {
+      "name": "Jokari Super 4 Plus",
+      "preview": "Automatic wire stripper, 0.2–6 mm²"
+    },
+    "stadler-erik": {
+      "name": "Stadler Form Erik E-020E",
+      "preview": "Electric heater"
+    },
+    "bosch-smv4hax71e": {
+      "name": "Bosch SMV4HAX71E",
+      "preview": "Built-in dishwasher"
+    },
+    "ikea-gu10": {
+      "name": "IKEA SOLHETTA GU10",
+      "preview": "GU10 LED bulb, 345 lm, 2700 K"
+    },
+    "meanwell-lpv10024": {
+      "name": "Mean Well LPV-100-24",
+      "preview": "24 V LED power supply"
+    },
+    "tuya-led-controller": {
+      "name": "Wi-Fi LED Dimmer S100-NO-W1",
+      "preview": "Wi-Fi single-color LED strip dimmer, 12–24 V"
+    },
+    "anza-microfibre8": {
+      "name": "Anza Microfibre 8 mm",
+      "preview": "Paint roller"
+    },
+    "orno-or-cr-282": {
+      "name": "ORNO OR-CR-282",
+      "preview": "Compact microwave motion sensor, 230 V"
+    },
+    "ikea-bilresa": {
+      "name": "IKEA BILRESA",
+      "preview": "Wireless remote control"
+    },
+    "ikea-silverglans": {
+      "name": "IKEA SILVERGLANS",
+      "preview": "LED lighting driver"
+    },
+    "ikea-myggspray": {
+      "name": "IKEA MYGGSPRAY",
+      "preview": "Wireless Matter motion sensor, IP67"
+    },
+    "hansgrohe-logis-100": {
+      "name": "hansgrohe Logis 100",
+      "preview": "Chrome washbasin faucet, 93 mm spout"
+    },
+    "schell-comfort-049070699": {
+      "name": "SCHELL COMFORT 04 907 06 99",
+      "preview": "Angle valve"
+    },
+    "videx-gx53-track-kit-hallway": {
+      "name": "VIDEX — GX53 track lighting kit, 2 m + 4 fixtures",
+      "preview": "Black GX53 track, 2 m, four fixtures"
+    },
+    "videx-gx53-8w-3000k-hallway": {
+      "name": "VIDEX LED GX53 — 8 W, 3000 K",
+      "preview": "GX53 LED lamp"
+    },
+    "emos-p3541": {
+      "name": "EMOS P3541 — headlamp",
+      "preview": "Rechargeable COB headlamp, up to 380 lm"
+    },
+    "metabo-powermaxx-bs-12-bl-q-601749500": {
+      "name": "Metabo PowerMaxx BS 12 BL Q — 12 V drill driver",
+      "preview": "Brushless 12 V drill driver with Quick chuck"
+    },
+    "olfa-l5-al": {
+      "name": "OLFA L5-AL — 18 mm utility knife",
+      "preview": "18 mm utility knife with Auto-Lock blade"
+    },
+    "knipex-cobra-87-01-180": {
+      "name": "Knipex Cobra 87 01 180",
+      "preview": "180 mm adjustable water pump pliers"
+    },
+    "modee-ml-flws4000k50w-a2n": {
+      "name": "Modee A2 — portable 50 W LED work light",
+      "preview": "4000 K mains-powered floodlight with adjustable folding stand"
+    }
+  }
+}
