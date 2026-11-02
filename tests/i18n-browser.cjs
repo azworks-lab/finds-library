@@ -45,7 +45,7 @@ const assert=require('node:assert/strict');
    await page.locator('#resetAll').click();
    assert.equal(await page.locator('#cards .card').count(),before,'Reset did not restore all products');
    const linked=page.locator('#cards .card').filter({has:page.locator('[data-related]')}).first();
-   await linked.locator('summary').click();
+   await linked.locator('summary').first().click();
    const linkedName=await linked.locator('.title').innerText();
    await linked.locator('[data-related]').first().click();
    assert.equal(await page.locator('#cards .card').count(),1,'Related-product navigation did not focus');
