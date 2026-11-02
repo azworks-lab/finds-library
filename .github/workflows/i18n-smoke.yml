@@ -1,5 +1,7 @@
 name: FINDS i18n smoke checks
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [feature/ru-en-localization]
   workflow_dispatch:
