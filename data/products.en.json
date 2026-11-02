@@ -100,7 +100,19 @@
     },
     "visional-hb17": {
       "name": "VISIONAL HB-17.5×7M",
-      "preview": "LED aluminum profile"
+      "preview": "LED aluminum profile",
+      "specs": "Straight aluminum LED strip profile",
+      "note": "Purchased previously. This is a straight profile; a separate VISIONAL corner profile was selected and purchased for the curtain recess. Retained as a separate purchase.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Straight aluminum LED strip profile"
+        },
+        {
+          "label": "Consideration",
+          "value": "A different bracket or angled profile may be needed for 45° directional light"
+        }
+      ]
     },
     "visional-hb158x158": {
       "name": "VISIONAL HB-15.8×15.8CM — corner LED profile",
@@ -208,7 +220,31 @@
     },
     "jokari-super4": {
       "name": "Jokari Super 4 Plus",
-      "preview": "Automatic wire stripper, 0.2–6 mm²"
+      "preview": "Automatic wire stripper, 0.2–6 mm²",
+      "specs": "Automatic wire stripper for 0.2–6.0 mm² conductors; 6–15 mm strip-length stop; side cutter up to 2.5 mm²; replaceable blades",
+      "note": "Super 4 Plus (article 20050) selected for wire stripping. Purchase not confirmed; target budget up to €25.",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "20050"
+        },
+        {
+          "label": "Wire cross-section",
+          "value": "0.2–6.0 mm²"
+        },
+        {
+          "label": "Strip-length stop",
+          "value": "6–15 mm"
+        },
+        {
+          "label": "Side cutter",
+          "value": "Up to 2.5 mm²"
+        },
+        {
+          "label": "Blades",
+          "value": "Replaceable"
+        }
+      ]
     },
     "stadler-erik": {
       "name": "Stadler Form Erik E-020E",
@@ -228,7 +264,19 @@
     },
     "bosch-smv4hax71e": {
       "name": "Bosch SMV4HAX71E",
-      "preview": "Built-in dishwasher"
+      "preview": "Built-in dishwasher",
+      "specs": "Built-in dishwasher",
+      "note": "Selected for further price monitoring. It is important that a large cooking pot insert approximately 27 cm in diameter and 18 cm high can fit; clearance for this item has not yet been verified.",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Built-in dishwasher"
+        },
+        {
+          "label": "Selection requirement",
+          "value": "Fit an approximately 27 cm diameter, 18 cm high pot insert; unverified"
+        }
+      ]
     },
     "ikea-gu10": {
       "name": "IKEA SOLHETTA GU10",
@@ -272,7 +320,31 @@
     },
     "ikea-bilresa": {
       "name": "IKEA BILRESA",
-      "preview": "Wireless remote control"
+      "preview": "Wireless remote control",
+      "specs": "Two buttons; Matter over Thread; 2 × AAA; 70 × 40 × 19 mm",
+      "note": "Separately purchased wireless controller. Paired with the IKEA FAXÄLVEN mirror cabinet lighting via SILVERGLANS; control works. May also be used with other compatible IKEA systems. Zigbee is not used.",
+      "details": [
+        {
+          "label": "Connectivity",
+          "value": "Matter over Thread"
+        },
+        {
+          "label": "Power",
+          "value": "2 × AAA"
+        },
+        {
+          "label": "Dimensions",
+          "value": "70 × 40 × 19 mm"
+        },
+        {
+          "label": "Controls",
+          "value": "Light, brightness and scenes; up to 10 compatible devices"
+        },
+        {
+          "label": "Matter integration",
+          "value": "A compatible Thread Border Router is required for connection to a Matter system"
+        }
+      ]
     },
     "ikea-silverglans": {
       "name": "IKEA SILVERGLANS",
@@ -348,7 +420,43 @@
     },
     "videx-gx53-8w-3000k-hallway": {
       "name": "VIDEX LED GX53 — 8 W, 3000 K",
-      "preview": "GX53 LED lamp"
+      "preview": "GX53 LED lamp",
+      "specs": "Four GX53 lamps, 8 W, 3000 K, 730 lm, 140° beam",
+      "note": "Purchased for the hallway track lighting system from LEDveikals.lv. Four lamps at €2.99 each.",
+      "details": [
+        {
+          "label": "Quantity",
+          "value": "4 units"
+        },
+        {
+          "label": "Base",
+          "value": "GX53"
+        },
+        {
+          "label": "Power",
+          "value": "8 W per lamp"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3000 K"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "730 lm per lamp"
+        },
+        {
+          "label": "Beam angle",
+          "value": "140°"
+        },
+        {
+          "label": "Price",
+          "value": "€2.99 each; €11.96 for four"
+        },
+        {
+          "label": "Retailer",
+          "value": "LEDveikals.lv"
+        }
+      ]
     },
     "emos-p3541": {
       "name": "EMOS P3541 — headlamp",
@@ -388,7 +496,27 @@
     },
     "metabo-powermaxx-bs-12-bl-q-601749500": {
       "name": "Metabo PowerMaxx BS 12 BL Q — 12 V drill driver",
-      "preview": "Brushless 12 V drill driver with Quick chuck"
+      "preview": "Brushless 12 V drill driver with Quick chuck",
+      "specs": "12 V brushless drill/driver, 38/20 Nm torque, Quick-change chuck; kit with two 2 Ah batteries, LC 40 charger and case",
+      "note": "Selected drill/driver model. Purchase not confirmed. Photo of the exact kit matched by EAN 4061792217843 (Toolnation).",
+      "details": [
+        {
+          "label": "Article number",
+          "value": "601749500"
+        },
+        {
+          "label": "EAN",
+          "value": "4061792217843"
+        },
+        {
+          "label": "Torque",
+          "value": "38/20 Nm"
+        },
+        {
+          "label": "Kit contents",
+          "value": "2 × 2 Ah batteries, LC 40 charger, case"
+        }
+      ]
     },
     "olfa-l5-al": {
       "name": "OLFA L5-AL — 18 mm utility knife",
