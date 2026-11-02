@@ -31,6 +31,18 @@ const assert=require('node:assert/strict');
    await page.reload();assert.equal(await page.locator('html').getAttribute('lang'),'en','English preference not persisted');
    assert.equal(errors.length,0,'JS errors after English reload: '+errors.join('; '));
    console.log('PASS viewport',width,'products',before);
+   if(width===390){
+    await page.goto('http://127.0.0.1:8765/');
+    await page.evaluate(async()=>{await navigator.serviceWorker.ready;const reg=await navigator.serviceWorker.getRegistration();await reg?.update()});
+    await page.reload();await page.locator('#cards .card').first().waitFor();
+    await context.setOffline(true);
+    await page.reload({waitUntil:'domcontentloaded'});
+    await page.locator('#cards .card').first().waitFor({timeout:12000});
+    assert.equal(await page.locator('html').getAttribute('lang'),'en','Offline language preference lost');
+    assert.equal(errors.length,0,'Offline JS errors: '+errors.join('; '));
+    await context.setOffline(false);
+    console.log('PASS offline PWA');
+   }
    await context.close();
   }
  }finally{await browser.close()}
