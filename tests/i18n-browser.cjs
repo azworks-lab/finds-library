@@ -23,6 +23,13 @@ const assert=require('node:assert/strict');
    await page.reload();
    assert.equal(await page.locator('html').getAttribute('lang'),'ru');
    assert.equal(errors.length,0,'JS errors: '+errors.join('; '));
+   await page.locator('#enLanguage').click();await page.waitForFunction(()=>Object.keys(englishProducts).length>0);
+   const englishName=await page.locator('#cards .card .title').first().innerText();
+   await page.locator('#search').fill(englishName);
+   assert((await page.locator('#cards .card').count())>0,'English product name search failed');
+   await page.locator('#search').fill('');
+   await page.reload();assert.equal(await page.locator('html').getAttribute('lang'),'en','English preference not persisted');
+   assert.equal(errors.length,0,'JS errors after English reload: '+errors.join('; '));
    console.log('PASS viewport',width,'products',before);
    await context.close();
   }
