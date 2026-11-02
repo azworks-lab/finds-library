@@ -892,7 +892,67 @@
     },
     "schell-comfort-049070699": {
       "name": "SCHELL COMFORT 04 907 06 99",
-      "preview": "Angle valve"
+      "preview": "Angle valve",
+      "specs": "Chrome angle regulating valve, G 1/2″ × G 3/8″, two units",
+      "note": "Two SCHELL angle valves purchased for the hansgrohe Logis 100 basin mixer. Purchased at DEPO; exact actual purchase price not recorded. Extended body and decorative escutcheon included. No ASAG self-sealing thread.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "SCHELL COMFORT 04 907 06 99"
+        },
+        {
+          "label": "Quantity",
+          "value": "2 units"
+        },
+        {
+          "label": "Inlet",
+          "value": "DN 15, G 1/2″ male thread"
+        },
+        {
+          "label": "Outlet",
+          "value": "DN 10, G 3/8″ male thread"
+        },
+        {
+          "label": "Finish",
+          "value": "Chrome"
+        },
+        {
+          "label": "Handle",
+          "value": "COMFORT"
+        },
+        {
+          "label": "Included",
+          "value": "Extended body, Ø54 mm escutcheon"
+        },
+        {
+          "label": "ASAG thread",
+          "value": "No (not self-sealing)"
+        },
+        {
+          "label": "Noise class",
+          "value": "I"
+        },
+        {
+          "label": "Country of manufacture",
+          "value": "Germany"
+        },
+        {
+          "label": "EAN",
+          "value": "4021163105292"
+        },
+        {
+          "label": "Retailer",
+          "value": "DEPO"
+        },
+        {
+          "label": "Listed unit price",
+          "value": "€5.34 (DEPO)"
+        },
+        {
+          "label": "Listed total for two",
+          "value": "€10.68"
+        }
+      ]
     },
     "videx-gx53-track-kit-hallway": {
       "name": "VIDEX — GX53 track lighting kit, 2 m + 4 fixtures",
