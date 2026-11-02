@@ -1,0 +1,17 @@
+{
+  "en": {
+    "library": "Personal product library",
+    "search": "Search the library",
+    "categories": "Categories",
+    "filters": "Filters",
+    "newest": "Newest",
+    "purchased": "Purchased",
+    "selected": "Selected",
+    "included": "Included",
+    "candidate": "Candidate",
+    "compare": "Compare prices",
+    "specifications": "Specifications",
+    "notes": "Notes",
+    "related": "Related products"
+  }
+}
