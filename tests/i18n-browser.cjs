@@ -68,6 +68,31 @@ const assert=require('node:assert/strict');
     assert.equal(await page.locator('#search').getAttribute('placeholder'),'Search the library…','Offline English UI missing');
     assert.equal(errors.length,0,'Offline JS errors: '+errors.join('; '));
     await context.setOffline(false);
+    const cacheReport=await page.evaluate(async()=>{
+     const keys=await caches.keys();
+     const current=keys.find(k=>k.startsWith('finds-library-v2-i18n-preview-'));
+     if(!current)throw Error('Expected current PWA cache missing');
+     const cache=await caches.open(current);
+     const paths=(await cache.keys()).map(r=>new URL(r.url).pathname);
+     return {current,paths};
+    });
+    for(const path of ['/index.html','/data/products.json','/data/products.en.json','/version.json']){
+     assert(cacheReport.paths.some(p=>p.endsWith(path)),'Missing offline cache asset: '+path);
+    }
+    await page.evaluate(async()=>{const old=await caches.open('finds-library-obsolete-test');await old.put('./obsolete-test',new Response('old'))});
+    assert(await page.evaluate(async()=>(await caches.keys()).includes('finds-library-obsolete-test')));
+    await page.evaluate(async()=>{
+     const reg=await navigator.serviceWorker.getRegistration();
+     await reg.unregister();
+     await navigator.serviceWorker.register('./sw.js?test-reinstall='+Date.now());
+     await navigator.serviceWorker.ready;
+    });
+    await page.waitForFunction(async()=>!(await caches.keys()).includes('finds-library-obsolete-test'),{timeout:20000});
+    await context.setOffline(true);
+    await page.reload({waitUntil:'domcontentloaded',timeout:15000});
+    await page.locator('#cards .card').first().waitFor({timeout:12000});
+    await context.setOffline(false);
+    console.log('PASS PWA cache migration and offline after SW reinstall');
     console.log('PASS offline PWA');
    }
    await context.close();
