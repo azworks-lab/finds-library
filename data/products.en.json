@@ -120,7 +120,39 @@
     },
     "emos-p3541": {
       "name": "EMOS P3541 — headlamp",
-      "preview": "Rechargeable COB headlamp, up to 380 lm"
+      "preview": "Rechargeable COB headlamp, up to 380 lm",
+      "specs": "COB LED headlamp, up to 380 lm, 1,200 mAh Li-Pol battery",
+      "note": "Purchased at DEPO for €11.21 with a loyalty card.",
+      "details": [
+        {
+          "label": "Product code",
+          "value": "P3541"
+        },
+        {
+          "label": "EAN",
+          "value": "8592920112571"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "Up to 380 lm"
+        },
+        {
+          "label": "Battery",
+          "value": "Li-Pol, 1,200 mAh"
+        },
+        {
+          "label": "Retailer",
+          "value": "DEPO"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€11.21"
+        },
+        {
+          "label": "Price condition",
+          "value": "Loyalty card"
+        }
+      ]
     },
     "metabo-powermaxx-bs-12-bl-q-601749500": {
       "name": "Metabo PowerMaxx BS 12 BL Q — 12 V drill driver",
@@ -128,7 +160,39 @@
     },
     "olfa-l5-al": {
       "name": "OLFA L5-AL — 18 mm utility knife",
-      "preview": "18 mm utility knife with Auto-Lock blade"
+      "preview": "18 mm utility knife with Auto-Lock blade",
+      "specs": "18 mm X-Design utility knife with Auto-Lock blade mechanism, non-slip grip, metal tip and Excel Black LBB blade",
+      "note": "Purchased at ABC for €10.65 with a loyalty card.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "L5-AL"
+        },
+        {
+          "label": "Blade width",
+          "value": "18 mm"
+        },
+        {
+          "label": "Locking mechanism",
+          "value": "Auto-Lock"
+        },
+        {
+          "label": "Included blade",
+          "value": "Excel Black LBB"
+        },
+        {
+          "label": "Retailer",
+          "value": "ABC"
+        },
+        {
+          "label": "Purchase price",
+          "value": "€10.65"
+        },
+        {
+          "label": "Price condition",
+          "value": "Loyalty card"
+        }
+      ]
     },
     "knipex-cobra-87-01-180": {
       "name": "Knipex Cobra 87 01 180",
@@ -136,7 +200,43 @@
     },
     "modee-ml-flws4000k50w-a2n": {
       "name": "Modee A2 — portable 50 W LED work light",
-      "preview": "4000 K mains-powered floodlight with adjustable folding stand"
+      "preview": "4000 K mains-powered floodlight with adjustable folding stand",
+      "specs": "50 W, 4000 K, claimed 6500 lm, CRI >80, 120° beam, IP65, 220–240 V, 1.5 m cable, adjustable folding stand",
+      "note": "Selected on 2 November 2026 for apartment renovation; not purchased. Latelektro price of €22.50 based on a screenshot, with pickup in Riga. The claimed luminous flux has not been independently measured.",
+      "details": [
+        {
+          "label": "Supply voltage",
+          "value": "220–240 V"
+        },
+        {
+          "label": "Power",
+          "value": "50 W"
+        },
+        {
+          "label": "Color temperature",
+          "value": "4000 K"
+        },
+        {
+          "label": "Luminous flux (claimed)",
+          "value": "6500 lm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Cable",
+          "value": "1.5 m"
+        },
+        {
+          "label": "Retailer",
+          "value": "Latelektro, Riga"
+        },
+        {
+          "label": "Selection price",
+          "value": "€22.50"
+        }
+      ]
     }
   }
 }
