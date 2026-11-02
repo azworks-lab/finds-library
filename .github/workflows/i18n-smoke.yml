@@ -28,5 +28,5 @@ jobs:
           if(!sw.includes('data/products.en.json'))throw Error('EN translations absent from offline cache');
           const build=JSON.parse(fs.readFileSync('version.json')).build;
           if(!html.includes("PAGE_BUILD='"+build+"'"))throw Error('PWA build mismatch');
-          const script=html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];if(!script)throw Error('Inline script not found');new (require('vm').Script)(script,{filename:'index-inline.js'});console.log('JavaScript syntax and static smoke checks passed');
+          const start=html.indexOf('<script>'),end=html.indexOf('</script>',start);if(start<0||end<0)throw Error('Inline script not found');const script=html.slice(start+8,end);new (require('vm').Script)(script,{filename:'index-inline.js'});console.log('JavaScript syntax and static smoke checks passed');
           NODE
