@@ -7,6 +7,7 @@ const assert=require('node:assert/strict');
    const context=await browser.newContext({viewport:{width,height:800}});
    const page=await context.newPage();
    const errors=[];page.on('pageerror',e=>errors.push(e.message));
+   const perf=await page.evaluate(()=>({start:performance.now()}));
    await page.goto('http://127.0.0.1:8765/',{waitUntil:'domcontentloaded'});
    await page.locator('#cards .card').first().waitFor({timeout:15000});
    assert.equal(errors.length,0,'initial JS errors: '+errors.join('; '));
@@ -30,7 +31,8 @@ const assert=require('node:assert/strict');
    await page.locator('#search').fill('');
    await page.reload();assert.equal(await page.locator('html').getAttribute('lang'),'en','English preference not persisted');
    assert.equal(errors.length,0,'JS errors after English reload: '+errors.join('; '));
-   console.log('PASS viewport',width,'products',before);
+   const timing=await page.evaluate(()=>({domReady:Math.round(performance.getEntriesByType('navigation')[0]?.domContentLoadedEventEnd||0),transfer:performance.getEntriesByType('resource').reduce((n,r)=>n+(r.transferSize||0),0)}));
+   console.log('PASS viewport',width,'products',before,'DOM ready ms',timing.domReady,'resource transfer bytes',timing.transfer);
    if(width===390){
     await page.goto('http://127.0.0.1:8765/');
     await page.waitForFunction(()=>navigator.serviceWorker.controller!==null,{timeout:15000}).catch(()=>{});
