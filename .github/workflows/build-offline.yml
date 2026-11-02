@@ -2,25 +2,24 @@ name: Build offline library
 # Release QA verification trigger 2026-10-23; no functional changes.
 on:
   push:
-    branches:
-      - finds-v2-image-test
-      - test/logis-update-import
-      - main
+    branches: [main]
     paths:
       - '.github/workflows/build-offline.yml'
-      - 'data/products.json'
       - 'index.html'
-      - 'images/**'
-      - 'data/product-update-request.json'
+  workflow_run:
+    workflows: ["Localize FINDS product photos"]
+    types: [completed]
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
   build:
-    if: (github.ref == 'refs/heads/finds-v2-image-test' || github.ref == 'refs/heads/test/logis-update-import' || github.ref == 'refs/heads/main')
+    if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Generate self-contained HTML
         run: |
           python3 - <<'PY'
