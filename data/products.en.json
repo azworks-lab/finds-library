@@ -536,11 +536,111 @@
     },
     "ikea-gu10": {
       "name": "IKEA SOLHETTA GU10",
-      "preview": "GU10 LED bulb, 345 lm, 2700 K"
+      "preview": "GU10 LED bulb, 345 lm, 2700 K",
+      "specs": "Dimmable GU10 bulb, 345 lm, 2.5 W; 2700 K and CRI 90 (previously noted); energy class C, 25,000 h lifetime",
+      "note": "Purchased IKEA bulbs. Model LED2315R3 and 2.5 W / 345 lm confirmed by IKEA screenshot. 2700 K and CRI 90 were recorded earlier.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "LED2315R3"
+        },
+        {
+          "label": "Base",
+          "value": "GU10"
+        },
+        {
+          "label": "Power",
+          "value": "2.5 W"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "345 lm"
+        },
+        {
+          "label": "Dimmable",
+          "value": "Yes"
+        },
+        {
+          "label": "Color temperature",
+          "value": "2700 K (previously noted)"
+        },
+        {
+          "label": "Color rendering",
+          "value": "CRI 90 (previously noted)"
+        },
+        {
+          "label": "Energy class",
+          "value": "C"
+        },
+        {
+          "label": "Lifetime",
+          "value": "25,000 h"
+        },
+        {
+          "label": "Startup",
+          "value": "Under 1 second"
+        },
+        {
+          "label": "Beam angle",
+          "value": "40°"
+        },
+        {
+          "label": "Diameter",
+          "value": "50 mm"
+        }
+      ]
     },
     "meanwell-lpv10024": {
       "name": "Mean Well LPV-100-24",
-      "preview": "24 V LED power supply"
+      "preview": "24 V LED power supply",
+      "specs": "24 V, 100 W LED strip power supply",
+      "note": "Selected and purchased for the BTF-LIGHTING FCOB 24 V / 70 W strip. Output 24 V DC, 4.2 A, 100.8 W; IP67; 190 × 52 × 37 mm. Rated power headroom about 44%.",
+      "details": [
+        {
+          "label": "Output",
+          "value": "24 V DC, 4.2 A"
+        },
+        {
+          "label": "Rated power",
+          "value": "100.8 W"
+        },
+        {
+          "label": "Input",
+          "value": "90–264 V AC, 47–63 Hz"
+        },
+        {
+          "label": "Dimensions",
+          "value": "190 × 52 × 37 mm"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP67"
+        },
+        {
+          "label": "Efficiency",
+          "value": "Typically 88%"
+        },
+        {
+          "label": "Cooling",
+          "value": "Natural convection"
+        },
+        {
+          "label": "Compatible strip",
+          "value": "BTF-LIGHTING FCOB, 24 V, 70 W"
+        },
+        {
+          "label": "Power headroom",
+          "value": "Approx. 30.8 W, or 44% of load"
+        },
+        {
+          "label": "Enclosure protection",
+          "value": "IP67"
+        },
+        {
+          "label": "Typical efficiency",
+          "value": "88%"
+        }
+      ]
     },
     "tuya-led-controller": {
       "name": "Wi-Fi LED Dimmer S100-NO-W1",
