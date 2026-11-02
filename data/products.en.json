@@ -644,7 +644,51 @@
     },
     "tuya-led-controller": {
       "name": "Wi-Fi LED Dimmer S100-NO-W1",
-      "preview": "Wi-Fi single-color LED strip dimmer, 12–24 V"
+      "preview": "Wi-Fi single-color LED strip dimmer, 12–24 V",
+      "specs": "Single-color LED dimmer, 12–24 V DC, up to 10 A; 120 W at 12 V / 240 W at 24 V; 2.4 GHz Wi-Fi",
+      "note": "Purchased for BTF-LIGHTING FCOB 24 V / 70 W. S100-NO-W1 operation via Tuya confirmed by the user.",
+      "details": [
+        {
+          "label": "Model",
+          "value": "S100-NO-W1"
+        },
+        {
+          "label": "Input",
+          "value": "12–24 V DC"
+        },
+        {
+          "label": "Maximum current",
+          "value": "10 A"
+        },
+        {
+          "label": "Power at 12 V",
+          "value": "Up to 120 W"
+        },
+        {
+          "label": "Power at 24 V",
+          "value": "Up to 240 W"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz (marked on housing)"
+        },
+        {
+          "label": "Operating temperature",
+          "value": "−20 to +60 °C"
+        },
+        {
+          "label": "Output terminals",
+          "value": "Two +/− pairs"
+        },
+        {
+          "label": "LED strip",
+          "value": "BTF-LIGHTING FCOB, 24 V, 70 W (approx. 2.92 A)"
+        },
+        {
+          "label": "App",
+          "value": "Tuya (operation confirmed)"
+        }
+      ]
     },
     "anza-microfibre8": {
       "name": "Anza Microfibre 8 mm",
@@ -672,7 +716,51 @@
     },
     "orno-or-cr-282": {
       "name": "ORNO OR-CR-282",
-      "preview": "Compact microwave motion sensor, 230 V"
+      "preview": "Compact microwave motion sensor, 230 V",
+      "specs": "Compact microwave motion sensor, 230 V / 50 Hz; 1200 W maximum load, LED up to 300 W; IP20",
+      "note": "Purchased for the hallway. Packaging lists 360°/180° detection, 2/5/8 m range, 5/30/150/2000 lx light threshold and 5/30/90 s or 3/5/10 min switch-off delay. DIP switch settings. Five-year warranty stated on packaging. Data transcribed from packaging photos; installation and operation were not confirmed at the time.",
+      "details": [
+        {
+          "label": "Power",
+          "value": "230 V AC, 50 Hz"
+        },
+        {
+          "label": "Maximum load",
+          "value": "1200 W"
+        },
+        {
+          "label": "Maximum LED load",
+          "value": "300 W"
+        },
+        {
+          "label": "Detection angle",
+          "value": "360° / 180°"
+        },
+        {
+          "label": "Range",
+          "value": "2 / 5 / 8 m"
+        },
+        {
+          "label": "Light threshold",
+          "value": "5 / 30 / 150 / 2000 lx"
+        },
+        {
+          "label": "Switch-off delay",
+          "value": "5 / 30 / 90 s; 3 / 5 / 10 min"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "Adjustment",
+          "value": "DIP switches"
+        },
+        {
+          "label": "Packaging warranty",
+          "value": "5 years"
+        }
+      ]
     },
     "ikea-bilresa": {
       "name": "IKEA BILRESA",
