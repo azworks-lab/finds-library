@@ -346,7 +346,7 @@
       "name": "Sonoff M5",
       "preview": "Smart wall switch",
       "specs": "Smart wall switch",
-      "note": "Purchased for the bedroom entrance. During installation checks, no working neutral conductor was found in the wall box. The device powered on but did not switch the lighting. The wiring requires diagnosis.",
+      "note": "Bedroom lighting control.",
       "details": [
         {
           "label": "Type",
