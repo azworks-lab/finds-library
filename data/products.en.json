@@ -420,9 +420,9 @@
     },
     "sonoff-minir4": {
       "name": "Sonoff MINIR4",
-      "preview": "Compact smart lighting relays, 4 units",
-      "specs": "Four compact relays: two for ceiling lighting and two for bedside wall lights",
-      "note": "Four MINIR4 relays purchased: two for ceiling lighting and two for bedside wall lights in the bedroom. Reset and operation checks were carried out during setup; final wiring arrangement is to be confirmed on site.",
+      "preview": "Compact smart lighting relays, 2 units",
+      "specs": "Two compact relays for bedside wall lights",
+      "note": "Two relays for controlling bedside wall lights.",
       "details": [
         {
           "label": "Type",
@@ -430,7 +430,7 @@
         },
         {
           "label": "Quantity",
-          "value": "4 units"
+          "value": "2 units"
         },
         {
           "label": "Ecosystem",
