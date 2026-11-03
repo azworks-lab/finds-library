@@ -530,7 +530,7 @@
     },
     {
       "id": "sonoff-m5",
-      "name": "Sonoff M5",
+      "name": "SONOFF-M5-1C-86",
       "category": "Электрика и освещение",
       "subcategory": "Умный дом",
       "status": "Куплено",
@@ -571,7 +571,7 @@
         },
         {
           "label": "Исполнение",
-          "value": "1/2/3 клавиши; 80/86/120 — параметры зависят от версии"
+          "value": "1 клавиша, формат 86"
         }
       ],
       "related": [
@@ -579,7 +579,8 @@
         "sonoff-minir4"
       ],
       "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-switchman-smart-wall-switch-m5",
-      "photo": "images/sonoff-m5.jpg"
+      "photo": "images/sonoff-m5.jpg",
+      "sku": "M5-1C-86"
     },
     {
       "id": "sonoff-r5",
