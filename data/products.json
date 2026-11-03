@@ -634,7 +634,7 @@
       "subcategory": "Умный дом",
       "status": "Куплено",
       "brand": "Sonoff",
-      "specs": "4 мини-реле: 2 для потолочного освещения и 2 для прикроватных бра",
+      "specs": "2 мини-реле для управления прикроватными бра",
       "note": "2 реле для управления прикроватных бра.",
       "tags": [
         "спальня",
@@ -679,7 +679,7 @@
       ],
       "manufacturerUrl": "https://sonoff.tech/en-us/products/sonoff-mini-extreme-wi-fi-smart-switch-minir4",
       "photo": "images/sonoff-minir4.jpg",
-      "preview": "Компактные умные реле для освещения, 4 шт."
+      "preview": "Компактные умные реле для освещения, 2 шт."
     },
     {
       "id": "schneider-sedna",
