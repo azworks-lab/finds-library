@@ -30,5 +30,16 @@ jobs:
           git add images/ data/products.json
           if ! git diff --cached --quiet; then
             git commit -m "chore(images): store product photos locally"
-            git push
+            # A catalog edit may land while the image job is running.
+            # Rebase our image commit onto the latest main before pushing.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              if git rebase origin/main && git push origin HEAD:main; then
+                exit 0
+              fi
+              git rebase --abort 2>/dev/null || true
+              sleep 2
+            done
+            echo 'Could not publish localized images after retries' >&2
+            exit 1
           fi
