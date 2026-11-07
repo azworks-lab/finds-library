@@ -33,9 +33,11 @@ for item in items:
     if not isinstance(item, dict):
         continue
     pid = item.get("id") or "<missing>"
-    for key in ("id", "name", "category", "subcategory", "status", "brand", "specs", "note"):
+    for key in ("id", "name", "category", "subcategory", "status", "brand", "specs"):
         if not isinstance(item.get(key), str) or not item[key].strip():
             fail(f"{pid}: missing {key}")
+    if "note" in item and not isinstance(item["note"], str):
+        fail(f"{pid}: note must be a string (empty allowed)")
     if item.get("status") not in statuses:
         fail(f"{pid}: unknown status")
     if "addedAt" in item:
