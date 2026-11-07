@@ -1819,6 +1819,79 @@
       "price": 11.99,
       "photo": "images/sonoff-minir4m.jpg",
       "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-mini-extreme-wi-fi-smart-switch-matter-enabled"
+    },
+    {
+      "id": "orno-or-cr-242",
+      "name": "ORNO OR-CR-242",
+      "brand": "ORNO",
+      "category": "Электрика и освещение",
+      "subcategory": "Датчики движения",
+      "status": "Куплено",
+      "sku": "OR-CR-242",
+      "specs": "Настенный PIR-датчик движения 180°, 230 В, IP44",
+      "preview": "Настенный PIR-датчик движения, 180°, IP44",
+      "note": "",
+      "price": 12.49,
+      "store": "Kurši",
+      "addedAt": "2026-11-07",
+      "tags": [
+        "датчик движения",
+        "PIR",
+        "освещение",
+        "прихожая"
+      ],
+      "details": [
+        {
+          "label": "Тип",
+          "value": "Пассивный инфракрасный (PIR)"
+        },
+        {
+          "label": "Питание",
+          "value": "230 В AC, 50 Гц"
+        },
+        {
+          "label": "Угол обнаружения",
+          "value": "180°"
+        },
+        {
+          "label": "Дальность",
+          "value": "до 15 м"
+        },
+        {
+          "label": "Задержка",
+          "value": "10 с – 15 мин"
+        },
+        {
+          "label": "Порог освещённости",
+          "value": "3–2000 лк"
+        },
+        {
+          "label": "Максимальная нагрузка",
+          "value": "800 Вт"
+        },
+        {
+          "label": "Максимальная LED-нагрузка",
+          "value": "200 Вт"
+        },
+        {
+          "label": "Регулировка",
+          "value": "Вертикальная и горизонтальная"
+        },
+        {
+          "label": "Защита",
+          "value": "IP44"
+        },
+        {
+          "label": "Размеры",
+          "value": "55,5 × 80,2 × 68,2 мм"
+        },
+        {
+          "label": "Гарантия на упаковке",
+          "value": "3 года"
+        }
+      ],
+      "manufacturerUrl": "https://www.orno.pl/en/archived-products/262-mini-pir-motion-sensor-180-ip44-5901752485099.html",
+      "photo": "https://www.orno.pl/8496-medium_default/mini-pir-motion-sensor-180-ip44.jpg"
     }
   ],
   "subcategories": {
