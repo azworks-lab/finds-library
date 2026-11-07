@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-02",
+  "updated": "2026-11-07",
   "products": [
     {
       "id": "dewalt-dch263p1-qw",
@@ -1759,6 +1759,48 @@
       "preview": "Сетевой прожектор 4000 K на регулируемой складной подставке",
       "price": 22.5,
       "photo": "images/modee-ml-flws4000k50w-a2n.jpg"
+    },
+    {
+      "id": "sonoff-minir4m",
+      "name": "SONOFF MINIR4M — Matter Wi-Fi реле",
+      "brand": "SONOFF",
+      "category": "Электрика и освещение",
+      "subcategory": "Умный дом",
+      "status": "Куплено",
+      "sku": "MINIR4M",
+      "specs": "Одноканальное встраиваемое Wi-Fi реле с поддержкой Matter; клеммы N, L In, L Out, S1, S2; подключение внешнего выключателя",
+      "preview": "Компактное реле Matter over Wi-Fi",
+      "note": "AiO.lv, 11,99 €. Цена сообщена пользователем; устройство показано на фото упаковки.",
+      "tags": [
+        "SONOFF",
+        "Matter",
+        "Wi-Fi",
+        "реле",
+        "умный дом"
+      ],
+      "details": [
+        {
+          "label": "Модель",
+          "value": "MINIR4M"
+        },
+        {
+          "label": "Протокол",
+          "value": "Matter over Wi-Fi"
+        },
+        {
+          "label": "Цена покупки",
+          "value": "11,99 €"
+        },
+        {
+          "label": "Магазин",
+          "value": "AiO.lv"
+        }
+      ],
+      "related": [
+        "sonoff-minir4"
+      ],
+      "addedAt": "2026-11-07",
+      "price": 11.99
     }
   ],
   "subcategories": {
