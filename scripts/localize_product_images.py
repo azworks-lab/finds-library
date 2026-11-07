@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Save externally hosted FINDS product photos into the repository."""
+"""Save externally hosted FINDS product photos into the repository.
+
+Runs on catalog changes and safely retries publication via GitHub Actions.
+"""
 import io
 import json
 import pathlib
