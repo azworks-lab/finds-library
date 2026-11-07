@@ -1780,20 +1780,36 @@
       ],
       "details": [
         {
-          "label": "Модель",
-          "value": "MINIR4M"
+          "label": "Тип",
+          "value": "Компактное реле управления освещением"
+        },
+        {
+          "label": "Количество",
+          "value": "1 шт."
+        },
+        {
+          "label": "Экосистема",
+          "value": "eWeLink / Matter"
+        },
+        {
+          "label": "Питание",
+          "value": "100–240 В AC, 50/60 Гц"
+        },
+        {
+          "label": "Максимальная нагрузка",
+          "value": "10 А, активная"
+        },
+        {
+          "label": "Размеры",
+          "value": "39,5 × 33 × 16,8 мм"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2,4 ГГц, IEEE 802.11 b/g/n"
         },
         {
           "label": "Протокол",
           "value": "Matter over Wi-Fi"
-        },
-        {
-          "label": "Цена покупки",
-          "value": "11,99 €"
-        },
-        {
-          "label": "Магазин",
-          "value": "AiO.lv"
         }
       ],
       "related": [
@@ -1801,7 +1817,8 @@
       ],
       "addedAt": "2026-11-07",
       "price": 11.99,
-      "photo": "images/sonoff-minir4m.jpg"
+      "photo": "images/sonoff-minir4m.jpg",
+      "manufacturerUrl": "https://sonoff.tech/en-eu/products/sonoff-mini-extreme-wi-fi-smart-switch-matter-enabled"
     }
   ],
   "subcategories": {
