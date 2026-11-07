@@ -1181,6 +1181,62 @@
           "value": "€22.50"
         }
       ]
+    },
+    "orno-or-cr-242": {
+      "name": "ORNO OR-CR-242",
+      "preview": "Wall-mounted PIR motion sensor, 180°, IP44",
+      "specs": "Wall-mounted 180° PIR motion sensor, 230 V, IP44",
+      "note": "",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Passive infrared (PIR)"
+        },
+        {
+          "label": "Power supply",
+          "value": "230 V AC, 50 Hz"
+        },
+        {
+          "label": "Detection angle",
+          "value": "180°"
+        },
+        {
+          "label": "Range",
+          "value": "up to 15 m"
+        },
+        {
+          "label": "Switch-off delay",
+          "value": "10 s – 15 min"
+        },
+        {
+          "label": "Ambient light threshold",
+          "value": "3–2000 lx"
+        },
+        {
+          "label": "Maximum load",
+          "value": "800 W"
+        },
+        {
+          "label": "Maximum LED load",
+          "value": "200 W"
+        },
+        {
+          "label": "Adjustment",
+          "value": "Vertical and horizontal"
+        },
+        {
+          "label": "Protection",
+          "value": "IP44"
+        },
+        {
+          "label": "Dimensions",
+          "value": "55.5 × 80.2 × 68.2 mm"
+        },
+        {
+          "label": "Warranty on packaging",
+          "value": "3 years"
+        }
+      ]
     }
   }
 }
