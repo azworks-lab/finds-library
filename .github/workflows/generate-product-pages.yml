@@ -7,6 +7,13 @@ on:
       - data/products.en.json
       - scripts/generate_product_pages.py
   workflow_dispatch:
+  pull_request:
+    paths:
+      - 'data/products.json'
+      - 'data/products.en.json'
+      - 'scripts/generate_product_pages.py'
+      - 'scripts/test_product_pages.py'
+      - '.github/workflows/generate-product-pages.yml'
 permissions:
   contents: write
 concurrency:
@@ -17,9 +24,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate static HTML for all products
+        run: python3 scripts/test_product_pages.py
       - name: Generate static HTML
         run: python3 scripts/generate_product_pages.py
       - name: Commit generated pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
