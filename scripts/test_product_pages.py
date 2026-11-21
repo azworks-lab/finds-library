@@ -31,7 +31,7 @@ with tempfile.TemporaryDirectory() as folder:
             assert "fetch(" not in page, p["id"]
             assert "<dt>" in page, p["id"]
             assert p.get("note", "<<<none>>>") not in page or not p.get("note"), "Note exposed"
-            match = re.search(r'<script type="application/ld\\+json">(.*?)</script>', page, re.S)
+            match = re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S)
             assert match, p["id"]
             structured = json.loads(match.group(1))
             assert structured["@type"] == "Product"
