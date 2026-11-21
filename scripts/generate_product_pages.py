@@ -95,7 +95,7 @@ def main():
         for lang in ("ru", "en"):
             sitemap.append(f'  <url><loc>{esc(url_for(pid, lang))}</loc></url>')
     sitemap.append('</urlset>')
-    (ROOT / "sitemap.xml").write_text("\\n".join(sitemap) + "\\n", encoding="utf-8")
+    (ROOT / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     print(f"Generated {len(ids)} product pages in each language")
 
 if __name__ == "__main__":
