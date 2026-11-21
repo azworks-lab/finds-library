@@ -1237,6 +1237,46 @@
           "value": "3 years"
         }
       ]
+    },
+    "sonoff-minir4m": {
+      "name": "SONOFF MINIR4M — Matter Wi-Fi relay",
+      "preview": "Compact Matter over Wi-Fi relay",
+      "specs": "Single-channel flush-mounted Wi-Fi relay with Matter support; N, L In, L Out, S1 and S2 terminals; supports an external wall switch",
+      "note": "",
+      "details": [
+        {
+          "label": "Type",
+          "value": "Compact lighting control relay"
+        },
+        {
+          "label": "Quantity",
+          "value": "1 unit"
+        },
+        {
+          "label": "Ecosystem",
+          "value": "eWeLink / Matter"
+        },
+        {
+          "label": "Power supply",
+          "value": "100–240 V AC, 50/60 Hz"
+        },
+        {
+          "label": "Maximum load",
+          "value": "10 A resistive"
+        },
+        {
+          "label": "Dimensions",
+          "value": "39.5 × 33 × 16.8 mm"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "2.4 GHz, IEEE 802.11 b/g/n"
+        },
+        {
+          "label": "Protocol",
+          "value": "Matter over Wi-Fi"
+        }
+      ]
     }
   }
 }
