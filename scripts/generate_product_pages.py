@@ -87,6 +87,15 @@ def main():
             if page.parent.name not in ids:
                 page.unlink()
                 page.parent.rmdir()
+    # Search-engine discovery: canonical RU and EN URLs only.
+    # Deterministic output, no lastmod dates invented from build time.
+    sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
+               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for pid in sorted(ids):
+        for lang in ("ru", "en"):
+            sitemap.append(f'  <url><loc>{esc(url_for(pid, lang))}</loc></url>')
+    sitemap.append('</urlset>')
+    (ROOT / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
     print(f"Generated {len(ids)} product pages in each language")
 
 if __name__ == "__main__":

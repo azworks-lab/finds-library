@@ -4,6 +4,7 @@ import importlib.util
 import json
 import re
 import tempfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 source = Path(__file__).with_name("generate_product_pages.py")
@@ -35,6 +36,15 @@ with tempfile.TemporaryDirectory() as folder:
             assert match, p["id"]
             structured = json.loads(match.group(1))
             assert structured["@type"] == "Product"
+    # Validate the generated sitemap against the exact catalog in both languages.
+    (module.ROOT / "data").mkdir()
+    for name in ("products.json", "products.en.json"):
+        (module.ROOT / "data" / name).write_bytes((root / "data" / name).read_bytes())
+    module.main()
+    sitemap = ET.parse(module.ROOT / "sitemap.xml")
+    locations = [el.text for el in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
+    expected = {module.url_for(p["id"], lang) for p in catalog for lang in ("ru", "en")}
+    assert len(locations) == len(expected) and set(locations) == expected, "Sitemap incomplete or duplicate URLs"
     target = module.ROOT / "p/videx-gx53-8w-3000k-hallway/index.html"
     assert target.exists(), "Control product missing"
     assert "VIDEX" in target.read_text(encoding="utf-8").upper()
